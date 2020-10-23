@@ -1,0 +1,10 @@
+html, body {width: 100%; font-size: 16px; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; overflow: hidden; position: relative; height: 100vh;}
+.header-wrapper {width: 100%;}
+.header-wrapper img {width: 75%; height: auto;}
+.header-wrapper .bg-cover {width: 75%; height: 100%; background-color: #f86953; opacity: 0.85; z-index: 2; position: absolute;}
+.header-wrapper .moon {position: absolute; top: 50%; transform: translateY(-50%); right: 50px; z-index: 3; width: 35%; border-radius: 50%;}
+.header-top {display: flex; width: 100%;}
+.header-top .logo-wrap {position: absolute; z-index: 4; width: 150px; height: auto; top: 20px; left: 20px;}
+.header-top .icon-wrap {position: absolute; z-index: 4; color: #f8f8f8; font-size: 1.5em; top: 20px; right: 100px;}
+.header-top .icon-wrap i {padding-left: 0.5em;}
+.header-top .bar-wrap {width: 3%; height: 5%; position: absolute; top: 0; right: 0; border-bottom: 1px solid #f8f8f8;}
