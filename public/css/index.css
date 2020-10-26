@@ -1,11 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap');
+
 /* font-family: 'Frank Ruhl Libre', serif; */
 
-html, body {width: 100%; font-size: 16px; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; overflow: hidden; position: relative; height: 100vh;}
+html, body {width: 100%; font-size: 16px; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; height: 100vh; position: relative; overflow: hidden;}
 .header-wrapper {width: 100%;}
-.header-wrapper img {width: 75%;}
-.header-wrapper .bg-cover {width: 75%; height: 100vh; background-color: #f86953; opacity: 0.85; position: absolute;}
-.header-top .logo-wrap {position: absolute; width: 150px; height: auto; top: 20px; left: 20px;}
-.header-top .icon-wrap {position: absolute; color: #f8f8f8; font-size: 1.5em; top: 20px; right: 100px;}
-.header-top .icon-wrap i {padding-left: 0.5em; cursor: pointer;}
-.header-top .bar-wrap {width: 3%; height: 4%; position: absolute; top: 0; right: 0; border-bottom: 1px solid #f8f8f8;}
+.header-wrapper .bg-image {width: 70%; background: url(../img/main-2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100%;} 
+.header-wrapper .bg-cover {width: 70%; height: 100vh; background-color: #f86953; opacity: 0.85;}
+.header-wrapper .header-top {position: absolute; width: 100%; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center;}
+.header-wrapper .header-top .top-left {width: 95%; display: flex; justify-content: space-between; align-items: center;}
+.header-top .right-wrap img {width: 120px; height: auto; padding: 10px;}
+.header-top .left-wrap {display: flex; justify-content: space-between; align-items: center; width: 10%;}
+.header-top .left-wrap .icon-wrap {color: #f8f8f8; font-size: 1.5em;}
+.header-top .left-wrap i {padding-left: 0.5em; cursor: pointer;}
+.header-top .top-right {display: flex; flex-direction: column; width: 5%;}
+.header-top .bar-wrap1 {width: 100%; height: 10%; border-top: 1px solid #f8f8f8; padding-bottom: 10px;}
+.header-top .bar-wrap2 {width: 100%; height: 10%; border-bottom: 1px solid #f8f8f8;}
+
+/* ******** moon******************* */
+.moon {position: absolute; top: 20%; left: 61%;}
+.moon img {width: 500px; height: auto;}
+.moon .line {width: 500px; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
+
+
+/* ******** main ******************* */
+.main {width: 100%; position: relative; position: absolute; top: 30%; left: 0; }
+.main img {position: absolute; top: 20%; left: 24.5%; width: 160px; height: auto; border: 1px solid #f8f8f8; border-radius: 50%;}
+.main .name {font-size: 6em; color: #313642; letter-spacing: -0.065em; position: absolute; left: 38%; top: -15%;}
+.main .port-p {font-size: 12em; color: #313642; font-family: 'Frank Ruhl Libre', serif; text-align: center; letter-spacing: 0.125em;}
+.main .port-p img {width: 180px; height: auto;}
+.main .port-p span:nth-child(1) {padding-left: 0.75em;}
+.main .port-p span:nth-child(2) {color: #f8f8f8;}
+.main .line {width: 39%; height: 5%; border-bottom: 1px solid #f8f8f8; position: absolute; left: 33%; top: 70%;}
+.main .web {font-size: 6em; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8; left: 50%; position: absolute; top: 65%;}
+.main .develop {font-size: 4em; color: #f8f8f8; left: 42%; position: absolute; top: 96%;}
+.main .design {font-size: 4em; color: #f8f8f8; left: 48%; position: absolute; top: 116%;}
+.main .and {position: absolute; top: 50%; left: 60.2%; font-size: 12.5em; font-family: 'Frank Ruhl Libre', serif; color: #313642;}
+
+/* ******** scroll-bar ******************* */
+.scroll-wrap {width: 3%; position: absolute; top: 40%; left: 0;}
+.scroll-wrap .bar1 {width: 150%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1.5em;}
+.scroll-wrap .bar2 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1.5em;}
+.scroll-wrap .bar3 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1.5em;}
+.scroll-wrap .bar4 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1.5em;}
+
+/* ******** scroll-down ******************* */
+.scroll-down {width: 20%; position: absolute; bottom: 10%; left: 0; border: 1px solid red;}
+.scroll-down .text {font-size: 1em; color: #f8f8f8; font-weight: 400; transform: rotate(90deg);}
