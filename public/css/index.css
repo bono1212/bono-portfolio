@@ -74,6 +74,13 @@ html, body {width: 100%; font-size: 16px; background: url(../img/main-1.png) no-
 .about-wrap .about-small .txt .title-me {font-size: 15vw; position: absolute; top: 55%; right: 0; color: #f8f8f8;}
 .about-wrap .about-small .msg {font-size: 1.5vw; position: absolute; bottom: 11em; right: 4.75em; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8;}
 
+.about-wrap .show-me {width: 40%; position: absolute; bottom: 7em; right: 0;}
+.about-wrap .show-me .show-line {position: absolute; width: 70%; background-color: #f8f8f8; height: 1px; position: absolute; top: 50%; right: -0.125em;}
+.about-wrap .show-me .show-bg {width: 230px; height: 45px; border-radius: 25px; border: 1px solid #313642; display: flex; justify-content: flex-end; align-items: center; font-size: 1.125vw; background-color: #313642; color: #f86953; padding-right: 1em; cursor: pointer; box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3); transition: all 0.2s;}
+.about-wrap .show-me .show-bg .circle {width: 25px; height: 25px; border-radius: 50%; border: 1px solid #f86953; background-color: #f86953; color: #f8f8f8; position: absolute; left: 1.5em; text-align: center; font-size: 0.5vw; line-height: 25px; transition: all 0.5s;}
+.about-wrap .show-me .show-bg .circle i {cursor: pointer; font-size: 0.25vw;}
+.about-wrap .show-me .show-bg:hover .circle {transform: scale(1.1);}
+.about-wrap .show-me .show-bg:hover {transform: translateY(3px);}
 
 
 /* **********반응형************* */
