@@ -4,48 +4,47 @@
 
 html, body {width: 100%; font-size: 16px; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; height: 100vh; position: relative;}
 .header-wrapper {width: 100%;}
-.header-wrapper .bg-image {width: 70%; background: url(../img/main-2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100%;} 
-.header-wrapper .bg-cover {width: 70%; height: 100vh; background-color: #f86953; opacity: 0.8;}
+.header-wrapper .bg-image {width: 75%; background: url(../img/main-2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100%;} 
+.header-wrapper .bg-cover {width: 75%; height: 100vh; background-color: #f86953; opacity: 0.8;}
 .header-wrapper .header-top {position: absolute; width: 100%; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center;}
-.header-wrapper .header-top .top-left {width: 95%; display: flex; justify-content: space-between; align-items: center;}
+.header-wrapper .header-top .top-left {width: 90%; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0.5vw;}
 .header-top .right-wrap img {width: 120px; height: auto; padding: 10px;}
 .header-top .left-wrap {display: flex; justify-content: space-between; align-items: center; width: 10%;}
-.header-top .left-wrap .icon-wrap {color: #f8f8f8; font-size: 2em;}
-.header-top .left-wrap i {padding-left: 0.5em; cursor: pointer;}
-.header-top .top-right {display: flex; flex-direction: column; width: 5%; padding-right: 3em; cursor: pointer;}
-.header-top .bar-wrap1 {width: 100%; height: 10%; border-top: 1px solid #f8f8f8; padding-bottom: 10px;}
-.header-top .bar-wrap2 {width: 100%; height: 10%; border-bottom: 1px solid #f8f8f8;}
+.header-top .left-wrap .icon-wrap {color: #f8f8f8; font-size: 2vw;}
+.header-top .left-wrap i {padding-left: 0.25em; cursor: pointer;}
+.header-top .top-right {display: flex; flex-direction: column; width: 5%; padding-right: 3em; cursor: pointer; position: absolute; right: 0; top: 2.5vw;}
+.header-top .bar-wrap1 {width: 50px; height: 10%; border-top: 1px solid #f8f8f8; padding-bottom: 10px;}
+.header-top .bar-wrap2 {width: 50px; height: 10%; border-bottom: 1px solid #f8f8f8;}
 
 /* ******** moon******************* */
-.moon {position: absolute; top: 20%; left: 61%;}
+.moon {position: absolute; top: 20%; left: 66%;}
 .moon img {width: 26vw; height: auto;}
 .moon .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
 
 
 /* ******** main ******************* */
-.main {width: 100%; position: relative; position: absolute; top: 30%; left: 0; border: 3px solid yellow;}
-.main img {width: 9vw; height: auto; border: 1px solid #f8f8f8; border-radius: 50%;}
-.main .name {font-size: 5vw; color: #313642; letter-spacing: -0.065em; position: absolute; left: 38%; top: -15%;}
-.main .port-p {font-size: 10vw; color: #313642; font-family: 'Frank Ruhl Libre', serif; text-align: center; letter-spacing: 0.0125em;}
-.main .port-p span:nth-child(2) {color: #f8f8f8;}
-.main .line {width: 39%; height: 5%; border-bottom: 1px solid #f8f8f8; position: absolute; left: 33%; top: 70%;}
-.main .web {font-size: 5vw; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8; left: 50%; position: absolute; top: 65%;}
-.main .develop {font-size: 3vw; color: #f8f8f8; left: 43%; position: absolute; top: 96%;}
-.main .design {font-size: 3vw; color: #f8f8f8; left: 48%; position: absolute; top: 116%;}
-.main .and {position: absolute; top: 50%; left: 60.2%; font-size: 11vw; font-family: 'Frank Ruhl Libre', serif; color: #313642;}
+.main {width: 100%; position: relative; position: absolute; top: 30%; left: 0; font-size: 10vw;}
+.main img {width: 10vw; height: auto; border: 1px solid #f8f8f8; border-radius: 50%; height: 10vw;}
+.main .name {font-size: 5vw; color: #313642; letter-spacing: -0.065em; position: absolute; left: 42%; top: -16%;}
+.main .port-p {font-size: 10vw; color: #313642; font-family: 'Frank Ruhl Libre', serif; text-align: center; display: flex; justify-content: center; align-items: center;}
+.main .line {width: 40%; height: 5%; border-bottom: 1px solid #f8f8f8; position: absolute; left: 34.5%; top: 70%;}
+.main .web {font-size: 5vw; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8; left: 55.5%; position: absolute; top: 66%;}
+.main .develop {font-size: 3.5vw; color: #f8f8f8; left: 46%; position: absolute; top: 98%;}
+.main .design {font-size: 3.5vw; color: #f8f8f8; left: 51%; position: absolute; top: 119%;}
+.main .and {position: absolute; top: 50%; left: 66%; font-size: 11vw; font-family: 'Frank Ruhl Libre', serif; color: #313642;}
 
 /* ******** scroll-bar ******************* */
 .scroll-wrap {width: 3%; position: absolute; top: 40%; left: 0; cursor: pointer;}
-.scroll-wrap .bar1 {width: 150%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1.5em;}
-.scroll-wrap .bar2 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1.5em;}
-.scroll-wrap .bar3 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1.5em;}
-.scroll-wrap .bar4 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1.5em;}
+.scroll-wrap .bar1 {width: 150%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 0.125em;}
+.scroll-wrap .bar2 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 0.125em;}
+.scroll-wrap .bar3 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 0.125em;}
+.scroll-wrap .bar4 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 0.125em;}
 
 
 /* ******** scroll-down ******************* */
-.scroll-down {width: 7%; position: relative; bottom: 10%; left: 0;}
+/* .scroll-down {width: 7%; position: relative; bottom: 10%; left: 0;}
 .scroll-down .text {font-size: 1em; color: #f8f8f8; font-weight: 400; transform: rotate(90deg); position: absolute; top: 0; left: 0; font-family: 'Frank Ruhl Libre', serif;}
-.scroll-down .box {width: 30%; border-bottom: 1px solid #f8f8f8; height: 2%; transform: rotate(90deg); position: absolute; left: 26%; bottom: 0;}
+.scroll-down .box {width: 30%; border-bottom: 1px solid #f8f8f8; height: 2%; transform: rotate(90deg); position: absolute; left: 26%; bottom: 0;} */
 
 
 
@@ -85,11 +84,13 @@ html, body {width: 100%; font-size: 16px; background: url(../img/main-1.png) no-
 
 /* **********반응형************* */
 @media screen and (max-width: 1199px) {
-	
+	.moon img {width: 30vw; height: auto;}
+	.moon .line {width: 30vw; height: auto;}
+	.main {font-size: 10vw;}
 }
 
 @media screen and (max-width: 991px) {
-	
+	.main {font-size: 10vw;}
 }
 
 @media screen and (max-width: 767px) {
