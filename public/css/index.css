@@ -25,13 +25,13 @@ html, body {width: 100%; font-size: 16px; background: url(../img/main-1.png) no-
 /* ******** main ******************* */
 .main {width: 100%; position: relative; position: absolute; top: 30%; left: 0; font-size: 10vw;}
 .main img {width: 10vw; height: auto; border: 1px solid #f8f8f8; border-radius: 50%; height: 10vw;}
-.main .name {font-size: 5vw; color: #313642; letter-spacing: -0.065em; position: absolute; left: 42%; top: -16%;}
+.main .name {font-size: 4vw; color: #313642; letter-spacing: -0.065em; position: absolute; left: 47%; top: -12%;}
 .main .port-p {font-size: 10vw; color: #313642; font-family: 'Frank Ruhl Libre', serif; text-align: center; display: flex; justify-content: center; align-items: center;}
 .main .line {width: 40%; height: 5%; border-bottom: 1px solid #f8f8f8; position: absolute; left: 34.5%; top: 70%;}
-.main .web {font-size: 5vw; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8; left: 55.5%; position: absolute; top: 66%;}
-.main .develop {font-size: 3.5vw; color: #f8f8f8; left: 46%; position: absolute; top: 98%;}
-.main .design {font-size: 3.5vw; color: #f8f8f8; left: 51%; position: absolute; top: 119%;}
-.main .and {position: absolute; top: 50%; left: 66%; font-size: 11vw; font-family: 'Frank Ruhl Libre', serif; color: #313642;}
+.main .web {font-size: 5vw; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8; left: 55%; position: absolute; top: 66%;}
+.main .develop {font-size: 3.5vw; color: #f8f8f8; left: 45%; position: absolute; top: 98%;}
+.main .design {font-size: 3.5vw; color: #f8f8f8; left: 50%; position: absolute; top: 119%;}
+.main .and {position: absolute; top: 50%; left: 65%; font-size: 11vw; font-family: 'Frank Ruhl Libre', serif; color: #313642;}
 
 /* ******** scroll-bar ******************* */
 .scroll-wrap {width: 3%; position: absolute; top: 40%; left: 0; cursor: pointer;}
