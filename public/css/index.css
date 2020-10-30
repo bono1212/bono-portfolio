@@ -2,7 +2,7 @@
 
 /* font-family: 'Frank Ruhl Libre', serif; */
 
-html, body {width: 100%; font-size: 16px; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; height: 100vh; position: relative;}
+html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; height: 100vh; position: relative;}
 .header-wrapper {width: 100%;}
 .header-wrapper .bg-image {width: 75%; background: url(../img/main-2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100%;} 
 .header-wrapper .bg-cover {width: 75%; height: 100vh; background-color: #f86953; opacity: 0.8;}
@@ -31,7 +31,7 @@ html, body {width: 100%; font-size: 16px; background: url(../img/main-1.png) no-
 .main .web {font-size: 5vw; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8; left: 55%; position: absolute; top: 66%;}
 .main .develop {font-size: 3.5vw; color: #f8f8f8; left: 45%; position: absolute; top: 98%;}
 .main .design {font-size: 3.5vw; color: #f8f8f8; left: 50%; position: absolute; top: 119%;}
-.main .and {position: absolute; top: 50%; left: 65%; font-size: 11vw; font-family: 'Frank Ruhl Libre', serif; color: #313642;}
+.main .and {position: absolute; top: 50%; left: 65.5%; font-size: 11vw; font-family: 'Frank Ruhl Libre', serif; color: #313642;}
 
 /* ******** scroll-bar ******************* */
 .scroll-wrap {width: 3%; position: absolute; top: 40%; left: 0; cursor: pointer;}
@@ -49,18 +49,6 @@ html, body {width: 100%; font-size: 16px; background: url(../img/main-1.png) no-
 
 
 /* ********************menu-page***************** */
-.menu-wrap {width: 100vw; height: 100vh; background-color: #f86953; color: #f8f8f8; position: relative; display: none; position: absolute; top: 0;}
-.menu-wrap .menu-top-wrap {display: flex; justify-content: space-between; width: 95%; position: absolute; top: 0; align-items: center;}
-.menu-wrap .menu-top-wrap .icon-wrap {padding-right: 4.5em;}
-.menu-wrap .menu-top-wrap i {font-size: 1.5em; padding-left: 0.5em;}
-.menu-wrap .logo-wrap img {width: 120px; height: auto; padding: 10px;}
-.menu-wrap .contents {width: 100%; height: 80%; text-align: center; padding-top: 6em; display: flex; flex-direction: column; justify-content: center;}
-.menu-wrap .contents div {font-size: 6vw; transition: all 0.3s; cursor: pointer; padding-bottom: 0.25em;}
-.menu-wrap .contents div:last-child {padding-bottom: 0;}
-.menu-wrap .close {width: 2%; cursor: pointer; position: relative; top: 1.725em; right: 2.25em;}
-.menu-wrap .close .bar1 {height: 10%; border-bottom: 2px solid #f8f8f8; width: 100%; transform: rotate(45deg); position: absolute; right: 0;}
-.menu-wrap .close .bar2 {height: 10%; border-bottom: 2px solid #f8f8f8; width: 100%; transform: rotate(-45deg);}
-.menu-wrap .contents div span:hover {transform: scale(1.2); color: #313642;}
 
 
 /* ********************menu-page***************** */
