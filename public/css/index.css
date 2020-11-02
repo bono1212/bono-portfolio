@@ -4,15 +4,15 @@
 
 html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; height: 100vh; position: relative;}
 .header-wrapper {width: 100%;}
-.header-wrapper .bg-image {width: 75%; background: url(../img/main-2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100%;} 
+.header-wrapper .bg-image {width: 75%; background: url(../img/main-3.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100%;} 
 .header-wrapper .bg-cover {width: 75%; height: 100vh; background-color: #f86953; opacity: 0.8;}
 .header-wrapper .header-top {position: absolute; width: 100%; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center;}
-.header-wrapper .header-top .top-left {width: 90%; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0.5vw;}
-.header-top .right-wrap img {width: 120px; height: auto; padding: 10px;}
-.header-top .left-wrap {display: flex; justify-content: space-between; align-items: center; width: 10%;}
+.header-wrapper .header-top .top-left {width: 90%; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0.5vw; border: 1px solid yellow;}
+.header-top .right-wrap img {width: 150px; height: auto; padding: 10px;}
+.header-top .left-wrap {display: flex; justify-content: flex-end; align-items: center; width: 20%; border: 1px solid burlywood;}
 .header-top .left-wrap .icon-wrap {color: #f8f8f8; font-size: 2vw;}
 .header-top .left-wrap i {padding-left: 0.25em; cursor: pointer;}
-.header-top .top-right {display: flex; flex-direction: column; width: 5%; padding-right: 3em; cursor: pointer; position: absolute; right: 0; top: 2.5vw;}
+.header-top .top-right {display: flex; flex-direction: column; width: 5%; padding-right: 3em; cursor: pointer; position: absolute; right: 0; top: 2.5vw; border: 1px solid yellow;}
 .header-top .bar-wrap1 {width: 50px; height: 10%; border-top: 1px solid #f8f8f8; padding-bottom: 10px;}
 .header-top .bar-wrap2 {width: 50px; height: 10%; border-bottom: 1px solid #f8f8f8;}
 
@@ -23,22 +23,24 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ******** main ******************* */
-.main {width: 100%; position: relative; position: absolute; top: 30%; left: 0; font-size: 10vw;}
+.main {width: 100%; position: relative; position: absolute; top: 30%; left: 0; font-size: 10vw; display: flex; justify-content: center;}
 .main img {width: 10vw; height: auto; border: 1px solid #f8f8f8; border-radius: 50%; height: 10vw;}
 .main .name {font-size: 4vw; color: #313642; letter-spacing: -0.065em; position: absolute; left: 47%; top: -12%;}
-.main .port-p {font-size: 10vw; color: #313642; font-family: 'Frank Ruhl Libre', serif; text-align: center; display: flex; justify-content: center; align-items: center;}
+.main .port-p {font-size: 10vw; color: #313642; font-family: 'Frank Ruhl Libre', serif; text-align: center; display: flex; justify-content: center; align-items: center; border: 1px solid green; width: 80%;}
+.main .port-p .portfolio {display: flex; justify-content: center; align-items: center;}
+.main .port-p .portfolio div { margin: 0 4px}
 .main .line {width: 40%; height: 5%; border-bottom: 1px solid #f8f8f8; position: absolute; left: 34.5%; top: 70%;}
 .main .web {font-size: 5vw; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8; left: 55%; position: absolute; top: 66%;}
 .main .develop {font-size: 3.5vw; color: #f8f8f8; left: 45%; position: absolute; top: 98%;}
 .main .design {font-size: 3.5vw; color: #f8f8f8; left: 50%; position: absolute; top: 119%;}
-.main .and {position: absolute; top: 50%; left: 65.5%; font-size: 11vw; font-family: 'Frank Ruhl Libre', serif; color: #313642;}
+.main .and {position: absolute; top: 50%; left: 65.2%; font-size: 11vw; font-family: 'Frank Ruhl Libre', serif; color: #313642;}
 
 /* ******** scroll-bar ******************* */
 .scroll-wrap {width: 3%; position: absolute; top: 40%; left: 0; cursor: pointer;}
-.scroll-wrap .bar1 {width: 150%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 0.125em;}
-.scroll-wrap .bar2 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 0.125em;}
-.scroll-wrap .bar3 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 0.125em;}
-.scroll-wrap .bar4 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 0.125em;}
+.scroll-wrap .bar1 {width: 150%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;}
+.scroll-wrap .bar2 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;}
+.scroll-wrap .bar3 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;}
+.scroll-wrap .bar4 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;}
 
 
 /* ******** scroll-down ******************* */
@@ -75,16 +77,32 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.moon img {width: 30vw; height: auto;}
 	.moon .line {width: 30vw; height: auto;}
 	.main {font-size: 10vw;}
+	.header-top .left-wrap i {font-size: 3vw; padding-left: 0.125em;}
 }
 
 @media screen and (max-width: 991px) {
+	.main .port-p {width: 90%;}
+	.moon img {width: 35vw; height: auto;}
+	.moon .line {width: 35vw; height: auto;}
 	.main {font-size: 10vw;}
+	.main .name {font-size: 6vw; color: #313642; left: 36%; top: -26%;}
+	.header-top .left-wrap i {font-size: 2vw;}
+	.header-top .left-wrap i {font-size: 2.5vw; padding-left: 0.125em;}
 }
 
 @media screen and (max-width: 767px) {
-	
+	.main .port-p {width: 90%;}
+	.moon {top: 45%; left: 50%;}
+	.moon img {width: 65vw; height: auto;}
+	.moon .line {width: 65vw; height: auto;}
+	.main {font-size: 10vw;}
+	.main .name {font-size: 6vw; color: #313642; left: 36%; top: -26%;}
+	.header-top .left-wrap i {font-size: 4vw; padding-left: 0.125em;}
 }
 
 @media screen and (max-width: 575px) {
-	
+	.moon {top: 40%; left: 50%;}
+	.moon img {width: 85vw; height: auto;}
+	.moon .line {width: 85vw; height: auto;}
+	.scroll-wrap {display: none;}
 }
