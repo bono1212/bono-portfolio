@@ -12,8 +12,8 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .header-top .left-wrap {display: flex; justify-content: flex-end; align-items: center; width: 20%;}
 .header-top .left-wrap .icon-wrap {color: #f8f8f8; font-size: 2vw;}
 .header-top .left-wrap i {padding-left: 0.25em; cursor: pointer;}
-.header-top .top-right {display: flex; width: 10%; cursor: pointer; position: fixed; right: 0; top: 0; height: 9%; justify-content: center; align-items: center;}
-.header-top .top-right .bar-box {width: 50%; height: 50%; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+.header-top .top-right {display: flex; width: 10%; cursor: pointer; position: fixed; right: 0; top: 0; height: 11%; justify-content: center; align-items: center;}
+.header-top .top-right .bar-box {width: 50%; height: 50%; display: flex; justify-content: center; align-items: center; flex-direction: column;}
 .header-top .bar-wrap1 {width: 50%; background-color: #f8f8f8; height: 2px; margin: 6px 0; transition: transform 0.5s;}
 .header-top .bar-wrap2 {width: 50%; background-color: #f8f8f8; height: 2px; margin: 6px 0; transition: transform 0.5s;}
 
@@ -65,7 +65,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .menu-wrap .contents {padding-top: 8%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .menu-wrap .contents .menus {font-size: 6vw; color: #f8f8f8; transition: all 0.5s; width: 50%; text-align: center; height: 150px; margin-bottom: 0.125em; position: relative; overflow: hidden;}
 .menu-wrap .contents .menus div {transition: all 0.5s; width: 100%; animation-name: ani; animation-duration: 0.75s; position: absolute; letter-spacing: 0.125em;}
-.menu-wrap .contents div:hover {transform: scale(1.1); text-decoration: line-through;}
+.menu-wrap .contents div:hover {text-decoration: line-through;}
 
 @keyframes ani {
 	0% {transform: translateY(100px);}
