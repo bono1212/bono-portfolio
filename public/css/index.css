@@ -6,15 +6,25 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .header-wrapper {width: 100%; overflow: hidden;}
 .header-wrapper .bg-image {width: 75%; background: url(../img/main-3.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh;} 
 .header-wrapper .bg-cover {width: 75%; height: 100vh; background-color: #f86953; opacity: 0.8;}
-.header-wrapper .header-top {width: 100%; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center; position: fixed;}
-.header-wrapper .header-top .top-left {width: 90%; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0; border: 1px solid yellow;}
+.header-wrapper .header-top {width: 100%; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center; position: fixed; z-index: 9999;}
+.header-wrapper .header-top .top-left {width: 90%; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0;}
 .header-top .right-wrap img {width: 120px; height: auto; padding: 10px;}
-.header-top .left-wrap {display: flex; justify-content: flex-end; align-items: center; width: 20%; border: 1px solid burlywood;}
+.header-top .left-wrap {display: flex; justify-content: flex-end; align-items: center; width: 20%;}
 .header-top .left-wrap .icon-wrap {color: #f8f8f8; font-size: 2vw;}
 .header-top .left-wrap i {padding-left: 0.25em; cursor: pointer;}
-.header-top .top-right {display: flex; flex-direction: column; width: 5%; padding-right: 3em; cursor: pointer; position: fixed; right: 0; top: 2vw; border: 1px solid yellow;}
-.header-top .bar-wrap1 {width: 50px; height: 10%; border-top: 1px solid #f8f8f8; padding-bottom: 10px;}
-.header-top .bar-wrap2 {width: 50px; height: 10%; border-bottom: 1px solid #f8f8f8;}
+.header-top .top-right {display: flex; width: 10%; cursor: pointer; position: fixed; right: 0; top: 0; height: 9%; justify-content: center; align-items: center;}
+.header-top .top-right .bar-box {width: 50%; height: 50%; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+.header-top .bar-wrap1 {width: 50%; background-color: #f8f8f8; height: 2px; margin: 6px 0; transition: transform 0.5s;}
+.header-top .bar-wrap2 {width: 50%; background-color: #f8f8f8; height: 2px; margin: 6px 0; transition: transform 0.5s;}
+
+.header-top .top-right .bar-box:hover .bar-wrap1 {transform: rotate(45deg);}
+.header-top .top-right .bar-box:hover .bar-wrap2 {transform: rotate(-45deg);}
+/* .header-top .top-right .bar-box:hover .bar-wrap1 {transform: translateY(-2px);}
+.header-top .top-right .bar-box:hover .bar-wrap2 {transform: translateY(2px);} */
+
+
+
+
 
 /* ******** moon******************* */
 .moon {position: absolute; top: 20%; left: 66%;}
@@ -52,9 +62,17 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 /* ********************menu-page***************** */
 .menu-wrap {width: 100%; height: 100vh; background-color: #f86953;  display: none; position: absolute; top: 0;}
-.menu-wrap .contents {padding-top: 7%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
-.menu-wrap .contents div {font-size: 6vw; color: #f8f8f8; text-align: center; transition: all 0.5s; width: 30%;}
-.menu-wrap .contents div:hover {transform: scale(1.2); text-decoration: line-through;}
+.menu-wrap .contents {padding-top: 8%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.menu-wrap .contents .menus {font-size: 6vw; color: #f8f8f8; transition: all 0.5s; width: 50%; text-align: center; height: 150px; margin-bottom: 0.125em; position: relative; overflow: hidden;}
+.menu-wrap .contents .menus div {transition: all 0.5s; width: 100%; animation-name: ani; animation-duration: 0.75s; position: absolute; letter-spacing: 0.125em;}
+.menu-wrap .contents div:hover {transform: scale(1.1); text-decoration: line-through;}
+
+@keyframes ani {
+	0% {transform: translateY(100px);}
+	100% {transform: translateY(0);}
+}
+
+
 
 
 /* ********************menu-page***************** */
