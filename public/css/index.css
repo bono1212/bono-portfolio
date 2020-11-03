@@ -8,7 +8,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .header-wrapper .bg-cover {width: 75%; height: 100vh; background-color: #f86953; opacity: 0.8;}
 .header-wrapper .header-top {width: 100%; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center; position: fixed; z-index: 9999;}
 .header-wrapper .header-top .top-left {width: 90%; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0;}
-.header-top .right-wrap img {width: 120px; height: auto; padding: 10px;}
+.header-top .right-wrap img {width: 150px; height: auto; padding: 10px;}
 .header-top .left-wrap {display: flex; justify-content: flex-end; align-items: center; width: 20%;}
 .header-top .left-wrap .icon-wrap {color: #f8f8f8; font-size: 2vw;}
 .header-top .left-wrap i {padding-left: 0.25em; cursor: pointer;}
