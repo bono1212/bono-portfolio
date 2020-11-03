@@ -12,7 +12,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .header-top .left-wrap {display: flex; justify-content: flex-end; align-items: center; width: 20%;}
 .header-top .left-wrap .icon-wrap {color: #f8f8f8; font-size: 2vw;}
 .header-top .left-wrap i {padding-left: 0.25em; cursor: pointer;}
-.header-top .top-right {display: flex; width: 10%; cursor: pointer; position: fixed; right: 0; top: 0; height: 11%; justify-content: center; align-items: center;}
+.header-top .top-right {display: flex; width: 10%; cursor: pointer; position: fixed; right: 0; top: 0; height: 100px; justify-content: center; align-items: center;}
 .header-top .top-right .bar-box {width: 50%; height: 50%; display: flex; justify-content: center; align-items: center; flex-direction: column;}
 .header-top .bar-wrap1 {width: 50%; background-color: #f8f8f8; height: 2px; margin: 6px 0; transition: transform 0.5s;}
 .header-top .bar-wrap2 {width: 50%; background-color: #f8f8f8; height: 2px; margin: 6px 0; transition: transform 0.5s;}
@@ -96,6 +96,8 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 /* **********반응형************* */
 @media screen and (max-width: 1199px) {
+	.header-top .top-right {width: 10%;}
+	.header-top .top-right .bar-box {width: 80%;}
 	.moon img {width: 30vw; height: auto;}
 	.moon .line {width: 30vw; height: auto;}
 	.main {font-size: 10vw;}
@@ -108,18 +110,19 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.moon .line {width: 35vw; height: auto;}
 	.main {font-size: 10vw;}
 	.main .name {font-size: 6vw; color: #313642; left: 36%; top: -26%;}
-	.header-top .left-wrap i {font-size: 2vw;}
-	.header-top .left-wrap i {font-size: 2.5vw; padding-left: 0.125em;}
+	.header-top .left-wrap i {font-size: 4vw; padding-left: 0.25em;}
 }
 
 @media screen and (max-width: 767px) {
+	.header-top .top-right {width: 10%;}
+	.header-top .top-right .bar-box {width: 80%;}
 	.main .port-p {width: 90%;}
 	.moon {top: 45%; left: 50%;}
 	.moon img {width: 65vw; height: auto;}
 	.moon .line {width: 65vw; height: auto;}
 	.main {font-size: 10vw;}
-	.main .name {font-size: 6vw; color: #313642; left: 36%; top: -26%;}
-	.header-top .left-wrap i {font-size: 4vw; padding-left: 0.125em;}
+	.main .name {font-size: 7vw; color: #313642; left: 36%; top: -32%;}
+	.header-top .left-wrap i {font-size: 5vw; padding-left: 0.125em;}
 }
 
 @media screen and (max-width: 575px) {
