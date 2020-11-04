@@ -2,7 +2,7 @@
 
 /* font-family: 'Frank Ruhl Libre', serif; */
 
-html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; position: relative; overflow: hidden; height: 100vh;}
+html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; position: relative; /* overflow: hidden; */ height: 100vh;}
 .header-wrapper {width: 100%; overflow: hidden;}
 .header-wrapper .bg-image {width: 75%; background: url(../img/main-3.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh;} 
 .header-wrapper .bg-cover {width: 75%; height: 100vh; background-color: #f86953; opacity: 0.8;}
@@ -62,9 +62,9 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 /* ********************menu-page***************** */
 .menu-wrap {width: 100%; height: 100vh; background-color: #f86953;  display: none; position: absolute; top: 0;}
-.menu-wrap .contents {padding-top: 8%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
-.menu-wrap .contents .menus {font-size: 6vw; color: #f8f8f8; transition: all 0.5s; width: 50%; text-align: center; height: 150px; margin-bottom: 0.125em; position: relative; overflow: hidden;}
-.menu-wrap .contents .menus div {transition: all 0.5s; width: 100%; animation-name: ani; animation-duration: 0.75s; position: absolute; letter-spacing: 0.125em;}
+.menu-wrap .contents {display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;  height: 100%; width: 100%;}
+.menu-wrap .contents .menus {font-size: 6vw; color: #f8f8f8; width: 50%; text-align: center; height: 150px; margin-bottom: 0.125em; position: relative; overflow: hidden;}
+.menu-wrap .contents .menus div {transition: all 0.5s; width: 100%; animation-name: ani; animation-duration: 2s; position: absolute; letter-spacing: 0.125em;}
 .menu-wrap .contents div:hover {text-decoration: line-through;}
 
 @keyframes ani {
@@ -76,15 +76,15 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ********************menu-page***************** */
-.about-wrap {width: 100%; position: relative; overflow: hidden; height: 100%; /* display: none; */}
-.about-wrap .about-small {position: absolute; top: 0; right: 0;}
+.about-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; /* display: none; */ background-image: url(../img/main-1.png);}
+.about-wrap .about-small {width: 75%; background-image: url(../img/About2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh;}
 .about-wrap .moon2 {position: absolute; top: 22%; left: 10%;}
 .about-wrap .moon2 img {width: 26vw; height: auto;}
 .about-wrap .moon2 .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
-.about-wrap .about-small .txt {position: absolute; top: 10%; right: 8em;}
+.about-wrap .about-small .txt {}
 .about-wrap .about-small .txt .title-about {font-size: 14vw; color: #f8f8f8;}
-.about-wrap .about-small .txt .title-me {font-size: 14vw; position: absolute; top: 55%; right: 0; color: #f8f8f8;}
-.about-wrap .about-small .msg {font-size: 1.5vw; position: absolute; bottom: 12em; right: 4em; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8;}
+.about-wrap .about-small .txt .title-me {font-size: 14vw; position: absolute; color: #f8f8f8;}
+.about-wrap .about-small .msg {font-size: 2vw; position: absolute; bottom: 12em; right: 4em; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8;}
 
 .about-wrap .show-me {width: 40%; position: absolute; bottom: 7em; right: 0;}
 .about-wrap .show-me .show-line {position: absolute; width: 70%; background-color: #f8f8f8; height: 1px; position: absolute; top: 50%; right: -0.125em;}
@@ -94,6 +94,9 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .about-wrap .show-me .show-bg:hover .circle {transform: scale(1.1);}
 .about-wrap .about-bg .number {font-size: 12vw; position: absolute; top: 50%; left: 30%; font-family: 'Frank Ruhl Libre', serif; letter-spacing: -0.125em; z-index: 1;}
 
+
+
+
 /* **********반응형************* */
 @media screen and (max-width: 1199px) {
 	.header-top .top-right {width: 10%;}
@@ -102,6 +105,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.moon .line {width: 30vw; height: auto;}
 	.main {font-size: 10vw;}
 	.header-top .left-wrap i {font-size: 3vw; padding-left: 0.125em;}
+	.menu-wrap .contents .menus {font-size: 8vw;}
 }
 
 @media screen and (max-width: 991px) {
@@ -111,6 +115,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.main {font-size: 10vw;}
 	.main .name {font-size: 6vw; color: #313642; left: 36%; top: -26%;}
 	.header-top .left-wrap i {font-size: 4vw; padding-left: 0.25em;}
+	.menu-wrap .contents .menus {font-size: 8vw;}
 }
 
 @media screen and (max-width: 767px) {
@@ -123,6 +128,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.main {font-size: 10vw;}
 	.main .name {font-size: 7vw; color: #313642; left: 36%; top: -32%;}
 	.header-top .left-wrap i {font-size: 5vw; padding-left: 0.125em;}
+	.menu-wrap .contents .menus {font-size: 8vw;}
 }
 
 @media screen and (max-width: 575px) {
@@ -130,4 +136,5 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.moon img {width: 85vw; height: auto;}
 	.moon .line {width: 85vw; height: auto;}
 	.scroll-wrap {display: none;}
+	.menu-wrap .contents .menus {font-size: 8vw;}
 }
