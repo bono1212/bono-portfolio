@@ -64,7 +64,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .menu-wrap {width: 100%; height: 100vh; background-color: #f86953;  display: none; position: absolute; top: 0;}
 .menu-wrap .contents {display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;  height: 100%; width: 100%;}
 .menu-wrap .contents .menus {font-size: 6vw; color: #f8f8f8; width: 50%; text-align: center; height: 150px; margin-bottom: 0.125em; position: relative; overflow: hidden;}
-.menu-wrap .contents .menus div {transition: all 0.5s; width: 100%; animation-name: ani; animation-duration: 2s; position: absolute; letter-spacing: 0.125em;}
+.menu-wrap .contents .menus div {transition: all 0.5s; width: 100%; animation-name: ani; animation-duration: 2s; letter-spacing: 0.125em;}
 .menu-wrap .contents div:hover {text-decoration: line-through;}
 
 @keyframes ani {
@@ -77,7 +77,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 /* ********************menu-page***************** */
 .about-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; /* display: none; */ background-image: url(../img/main-1.png);}
-.about-wrap .about-small {width: 75%; background-image: url(../img/About2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh;}
+.about-wrap .about-small {width: 75%; background: url(../img/About2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; right: 0;}
 .about-wrap .moon2 {position: absolute; top: 22%; left: 10%;}
 .about-wrap .moon2 img {width: 26vw; height: auto;}
 .about-wrap .moon2 .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
