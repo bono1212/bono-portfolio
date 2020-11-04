@@ -14,11 +14,11 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .header-top .left-wrap i {padding-left: 0.25em; cursor: pointer;}
 .header-top .top-right {display: flex; width: 10%; cursor: pointer; position: fixed; right: 0; top: 0; height: 100px; justify-content: center; align-items: center;}
 .header-top .top-right .bar-box {width: 50%; height: 50%; display: flex; justify-content: center; align-items: center; flex-direction: column;}
-.header-top .bar-wrap1 {width: 50%; background-color: #f8f8f8; height: 2px; margin: 6px 0; transition: transform 0.5s;}
-.header-top .bar-wrap2 {width: 50%; background-color: #f8f8f8; height: 2px; margin: 6px 0; transition: transform 0.5s;}
+.header-top .bar-wrap1 {width: 50%; background-color: #f8f8f8; height: 2px;  transition: transform 0.5s; transform: translateY(-6px);}
+.header-top .bar-wrap2 {width: 50%; background-color: #f8f8f8; height: 2px;  transition: transform 0.5s; transform: translateY(6px);}
 
-.header-top .top-right .bar-box:hover .bar-wrap1 {transform: rotate(45deg);}
-.header-top .top-right .bar-box:hover .bar-wrap2 {transform: rotate(-45deg);}
+.header-top .top-right .bar-box:hover .bar-wrap1 {transform: rotate(45deg) translateY(0);}
+.header-top .top-right .bar-box:hover .bar-wrap2 {transform: rotate(-45deg) translateY(0);}
 /* .header-top .top-right .bar-box:hover .bar-wrap1 {transform: translateY(-2px);}
 .header-top .top-right .bar-box:hover .bar-wrap2 {transform: translateY(2px);} */
 
