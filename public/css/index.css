@@ -7,7 +7,7 @@
 
 /* font-family: 'Frank Ruhl Libre', serif; font-family: 'Roboto', sans-serif; font-family: 'Fredericka the Great', cursive; font-family: 'Mrs Saint Delafield', cursive;*/
 
-html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; position: relative; overflow: hidden; height: 100vh;}
+html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; position: relative; /* overflow: hidden; */ height: 100vh;}
 .header-wrapper {width: 100%; overflow: hidden;}
 .header-wrapper .bg-image {width: 75%; background: url(../img/main-3.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh;} 
 .header-wrapper .bg-cover {width: 75%; height: 100vh; background-color: #f86953; opacity: 0.8;}
@@ -112,7 +112,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ********************aboutme***************** */
-.about-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; /* display: none; */ background-image: url(../img/main-1.png); display: none;}
+.about-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; /* display: none; */ background-image: url(../img/main-1.png);}
 .about-wrap .about-small {width: 75%; background: url(../img/About2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; right: 0;}
 .about-wrap .moon2 {position: absolute; top: 22%; left: 10%;}
 .about-wrap .moon2 img {width: 26vw; height: auto;}
@@ -132,7 +132,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ***************page 01*************** */
-.who {width: 100%; background-color: #f8f8f8; display: none;}
+.who {width: 100%; background-color: #f8f8f8; /* display: none; */}
 .who .top-who {width: 100%; display: flex; padding-top: 1.25em; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw;}
 .who .top-who .line01 {width: 50px; height: 5px; background-color: #111;}
 .who .top-who .number {padding: 0 0.25em;}
