@@ -12,7 +12,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .header-wrapper .header-top {width: 100%; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center; position: fixed; z-index: 9999;}
 .header-wrapper .header-top .top-left {width: 90%; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0;}
 .header-top .right-wrap img {width: 150px; height: auto; padding: 10px;}
-.header-top .left-wrap {display: flex; justify-content: flex-end; align-items: center; width: 20%;}
+.header-top .left-wrap {display: flex; justify-content: flex-end; align-items: center;}
 .header-top .left-wrap .icon-wrap {color: #f8f8f8; font-size: 2vw;}
 .header-top .left-wrap i {padding-left: 0.25em; cursor: pointer;}
 .header-top .top-right {display: flex; width: 10%; cursor: pointer; position: fixed; right: 0; top: 0; height: 100px; justify-content: center; align-items: center;}
@@ -61,7 +61,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .menu-wrap {width: 100%; height: 100vh; background-color: #f86953;  display: none; position: absolute; top: 0;}
 .menu-wrap .contents {display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;  height: 100%; width: 100%;}
 .menu-wrap .contents .menus {font-size: 6vw; color: #f8f8f8; text-align: center; height: 150px; margin-bottom: 0.125em; position: relative; overflow: hidden; cursor: pointer;}
-.menu-wrap .contents .menus .line {width: 0; height: 8%; background-color: #f8f8f8; position: absolute; top: 65%;}
+.menu-wrap .contents .menus .line {width: 0; height: 8%; background-color: #f8f8f8; position: absolute; top: 55%;}
 .menu-wrap .contents .menus div {transition: all 0.3s; width: 100%; animation-name: ani; animation-duration: 1s; letter-spacing: 0.125em;}
 .menu-wrap .contents div:hover .line {width: 100%;}
 
@@ -92,7 +92,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ***************page 01*************** */
-.who {width: 100%; height: 100vh; background-color: #f8f8f8;}
+.who {width: 100%; background-color: #f8f8f8;}
 .who .top-who {width: 100%; display: flex; padding-top: 1.25em; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 3vw;}
 .who .top-who .line01 {width: 50px; height: 5px; background-color: #111;}
 .who .top-who .number {padding: 0 0.25em;}
@@ -100,19 +100,27 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .who .bottom {width: 100%; display: flex; justify-content: center; align-items: center;}
 .who .bottom-who {display: flex; justify-content: center; padding: 1em; border: 1px solid green; width: 80%; margin-top: 2em;}
 .who .bottom-who .img {padding: 0 1em; position: relative; width: 35%;}
-.who .bottom-who .img-bg {width: 20vw; height: 21vw; background-color: #f86953; opacity: 0.5; position: absolute; top: 1.25em; left: 3em;}
-.who .bottom-who .img img {width: 20vw; height: auto; opacity: 0.8;}
+.who .bottom-who .img-bg {width: 18vw; height: 19vw; background-color: #f86953; opacity: 0.5; position: absolute; top: 1.25em; left: 3em;}
+.who .bottom-who .img img {width: 18vw; height: auto; opacity: 0.8;}
 .who .bottom-who .intro-text {display: flex; flex-direction: column; justify-content: space-between; padding-left: 1em;}
 .who .bottom-who .intro-text .name {font-size: 5vw; font-family: 'Fredericka the Great', cursive; color: #f86953; letter-spacing: -0.125em; width: 65%;}
 .who .bottom-who .intro-text .intro {font-size: 1.25vw; font-family: 'Roboto', sans-serif;}
-.who .bottom-who .myself {font-family: 'Mrs Saint Delafield', cursive; font-size: 2.5vw; display: flex; justify-content: flex-end; margin-top: 1.25em; text-decoration: underline;}
-.who .lang {width: 100%; border: 1px solid green; display: flex; justify-content: center; align-items: center; margin-top: 5em;}
-.who .lang .l-skills {width: 80%; display: flex; justify-content: space-between; border: 1px solid red; align-items: center;}
-.who .lang .l-skills .langs {display: flex; flex-direction: column; justify-content: flex-start;}
-.who .lang .l-skills .langs .lan {font-size: 1.5vw; font-family: 'Roboto', sans-serif; letter-spacing: -1px; padding-bottom: 0.5em;}
-.who .lang .l-skills .langs .per-line {position: relative;}
-.who .lang .l-skills .langs .per {width: 15vw; height: 0.5vw; border: 1px solid #f86953;}
-.who .lang .l-skills .langs .per1 {width: 0; background-color: #f86953; position: absolute; top: 0; left: 0; height: 0.5vw;}
+.who .bottom-who .myself {font-family: 'Mrs Saint Delafield', cursive; font-size: 2.5vw; display: flex; justify-content: flex-end; text-decoration: underline;}
+
+.who .pass {width: 100%; border: 1px solid green; display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 2em;}
+.who .top-pass {width: 100%; display: flex; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 3vw;}
+.who .top-pass .line02 {width: 50px; height: 5px; background-color: #111;}
+.who .top-pass .number {padding: 0 0.25em;}
+.who .top-pass .small-title {padding: 0 0.5em; color: #d7d7d7;}
+.who .bottom {width: 100%; display: flex; justify-content: center; align-items: center;}
+.who .pass .know {width: 80%; display: flex; justify-content: center; border: 1px solid red; align-items: center;}
+.who .pass .part {display: flex; justify-content: center; flex: 33.3333% 0 0; align-items: center; flex-direction: column;}
+.who .pass .part img {width: 4vw; height: auto; margin-bottom: 1.25em; color: #f86953;}
+.who .pass .part .tech {width: 6vw; height: auto;}
+.who .pass .part .sector {font-size: 1.5vw; letter-spacing: -1px; font-family: 'Frank Ruhl Libre';}
+
+
+
 
 
 /* **********반응형************* */
@@ -141,7 +149,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.main {font-size: 10vw;}
 	.main .name {font-size: 6vw; color: #313642; left: 36%; top: -26%;}
 	.header-top .left-wrap i {font-size: 4vw; padding-left: 0.25em;}
-	.menu-wrap .contents .menus {font-size: 8vw;}
+	.menu-wrap .contents .menus {font-size: 10vw;}
 	.about-wrap .moon2 {top: 30%; left: 0;}
 	.about-wrap .moon2 img {width: 45vw;}
 	.about-wrap .moon2 .line {width: 45vw;}
@@ -150,7 +158,6 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.about-wrap .about-small .txt .title-me {font-size: 15vw; top: 1em; }
 	.about-wrap .about-small .msg {font-size: 1.5em; top: 13.5em; right: 0.25em;}
 	.about-wrap .about-bg .number {font-size: 14vw; top: 55%; left: 28%;}
-	
 }
 
 @media screen and (max-width: 767px) {
@@ -161,9 +168,9 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.moon img {width: 65vw; height: auto;}
 	.moon .line {width: 65vw; height: auto;}
 	.main {font-size: 10vw;}
-	.main .name {font-size: 7vw; color: #313642; left: 36%; top: -32%;}
+	.main .name {font-size: 7vw; color: #313642; left: 36%; top: -40%;}
 	.header-top .left-wrap i {font-size: 5vw; padding-left: 0.125em;}
-	.menu-wrap .contents .menus {font-size: 8vw;}
+	.menu-wrap .contents .menus {font-size: 10vw;}
 	.about-wrap .moon2 {top: 42%; left: -25%;}
 	.about-wrap .moon2 img {width: 75vw;}
 	.about-wrap .moon2 .line {width: 75vw;}
@@ -180,14 +187,27 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.who .bottom-who .intro-text .name {font-size: 8vw;}
 	.who .bottom-who .intro-text .intro {font-size: 3vw;}
 	.who .bottom-who .myself {font-size: 5vw;}
+	.who .pass .know {flex-direction: column;}
+	.who .pass .part {flex: 100% 0 0; padding-bottom: 2em;}
+	.who .pass .part img {width: 25vw; height: auto;}
+	.who .pass .part .tech {width: 27vw; height: auto;}
+	.who .pass .part .sector {font-size: 5vw;}
+	.who .top-who {font-size: 6vw;}
+	.who .top-pass {font-size: 6vw; padding: 1em 0;}
+	.main .web {font-size: 8vw; left: 29%; top: 115%;}
+	.main .develop {font-size: 6vw; left: 11%; top: 170%;}
+	.main .design {font-size: 6vw;  left: 22%; top: 210%;}
+	.main .and {top: 88%; left: 46%; font-size: 18vw;}
+	.scroll-wrap {display: none;}
+	.header-wrapper .header-top .top-left {width: 85%;}
+	.header-wrapper .header-top .top-left i {font-size: 5vw; }
 }
 
 @media screen and (max-width: 575px) {
 	.moon {top: 40%; left: 50%;}
 	.moon img {width: 85vw; height: auto;}
 	.moon .line {width: 85vw; height: auto;}
-	.scroll-wrap {display: none;}
-	.menu-wrap .contents .menus {font-size: 8vw;}
+	.menu-wrap .contents .menus {font-size: 10vw;}
 	.about-wrap .moon2 {top: 45%; left: -30%;}
 	.about-wrap .moon2 img {width: 85vw;}
 	.about-wrap .moon2 .line {width: 85vw;}
