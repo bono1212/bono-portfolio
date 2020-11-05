@@ -3,9 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 /* font-family: 'Frank Ruhl Libre', serif; font-family: 'Roboto', sans-serif; font-family: 'Fredericka the Great', cursive; font-family: 'Mrs Saint Delafield', cursive;*/
 
-html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; position: relative; /* overflow: hidden; */ height: 100vh;}
+html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; position: relative; overflow: hidden; height: 100vh;}
 .header-wrapper {width: 100%; overflow: hidden;}
 .header-wrapper .bg-image {width: 75%; background: url(../img/main-3.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh;} 
 .header-wrapper .bg-cover {width: 75%; height: 100vh; background-color: #f86953; opacity: 0.8;}
@@ -24,23 +26,61 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ******** moon******************* */
-.moon {position: absolute; top: 20%; left: 66%;}
+.moon {position: absolute; top: 20%; left: 66%; animation-name: aniMoon; animation-duration: 0.5s;}
 .moon img {width: 26vw; height: auto;}
 .moon .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
+
+@keyframes aniMoon {
+	0% {left: 100%;}
+	100% {left: 66%;}
+}
 
 
 /* ******** main ******************* */
 .main {width: 100%; position: relative; position: absolute; top: 30%; left: 0; font-size: 10vw; display: flex; justify-content: center;}
-.main img {width: 10vw; height: auto; border: 1px solid #f8f8f8; border-radius: 50%; height: 10vw;}
-.main .name {font-size: 4vw; color: #313642; letter-spacing: -0.065em; position: absolute; left: 47%; top: -12%;}
+.main img {width: 10vw; height: auto; border: 1px solid #f8f8f8; border-radius: 50%; height: 10vw; opacity: 1; animation-name: aniSmoon; animation-duration: 2s;}
+.main .name {font-size: 4vw; color: #313642; letter-spacing: -0.065em; position: absolute; left: 47%; top: -12%; animation: animated-text 3s steps(50,end) 3s 1 normal both; overflow: hidden;}
 .main .port-p {font-size: 10vw; color: #313642; font-family: 'Frank Ruhl Libre', serif; text-align: center; display: flex; justify-content: center; align-items: center; border: 1px solid green; width: 80%;}
-.main .port-p .portfolio {display: flex; justify-content: center; align-items: center;}
+.main .port-p .portfolio {display: flex; justify-content: center; align-items: center; animation-name: aniPort; animation-duration: 2s;}
 .main .port-p .portfolio div { margin: 0 4px}
 .main .line {width: 40%; height: 5%; border-bottom: 1px solid #f8f8f8; position: absolute; left: 34.5%; top: 70%;}
-.main .web {font-size: 5vw; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8; left: 55%; position: absolute; top: 66%;}
-.main .develop {font-size: 3.5vw; color: #f8f8f8; left: 45%; position: absolute; top: 98%;}
-.main .design {font-size: 3.5vw; color: #f8f8f8; left: 50%; position: absolute; top: 119%;}
-.main .and {position: absolute; top: 50%; left: 65.2%; font-size: 11vw; font-family: 'Frank Ruhl Libre', serif; color: #313642;}
+.main .web {font-size: 5vw; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8; left: 55%; position: absolute; top: 66%; animation-name: aniWeb; animation-duration: 2s;}
+.main .develop {font-size: 3.5vw; color: #f8f8f8; left: 45%; position: absolute; top: 98%; animation-name: aniDev; animation-duration: 2s;}
+.main .design {font-size: 3.5vw; color: #f8f8f8; left: 50%; position: absolute; top: 119%; animation-name: aniDes; animation-duration: 2s;}
+.main .and {position: absolute; top: 50%; left: 65.2%; font-size: 11vw; font-family: 'Frank Ruhl Libre', serif; color: #313642; animation-name: aniAnd; animation-duration: 1s;}
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 100%;}
+}
+
+@keyframes aniSmoon {
+	0% {opacity: 0;}
+	100% {opacity: 1; transform: rotate(360deg);}
+}
+@keyframes aniPort {
+	0% {margin-left: -100%;}
+	100% {left: 0;}
+}
+@keyframes aniWeb {
+	0% {margin-left: 100%;}
+	100% {left: 55%;}
+}
+@keyframes aniDev {
+	0% {margin-top: 100%;}
+	100% {top: 98%;}
+}
+@keyframes aniDes {
+	0% {margin-left: -200%;}
+	100% {left: 50%;}
+}
+@keyframes aniAnd {
+	0% {margin-top: -100%;}
+	100% {top: 50%;}
+}
+
+
+
 
 /* ******** scroll-bar ******************* */
 .scroll-wrap {width: 3%; position: absolute; top: 40%; left: 0; cursor: pointer;}
@@ -58,7 +98,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ********************menu-page***************** */
-.menu-wrap {width: 100%; height: 100vh; background-color: #f86953;  display: none; position: absolute; top: 0;}
+.menu-wrap {width: 100%; height: 100vh; background-color: #f86953;  display: none; position: absolute; top: 0; }
 .menu-wrap .contents {display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;  height: 100%; width: 100%;}
 .menu-wrap .contents .menus {font-size: 6vw; color: #f8f8f8; text-align: center; height: 150px; margin-bottom: 0.125em; position: relative; overflow: hidden; cursor: pointer;}
 .menu-wrap .contents .menus .line {width: 0; height: 8%; background-color: #f8f8f8; position: absolute; top: 55%;}
@@ -72,7 +112,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ********************aboutme***************** */
-.about-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; /* display: none; */ background-image: url(../img/main-1.png);}
+.about-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; /* display: none; */ background-image: url(../img/main-1.png); display: none;}
 .about-wrap .about-small {width: 75%; background: url(../img/About2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; right: 0;}
 .about-wrap .moon2 {position: absolute; top: 22%; left: 10%;}
 .about-wrap .moon2 img {width: 26vw; height: auto;}
@@ -92,13 +132,13 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ***************page 01*************** */
-.who {width: 100%; background-color: #f8f8f8;}
-.who .top-who {width: 100%; display: flex; padding-top: 1.25em; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 3vw;}
+.who {width: 100%; background-color: #f8f8f8; display: none;}
+.who .top-who {width: 100%; display: flex; padding-top: 1.25em; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw;}
 .who .top-who .line01 {width: 50px; height: 5px; background-color: #111;}
 .who .top-who .number {padding: 0 0.25em;}
 .who .top-who .small-title {padding: 0 0.5em; color: #d7d7d7;}
 .who .bottom {width: 100%; display: flex; justify-content: center; align-items: center;}
-.who .bottom-who {display: flex; justify-content: center; padding: 1em; border: 1px solid green; width: 80%; margin-top: 2em;}
+.who .bottom-who {display: flex; justify-content: center; padding: 1em; width: 80%; margin-top: 2em;}
 .who .bottom-who .img {padding: 0 1em; position: relative; width: 35%;}
 .who .bottom-who .img-bg {width: 18vw; height: 19vw; background-color: #f86953; opacity: 0.5; position: absolute; top: 1.25em; left: 3em;}
 .who .bottom-who .img img {width: 18vw; height: auto; opacity: 0.8;}
@@ -107,13 +147,13 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .who .bottom-who .intro-text .intro {font-size: 1.25vw; font-family: 'Roboto', sans-serif;}
 .who .bottom-who .myself {font-family: 'Mrs Saint Delafield', cursive; font-size: 2.5vw; display: flex; justify-content: flex-end; text-decoration: underline;}
 
-.who .pass {width: 100%; border: 1px solid green; display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 2em;}
-.who .top-pass {width: 100%; display: flex; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 3vw;}
+.who .pass {width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 2em;}
+.who .top-pass {width: 100%; display: flex; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw;}
 .who .top-pass .line02 {width: 50px; height: 5px; background-color: #111;}
 .who .top-pass .number {padding: 0 0.25em;}
 .who .top-pass .small-title {padding: 0 0.5em; color: #d7d7d7;}
 .who .bottom {width: 100%; display: flex; justify-content: center; align-items: center;}
-.who .pass .know {width: 80%; display: flex; justify-content: center; border: 1px solid red; align-items: center;}
+.who .pass .know {width: 80%; display: flex; justify-content: center; align-items: center;}
 .who .pass .part {display: flex; justify-content: center; flex: 33.3333% 0 0; align-items: center; flex-direction: column;}
 .who .pass .part img {width: 4vw; height: auto; margin-bottom: 1.25em; color: #f86953;}
 .who .pass .part .tech {width: 6vw; height: auto;}
