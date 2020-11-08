@@ -53,7 +53,6 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
   from{width: 0;}
   to{width: 100%;}
 }
-
 @keyframes aniSmoon {
 	0% {opacity: 0;}
 	100% {opacity: 1; transform: rotate(360deg);}
@@ -82,7 +81,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ******** scroll-bar ******************* */
-.scroll-wrap {width: 3%; position: absolute; top: 40%; left: 0; cursor: pointer;}
+.scroll-wrap {width: 3%; position: absolute; top: 40%; left: 0; cursor: pointer; position: fixed; z-index: 9999;}
 .scroll-wrap .bar1 {width: 150%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;}
 .scroll-wrap .bar2 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;}
 .scroll-wrap .bar3 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;}
@@ -96,7 +95,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ******** scroll-down ******************* */
-/* .scroll-down {width: 7%; position: relative; bottom: 10%; left: 0;}
+.scroll-down {width: 7%; position: relative; bottom: 10%; left: 0;}
 .scroll-down .text {font-size: 1em; color: #f8f8f8; font-weight: 400; transform: rotate(90deg); position: absolute; top: 0; left: 0; font-family: 'Frank Ruhl Libre', serif;}
 .scroll-down .box {width: 30%; border-bottom: 1px solid #f8f8f8; height: 2%; transform: rotate(90deg); position: absolute; left: 26%; bottom: 0;}
 
@@ -117,7 +116,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ********************aboutme***************** */
-.about-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; /* display: none; */ background-image: url(../img/main-1.png); background-size: cover;}
+.about-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; display: none; background-image: url(../img/main-1.png); background-size: cover;}
 .about-wrap .about-small {width: 75%; background: url(../img/About2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; right: 0;}
 .about-wrap .moon2 {position: absolute; top: 22%; left: 10%;}
 .about-wrap .moon2 img {width: 26vw; height: auto;}
@@ -127,17 +126,17 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .about-wrap .about-small .txt .title-me {font-size: 12vw; color: #f8f8f8; top: 1em; position: absolute;}
 .about-wrap .about-small .msg {font-size: 1.5em; position: absolute; top: 17em; right: 0.25em; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8;}
 
-.about-wrap .show-me {position: absolute; bottom: 8em; right: 30vw;}
+.about-wrap .show-me {position: absolute; bottom: 6em; right: 30vw;}
 .about-wrap .show-me .show-line {position: absolute; width: 30vw; background-color: #f8f8f8; height: 1px; position: absolute; top: 50%; right: -30vw;}
-.about-wrap .show-me .show-bg {width: 200px; height: 50px; border-radius: 25px; border: 1px solid #313642; display: flex; justify-content: flex-end; align-items: center; font-size: 1.25em; background-color: #313642; color: #f86953; padding-right: 0.75em; cursor: pointer; box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3); right: 0;}
-.about-wrap .show-me .show-bg .circle {width: 5em; height: 5em; border-radius: 50%; border: 1px solid #f86953; background-color: #f86953; color: #f8f8f8; position: absolute; left: 1.5em; text-align: center; font-size: 5px; line-height: 30px; transition: all 0.5s; margin-left: 1em;}
-.about-wrap .show-me .show-bg .circle i {cursor: pointer; font-size: 1vw;}
+.about-wrap .show-me .show-bg {width: 140px; height: 30px; border-radius: 25px; border: 1px solid #313642; display: flex; justify-content: flex-end; align-items: center; font-size: 0.875em; background-color: #313642; color: #f86953; padding-right: 0.75em; cursor: pointer; box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3); right: 0;}
+.about-wrap .show-me .show-bg .circle {width: 4em; height: 4em; border-radius: 50%; border: 1px solid #f86953; background-color: #f86953; color: #f8f8f8; position: absolute; left: 1.5em; text-align: center; font-size: 4px; line-height: 15px; transition: all 0.5s; margin-left: 1em;}
+.about-wrap .show-me .show-bg .circle i {cursor: pointer; font-size: 0.5vw;}
 .about-wrap .show-me .show-bg:hover .circle {transform: scale(1.1);}
 .about-wrap .about-bg .number {font-size: 12vw; position: absolute; top: 50%; left: 28%; font-family: 'Frank Ruhl Libre', serif; letter-spacing: -0.125em; z-index: 1;}
 
 
 /* ***************page 01*************** */
-.who {width: 100%; background-color: #f8f8f8; /* display: none; */}
+.who {width: 100%; background-color: #f8f8f8; display: none;}
 .who .top-who {width: 100%; display: flex; padding-top: 1.125em; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw;}
 .who .top-who .line01 {width: 50px; height: 5px; background-color: #111;}
 .who .top-who .number {padding: 0 0.25em;}
@@ -166,22 +165,80 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* *********page 02******** */
-.skills {width: 100%; background-color: #f8f8f8; /* display: none; */}
-.skills .top-skills {width: 100%; display: flex; padding-top: 1.25em; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw;}
+.skills {width: 100%; background-color: #f8f8f8; display: none;}
+.skills .top-skills {width: 100%; display: flex; padding-top: 0em; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw;}
 .skills .top-skills .line03 {width: 50px; height: 5px; background-color: #111;}
 .skills .top-skills .number {padding: 0 0.25em;}
 .skills .top-skills .small-title {padding: 0 0.5em; color: #d7d7d7;}
 .skills .skill-box {width: 100%; display: flex; justify-content: center; align-items: center; margin: 0.75em 0;}
-.skills .skill-wrap {padding: 3em 0;}
-.skills .skill-box .skills {width: 70%; display: flex; justify-content: space-between; align-items: center; padding: 0.75em 0; border: 1px solid yellowgreen;}
+.skills .skill-wrap {padding: 0.5em 0;}
+.skills .skill-box .skills {width: 70%; display: flex; justify-content: space-between; align-items: center; padding: 0.5em 0;}
 .skills .skill-box .skills .type {width: 20%; display: flex; justify-content: flex-start; align-items: center; font-family: 'Roboto', sans-serif; font-size: 1.25vw; font-weight: 500;}
 .skills .skill-box .skills .names {width: 40%; display: flex; justify-content: flex-start; align-items: center; font-family: 'Roboto', sans-serif; font-size: 1.25vw;}
 .skills .skill-box .skills .s-percent {width: 40%; display: flex; justify-content: flex-start; align-items: center;}
-.skills .skill-box .skills .s-percent .main-box {width: 100%; display: flex; justify-content: space-between; align-items: center; border: 1px solid #f86953;}
-.skills .skill-box .skills .s-percent .main-box .box {width: 19%; border: 1px solid #f8f8f8; background-color: #f86953; height: 0.5em;}
+.skills .skill-box .skills .s-percent .main-box {width: 100%; display: flex; justify-content: flex-start; align-items: center; border: 1px solid #f86953;}
+.skills .skill-box .skills .s-percent .main-box .box {width: 10%; border: 1px solid #f8f8f8; background-color: #f86953; height: 0.335em; animation-name: per; animation-duration: 1s;}
+
+@keyframes per {
+	0% {width: 0;}
+	100% {width: 10%;}
+}
 
 .skills .skills-bottom {width: 100%; background-color: #10131a;}
-.skills .skills-bottom .bg {font-size: 1em; color: #f8f8f8; padding: 3em 0; text-align: center;}
+.skills .skills-bottom .bg {font-size: 1em; color: #f8f8f8; padding: 2em 0; text-align: center;}
+.skills .lang-line {width: 100%; display: flex; justify-content: center; align-items: center; }
+.skills .lang-line div {width: 60%; height: 1px; background-color: #ddd;}
+
+
+
+/* ********************works********************** */
+.works-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; display: none; background-image: url(../img/main-1.png); background-size: cover;}
+.works-wrap .works-small {width: 75%; background: url(../img/works.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; right: 0;}
+.works-wrap .moon2 {position: absolute; top: 22%; left: 10%;}
+.works-wrap .moon2 img {width: 26vw; height: auto;}
+.works-wrap .moon2 .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
+.works-wrap .works-small .txt {display: flex; flex-direction: column; justify-content: center; align-items: flex-end; position: relative; font-family: 'Roboto', sans-serif; right: 7vw; top: 15%;}
+.works-wrap .works-small .txt .title-wo {font-size: 14vw; color: #f8f8f8; position: absolute; top: 0; left: 38%;}
+.works-wrap .works-small .txt .title-rks {font-size: 14vw; color: #f8f8f8; top: 0.875em; position: absolute;left: 56%;}
+.works-wrap .show-me {position: absolute; bottom: 6em; right: 30vw;}
+.works-wrap .show-me .show-line {position: absolute; width: 30vw; background-color: #f8f8f8; height: 1px; position: absolute; top: 50%; right: -30vw;}
+.works-wrap .show-me .show-bg {width: 140px; height: 30px; border-radius: 25px; border: 1px solid #f86953; display: flex; justify-content: flex-end; align-items: center; font-size: 0.875em; background-color: #f86953; color: #f8f8f8; padding-right: 0.75em; cursor: pointer; box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3); right: 0;}
+.works-wrap .show-me .show-bg .circle {width: 4em; height: 4em; border-radius: 50%; border: 1px solid #f8f8f8; background-color: #f8f8f8; color: #f8f8f8; position: absolute; left: 1.5em; text-align: center; font-size: 4px; line-height: 15px; transition: all 0.5s; margin-left: 1em;}
+.works-wrap .show-me .show-bg .circle i {cursor: pointer; font-size: 0.5vw; color: #f86953;}
+.works-wrap .show-me .show-bg:hover .circle {transform: scale(1.1);}
+.works-wrap .works-bg .number {font-size: 12vw; position: absolute; top: 50%; left: 28%; font-family: 'Frank Ruhl Libre', serif; letter-spacing: -0.125em; z-index: 1; color: #f8f8f8;}
+
+
+
+/* **********contact************* */
+.contact-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; background-image: url(../img/main-1.png); background-size: cover;}
+.contact-wrap .bg-contact {width: 75%; background: url(../img/contact-bg.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; left: 0; animation-name: bg; animation-duration: 2s;}
+.contact-wrap .moon4 {position: absolute; top: 20%; right: -23%; animation-name: Moon; animation-duration: 2s;}
+.contact-wrap .moon4 img {width: 26vw; height: auto;}
+.contact-wrap .moon4 .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
+
+.contact-wrap .title {position: absolute; left: 10%; top: 30%; font-size: 8vw; color: #f8f8f8; letter-spacing: -1px;}
+
+.contact-wrap .lines {width: 10%;}
+.contact-wrap .lines div {width: 5%; height: 1px; background-color: #f8f8f8; position: absolute; top: 55%; left: 12%;}
+.contact-wrap .lines div:last-child {margin-top: 1em; left: 16%;}
+.contact-wrap .email {font-size: 1vw; color: #f8f8f8; position: absolute; top: 65%; left: 12%;}
+.contact-wrap .icon-wrap {font-size: 1.5vw; color: #f8f8f8; position: absolute; top: 70%; left: 12%;}
+.contact-wrap .icon-wrap i {margin-right: 0.5em;}
+
+
+
+@keyframes Moon {
+	100% {right: -23%; transform: rotate(360deg);}
+}
+@keyframes bg {
+	0% {left: -100%;}
+	100% {left: 0;}
+}
+
+
+
+
 
 
 
@@ -205,6 +262,22 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.about-wrap .about-small .msg {font-size: 1.75em; top: 14em; right: 0.25em;}
 	.about-wrap .about-bg .number {font-size: 14vw; top: 55%; left: 28%;}
 	.skills .skill-wrap {padding: 2em 0;}
+	.works-wrap .moon2 {top: 25%; left: 5%;}
+	.works-wrap .moon2 img {width: 40vw;}
+	.works-wrap .moon2 .line {width: 40vw;}
+	.works-wrap .works-small .txt {right: 6vw; top: 10%;}
+	.works-wrap .works-small .txt .title-about {font-size: 15vw;}
+	.works-wrap .works-small .txt .title-me {font-size: 15vw; top: 1em; }
+	.works-wrap .works-small .msg {font-size: 1.75em; top: 14em; right: 0.25em;}
+	.works-wrap .works-bg .number {font-size: 14vw; top: 55%; left: 28%;}
+	.contact-wrap .moon4 {top: 20%; right: -23%;}
+	.contact-wrap .moon4 img {width: 28vw;}
+	.contact-wrap .moon4 .line {width: 28vw;}
+	.contact-wrap .title {left: 10%; top: 30%; font-size: 8vw;}
+	.contact-wrap .lines div {width: 5%; top: 50%; left: 12%;}
+	.contact-wrap .email {font-size: 2vw; top: 60%; left: 12%;}
+	.contact-wrap .icon-wrap {font-size: 2vw; top: 65%; left: 12%;}
+	.contact-wrap .icon-wrap i {margin-right: 0.5em;}
 }
 
 @media screen and (max-width: 991px) {
@@ -227,6 +300,14 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.who .pass .know {width: 80%;}
 	.skills .skill-box .skills {width: 80%;}
 	.skills .skill-wrap {padding: 1em 0;}
+	.wroks-wrap .moon2 {top: 30%; left: 0;}
+	.wroks-wrap .moon2 img {width: 45vw;}
+	.wroks-wrap .moon2 .line {width: 45vw;}
+	.wroks-wrap .wroks-small .txt {right: 6vw; top: 15%;}
+	.wroks-wrap .wroks-small .txt .title-wo {font-size: 15vw;}
+	.wroks-wrap .wroks-small .txt .title-rks {font-size: 15vw; top: 1em; }
+	.wroks-wrap .wroks-small .msg {font-size: 1.5em; top: 13.5em; right: 0.25em;}
+	.wroks-wrap .wroks-bg .number {font-size: 14vw; top: 55%; left: 28%;}
 }
 
 @media screen and (max-width: 767px) {
@@ -280,6 +361,23 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.skills .skill-box .skills .s-percent {width: 40%;}
 	.skills .top-skills {font-size: 6vw; padding: 0.5em 0;}
 	.skills .skill-wrap {padding-bottom: 2em;}
+	.works-wrap .moon2 {top: 42%; left: -25%;}
+	.works-wrap .moon2 img {width: 75vw;}
+	.works-wrap .moon2 .line {width: 75vw;}
+	.works-wrap .works-small .txt {right: 6vw; top: 20%;}
+	.works-wrap .works-small .txt .title-wo {font-size: 17vw;}
+	.works-wrap .works-small .txt .title-rks {font-size: 17vw; top: 1em; }
+	.works-wrap .works-small .msg {font-size: 1.5em; top: 10em; right: 0.25em;}
+	.works-wrap .works-bg .number {font-size: 22vw; top: 70%; left: 35%;}
+	.works-wrap .show-me {bottom: 4em; right: 9vw;}
+	.contact-wrap .moon4 {top: 40%; right: -23%;}
+	.contact-wrap .moon4 img {width: 45vw; height: auto;}
+	.contact-wrap .moon4 .line {width: 45vw; height: auto;}
+	.contact-wrap .title {left: 10%; top: 30%; font-size: 8vw;}
+	.contact-wrap .lines div {width: 5%; top: 50%; left: 12%;}
+	.contact-wrap .email {font-size: 2vw; top: 60%; left: 12%;}
+	.contact-wrap .icon-wrap {font-size: 2vw; top: 65%; left: 12%;}
+	.contact-wrap .icon-wrap i {margin-right: 0.5em;}
 }
 
 @media screen and (max-width: 575px) {
@@ -288,17 +386,36 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.moon .line {width: 85vw; height: auto;}
 	.menu-wrap .contents .menus {font-size: 10vw;}
 	.about-wrap .moon2 {top: 40%; left: -20%;}
-	.about-wrap .moon2 img {width: 75vw;}
-	.about-wrap .moon2 .line {width: 75vw;}
+	.about-wrap .moon2 img {width: 70vw;}
+	.about-wrap .moon2 .line {width: 70vw;}
 	.about-wrap .show-me {bottom: 3em; right: 10vw;}
 	.about-wrap .show-me .show-bg {width: 150px; height: 30px; font-size: 1em;}
-	.about-wrap .show-me .show-bg .circle {font-size: 3px; line-height: 15px; }
+	.about-wrap .show-me .show-bg .circle {font-size: 4px; line-height: 15px; }
 	.about-wrap .show-me .show-bg .circle i {cursor: pointer; font-size: 1vw;}
 	.about-wrap .show-me .show-line {width: 30vw; top: 60%; right: -30vw;}
 	.about-wrap .about-small .txt .title-about {font-size: 17vw; }
 	.about-wrap .about-small .txt .title-me {font-size: 17vw; top: 1em; }
-	.about-wrap .about-small .msg {font-size: 1em; top: 12em; right: 0.25em;}
+	.about-wrap .about-small .msg {font-size: 1em; top: 14em; right: 0.25em;}
 	.about-wrap .about-bg .number {font-size: 22vw; top: 70%; left: 40%;}
 	.skills .skill-box .skills .type {width: 12%; font-size: 2vw;}
 	.skills .skill-box .skills .names {width: 48%; font-size: 2vw;}
+	.works-wrap .moon2 {top: 40%; left: -20%;}
+	.works-wrap .moon2 img {width: 70vw;}
+	.works-wrap .moon2 .line {width: 70vw;}
+	.works-wrap .show-me {bottom: 3em; right: 10vw;}
+	.works-wrap .show-me .show-bg {width: 150px; height: 30px; font-size: 1em;}
+	.works-wrap .show-me .show-bg .circle {font-size: 4px; line-height: 15px; }
+	.works-wrap .show-me .show-bg .circle i {cursor: pointer; font-size: 1vw;}
+	.works-wrap .show-me .show-line {width: 30vw; top: 60%; right: -30vw;}
+	.works-wrap .works-small .txt .title-wo {font-size: 20vw; left: 24%; top: 0.125em;}
+	.works-wrap .works-small .txt .title-rks {font-size: 20vw; top: 1em; left:  50%;}
+	.works-wrap .works-bg .number {font-size: 22vw; top: 70%; left: 40%;}
+	.contact-wrap .moon4 {top: 40%; right: -60%; animation: none;}
+	.contact-wrap .moon4 img {width: 70vw; height: auto;}
+	.contact-wrap .moon4 .line {width: 70vw; height: auto;}
+	.contact-wrap .title {left: 10%; top: 30%; font-size: 10vw;}
+	.contact-wrap .lines div {width: 10%; top: 45%; left: 12%;}
+	.contact-wrap .email {font-size: 2.5vw; top: 55%; left: 12%;}
+	.contact-wrap .icon-wrap {font-size: 4vw; top: 60%; left: 12%;}
+	.contact-wrap .icon-wrap i {margin-right: 0.25em;}
 }
