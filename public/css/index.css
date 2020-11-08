@@ -7,7 +7,7 @@
 
 /* font-family: 'Frank Ruhl Libre', serif; font-family: 'Roboto', sans-serif; font-family: 'Fredericka the Great', cursive; font-family: 'Mrs Saint Delafield', cursive;*/
 
-html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; position: relative; /* overflow: hidden; */ height: 100vh;}
+html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; position: relative; overflow: hidden; height: 100vh;}
 .header-wrapper {width: 100%; overflow: hidden;}
 .header-wrapper .bg-image {width: 75%; background: url(../img/main-3.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh;} 
 .header-wrapper .bg-cover {width: 75%; height: 100vh; background-color: #f86953; opacity: 0.8;}
@@ -82,11 +82,12 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 /* ******** scroll-bar ******************* */
 .scroll-wrap {width: 3%; position: absolute; top: 40%; left: 0; cursor: pointer; position: fixed; z-index: 9999;}
-.scroll-wrap .bar1 {width: 150%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;}
-.scroll-wrap .bar2 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;}
-.scroll-wrap .bar3 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;}
-.scroll-wrap .bar4 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;}
+.scroll-wrap .bar1 {background-color: #f8f8f8; transition: all 0.3s; height: 3px; margin-bottom: 2em;}
+.scroll-wrap .bar2 {background-color: #f8f8f8; transition: all 0.3s; height: 3px; margin-bottom: 2em;}
+.scroll-wrap .bar3 {background-color: #f8f8f8; transition: all 0.3s; height: 3px; margin-bottom: 2em;}
+.scroll-wrap .bar4 {background-color: #f8f8f8; transition: all 0.3s; height: 3px; margin-bottom: 2em;}
 
+/*
 .scrollbar-down {width: 3%; position: absolute; top: 40%; left: 0; cursor: pointer;}
 .scroll-wrap .bar1 {width: 150%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;}
 .scroll-wrap .bar2 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;}
