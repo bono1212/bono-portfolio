@@ -81,11 +81,11 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ******** scroll-bar ******************* */
-.scroll-wrap {width: 3%; position: absolute; top: 40%; left: 0; cursor: pointer; position: fixed; z-index: 9999;}
-.scroll-wrap .bar1 {background-color: #f8f8f8; transition: all 0.3s; height: 3px; margin-bottom: 2em;}
-.scroll-wrap .bar2 {background-color: #f8f8f8; transition: all 0.3s; height: 3px; margin-bottom: 2em;}
-.scroll-wrap .bar3 {background-color: #f8f8f8; transition: all 0.3s; height: 3px; margin-bottom: 2em;}
-.scroll-wrap .bar4 {background-color: #f8f8f8; transition: all 0.3s; height: 3px; margin-bottom: 2em;}
+.scroll-wrap {width: 2%; position: absolute; top: 40%; left: 0; cursor: pointer; position: fixed; z-index: 9999;}
+.scroll-wrap .bar1 {background-color: #f8f8f8; transition: all 0.3s; padding-bottom: 0.25em; margin-bottom: 2.5em;}
+.scroll-wrap .bar2 {background-color: #f8f8f8; transition: all 0.3s; padding-bottom: 0.25em; margin-bottom: 2.5em;}
+.scroll-wrap .bar3 {background-color: #f8f8f8; transition: all 0.3s; padding-bottom: 0.25em; margin-bottom: 2.5em;}
+.scroll-wrap .bar4 {background-color: #f8f8f8; transition: all 0.3s; padding-bottom: 0.25em; margin-bottom: 2.5em;}
 
 /*
 .scrollbar-down {width: 3%; position: absolute; top: 40%; left: 0; cursor: pointer;}

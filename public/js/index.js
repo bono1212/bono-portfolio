@@ -25,3 +25,7 @@ $(".scroll-wrap .bar1").on("click", function(){
 	$(".scroll-wrap .bar2").stop().css("width", "100%");
 	$(".scroll-wrap .bar3").stop().css("width", "100%");
 })
+
+/* $(".menus .h").on("click", function(){
+
+}) */
