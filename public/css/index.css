@@ -7,7 +7,7 @@
 
 /* font-family: 'Frank Ruhl Libre', serif; font-family: 'Roboto', sans-serif; font-family: 'Fredericka the Great', cursive; font-family: 'Mrs Saint Delafield', cursive;*/
 
-html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; position: relative; overflow: hidden; height: 100vh;}
+html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; position: relative; /* overflow: hidden;  */height: 100vh;}
 .header-wrapper {width: 100%; overflow: hidden;}
 .header-wrapper .bg-image {width: 75%; background: url(../img/main-3.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh;} 
 .header-wrapper .bg-cover {width: 75%; height: 100vh; background-color: #f86953; opacity: 0.8;}
@@ -117,7 +117,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ********************aboutme***************** */
-.about-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; display: none; background-image: url(../img/main-1.png); background-size: cover;}
+.about-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; /* display: none; */ background-image: url(../img/main-1.png); background-size: cover;}
 .about-wrap .about-small {width: 75%; background: url(../img/About2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; right: 0; animation-name: about; animation-duration: 2s;}
 .about-wrap .moon2 {position: absolute; top: 22%; left: 10%; animation-name: Moon2; animation-duration: 2s;}
 .about-wrap .moon2 img {width: 26vw; height: auto;}
@@ -160,7 +160,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ***************page 01*************** */
-.who {width: 100%; background-color: #f8f8f8; display: none;}
+.who {width: 100%; background-color: #f8f8f8; /* display: none; */}
 .who .top-who {width: 100%; display: flex; padding-top: 1.125em; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw;}
 .who .top-who .line01 {width: 50px; height: 5px; background-color: #111;}
 .who .top-who .number {padding: 0 0.25em;}
@@ -189,7 +189,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* *********page 02******** */
-.skills {width: 100%; background-color: #f8f8f8; display: none;}
+.skills {width: 100%; background-color: #f8f8f8; /* display: none; */}
 .skills .top-skills {width: 100%; display: flex; padding-top: 0em; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw;}
 .skills .top-skills .line03 {width: 50px; height: 5px; background-color: #111;}
 .skills .top-skills .number {padding: 0 0.25em;}
@@ -257,22 +257,20 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* **********contact************* */
-.contact-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; background-image: url(../img/main-1.png); background-size: cover; display: none;}
+.contact-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; background-image: url(../img/main-1.png); background-size: cover; /* display: none; */}
 .contact-wrap .bg-contact {width: 75%; background: url(../img/contact-bg.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; left: 0; animation-name: bg; animation-duration: 2s;}
 .contact-wrap .moon4 {position: absolute; top: 20%; right: -23%; animation-name: Moon; animation-duration: 2s;}
 .contact-wrap .moon4 img {width: 26vw; height: auto;}
 .contact-wrap .moon4 .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
 
-.contact-wrap .title {position: absolute; left: 10%; top: 30%; font-size: 8vw; color: #f8f8f8; letter-spacing: -1px;}
+.contact-wrap .title {position: absolute; left: 10%; top: 30%; font-size: 8vw; color: #f8f8f8; letter-spacing: -1px; animation-name: tit; animation-duration: 2s;}
 
 .contact-wrap .lines {width: 10%;}
-.contact-wrap .lines div {width: 5%; height: 1px; background-color: #f8f8f8; position: absolute; top: 55%; left: 12%;}
-.contact-wrap .lines div:last-child {margin-top: 1em; left: 16%;}
+.contact-wrap .lines div {width: 5%; height: 1px; background-color: #f8f8f8; position: absolute; top: 55%; left: 12%; animation-name: line; animation-duration: 1s; animation-iteration-count: infinite;}
+.contact-wrap .lines div:last-child {margin-top: 1em; left: 14%; animation-delay: 0.5s;}
 .contact-wrap .email {font-size: 1vw; color: #f8f8f8; position: absolute; top: 65%; left: 12%;}
 .contact-wrap .icon-wrap {font-size: 1.5vw; color: #f8f8f8; position: absolute; top: 70%; left: 12%;}
 .contact-wrap .icon-wrap i {margin-right: 0.5em;}
-
-
 
 @keyframes Moon {
 	100% {right: -23%; transform: rotate(360deg);}
@@ -280,6 +278,14 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 @keyframes bg {
 	0% {left: -100%;}
 	100% {left: 0;}
+}
+@keyframes tit {
+	0% {left: -100%;}
+	100% {left: 10%;}
+}
+@keyframes line {
+	0% {width: 0;}
+	100% {width: 5%;}
 }
 
 
