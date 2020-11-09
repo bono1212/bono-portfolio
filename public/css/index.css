@@ -119,7 +119,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 /* ********************aboutme***************** */
 .about-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; /* display: none; */ background-image: url(../img/main-1.png); background-size: cover;}
 .about-wrap .about-small {width: 75%; background: url(../img/About2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; right: 0; animation-name: about; animation-duration: 2s;}
-.about-wrap .moon2 {position: absolute; top: 22%; left: 10%; animation-name: Moon2; animation-duration: 2s;}
+.about-wrap .moon2 {position: absolute; top: 22%; left: 10%; animation-name: Moon2; animation-duration: 2s; z-index: 9999;}
 .about-wrap .moon2 img {width: 26vw; height: auto;}
 .about-wrap .moon2 .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
 .about-wrap .about-small .txt {display: flex; flex-direction: column; justify-content: center; align-items: flex-end; position: relative; font-family: 'Roboto', sans-serif; right: 12vw; top: 20%; animation-name: txt; animation-duration: 1s;}
@@ -155,8 +155,6 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	0% {left: 150%;}
 	100% {left: 28%;}
 }
-
-
 
 
 /* ***************page 01*************** */
@@ -218,7 +216,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 /* ********************works********************** */
 .works-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; /* display: none; */ background-image: url(../img/main-1.png); background-size: cover;}
 .works-wrap .works-small {width: 75%; background: url(../img/works.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; right: 0; animation-name: works; animation-duration: 2s;}
-.works-wrap .moon2 {position: absolute; top: 22%; left: 10%; animation-name: Moon2; animation-duration: 2s;}
+.works-wrap .moon2 {position: absolute; top: 22%; left: 10%; animation-name: Moon2; animation-duration: 2s; z-index: 9999;}
 .works-wrap .moon2 img {width: 26vw; height: auto;}
 .works-wrap .moon2 .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
 .works-wrap .works-small .txt {display: flex; flex-direction: column; justify-content: center; align-items: flex-end; position: relative; font-family: 'Roboto', sans-serif; right: 7vw; top: 15%; animation-name: txt; animation-duration: 2s;}
