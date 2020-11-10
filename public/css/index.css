@@ -104,6 +104,9 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 /* ********************menu-page***************** */
 .menu-wrap {width: 100%; height: 100vh; background-color: #f86953;  display: none; position: absolute; top: 0; }
+.menu-wrap .icons {position: absolute; right: 10%; top: 2.125em;}
+.menu-wrap .icons i {color: #f8f8f8; font-size: 2em; margin-left: 0.25em; cursor: pointer;}
+
 .menu-wrap .contents {display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;  height: 100%; width: 100%;}
 .menu-wrap .contents .menus {font-size: 6vw; color: #f8f8f8; text-align: center;  position: relative; overflow: hidden; cursor: pointer;}
 .menu-wrap .contents .menus .line {width: 0; height: 8%; background-color: #f8f8f8; position: absolute; top: 50%;}
