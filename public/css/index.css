@@ -159,7 +159,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 }
 
 
-/* ***************page 01*************** */
+/* ***************who i am*************** */
 .page-1 .who {width: 100%; background-color: #f8f8f8; /* display: none; */}
 .page-1 .who .top-who {width: 100%; display: flex; padding-top: 1.125em; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw; padding-top: 1.5em;}
 .page-1 .who .top-who .line01 {width: 50px; height: 5px; background-color: #111;}
@@ -187,7 +187,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .page-1 .who .pass .part .sector {font-size: 1.5vw; letter-spacing: -1px; font-family: 'Frank Ruhl Libre';}
 
 
-/* *********page 02******** */
+/* *********skills******** */
 .page-1 .skills {width: 100%; background-color: #f8f8f8; /* display: none; */}
 .page-1 .skills .top-skills {width: 100%; display: flex; padding-top: 0em; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw; padding-top: 3em;}
 .page-1 .skills .top-skills .line03 {width: 50px; height: 5px; background-color: #111;}
@@ -252,8 +252,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 		100% {left: 28%;}
 	}
 
-
-/* **********work-wrap************* */
+/* **********work detial************* */
 .page-2 .work-wrap {width: 100%; display: flex; flex-direction: column;}
 .page-2 .work-wrap .publishing {width: 100%; border: 1px solid red; background-color: #f8f8f8; padding-top: 1.125em;}
 .page-2 .work-wrap .publishing .top-publish {width: 100%; display: flex; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw; padding-top: 3em;}
@@ -261,22 +260,26 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .page-2 .work-wrap .publishing .top-publish .number {padding: 0 0.25em;}
 .page-2 .work-wrap .publishing .top-publish .small-title {padding: 0 0.5em; color: #d7d7d7;}
 .page-2 .work-wrap .publishing .main-publish {width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 2em;}
-.page-2 .work-wrap .publishing .main-publish .sample {width: 70%; border: 1px solid green; padding: 15em;}
-.page-2 .work-wrap .frontend {width: 100%; border: 1px solid red; background-color: #f8f8f8; padding-top: 1.125em;}
+.page-2 .work-wrap .publishing .main-publish .sample {width: 70%; border: 1px solid green; display: flex; justify-content: center; align-items: center;}
+.page-2 .work-wrap .publishing .main-publish .sample .webs {width: 100%; display: flex; justify-content: space-between; border: 1px solid blue;}
+
+.page-2 .work-wrap .frontend {width: 100%; border: 1px solid red; background-color: #f8f8f8; padding-top: 1.125em 0;}
 .page-2 .work-wrap .frontend .top-front {width: 100%; display: flex; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw;}
 .page-2 .work-wrap .frontend .top-front .line01 {width: 50px; height: 5px; background-color: #111;}
 .page-2 .work-wrap .frontend .top-front .number {padding: 0 0.25em;}
 .page-2 .work-wrap .frontend .top-front .small-title {padding: 0 0.5em; color: #d7d7d7;}
 .page-2 .work-wrap .frontend .main-front {width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 2em;}
-.page-2 .work-wrap .frontend .main-front .sample {width: 70%; border: 1px solid green; padding: 15em;}
+.page-2 .work-wrap .frontend .main-front .sample {width: 70%; border: 1px solid green; padding: 15em; display: flex; justify-content: center; align-items: center;}
+.page-2 .work-wrap .frontend .main-front .sample .webs {width: 100%; display: flex; justify-content: space-between; border: 1px solid blue;}
+
 .page-2 .work-wrap .backend {width: 100%; border: 1px solid red; background-color: #f8f8f8; padding: 1.125em 0 3em  0;}
 .page-2 .work-wrap .backend .top-back {width: 100%; display: flex; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw;}
 .page-2 .work-wrap .backend .top-back .line01 {width: 50px; height: 5px; background-color: #111;}
 .page-2 .work-wrap .backend .top-back .number {padding: 0 0.25em;}
 .page-2 .work-wrap .backend .top-back .small-title {padding: 0 0.5em; color: #d7d7d7;}
-.page-2 .work-wrap .backend .main-back .sample {width: 70%; border: 1px solid green; padding: 15em;}
 .page-2 .work-wrap .backend .main-back {width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 2em;}
-
+.page-2 .work-wrap .backend .main-back .sample {width: 70%; border: 1px solid green; padding: 15em; display: flex; justify-content: center; align-items: center;}
+.page-2 .work-wrap .backend .main-back .sample .webs {width: 100%; display: flex; justify-content: space-between; border: 1px solid blue;}
 
 
 
