@@ -254,32 +254,59 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 /* **********work detial************* */
 .page-2 .work-wrap {width: 100%; display: flex; flex-direction: column;}
-.page-2 .work-wrap .publishing {width: 100%; border: 1px solid red; background-color: #f8f8f8; padding-top: 1.125em;}
+.page-2 .work-wrap .publishing {width: 100%; background-color: #f8f8f8; padding-top: 1.125em;}
 .page-2 .work-wrap .publishing .top-publish {width: 100%; display: flex; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw; padding-top: 3em;}
 .page-2 .work-wrap .publishing .top-publish .line01 {width: 50px; height: 5px; background-color: #111;}
 .page-2 .work-wrap .publishing .top-publish .number {padding: 0 0.25em;}
 .page-2 .work-wrap .publishing .top-publish .small-title {padding: 0 0.5em; color: #d7d7d7;}
-.page-2 .work-wrap .publishing .main-publish {width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 2em;}
-.page-2 .work-wrap .publishing .main-publish .sample {width: 70%; border: 1px solid green; display: flex; justify-content: center; align-items: center;}
-.page-2 .work-wrap .publishing .main-publish .sample .webs {width: 100%; display: flex; justify-content: space-between; border: 1px solid blue;}
+.page-2 .work-wrap .publishing .main-publish {width: 100%; display: flex; justify-content: center; align-items: center;}
+.page-2 .work-wrap .publishing .main-publish .sample {width: 70%; display: flex; justify-content: center; align-items: center; padding: 5em 2em;}
 
-.page-2 .work-wrap .frontend {width: 100%; border: 1px solid red; background-color: #f8f8f8; padding-top: 1.125em 0;}
+.page-2 .work-wrap .publishing .main-publish .sample .webs {width: 25%; display: flex; justify-content: center; position: relative; transition: all 0.5s;}
+.page-2 .work-wrap .publishing .main-publish .sample .webs img {width: 11vw; height: auto; transition: all 5s;}
+.page-2 .work-wrap .publishing .main-publish .sample .webs .cover {width: 11vw; background-color: #f86953; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #f8f8f8; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
+.page-2 .work-wrap .publishing .main-publish .sample .webs:hover .cover {opacity: 1;}
+.page-2 .work-wrap .publishing .main-publish .sample .webs:hover {transform: scale(1.1)}
+.page-2 .work-wrap .publishing .main-publish .sample .webs .cover .site-name {font-size: 1.25vw;}
+.page-2 .work-wrap .publishing .main-publish .sample .webs .cover .program {margin-top: 1em;}
+.page-2 .work-wrap .publishing .main-publish .sample .webs .cover .visit-site {border: 1px solid #f8f8f8; color: #f8f8f8; margin-top: 3em; padding: 0.25em 0.5em; cursor: pointer; transition: all 0.3s;}
+.page-2 .work-wrap .publishing .main-publish .sample .webs .cover .visit-site:hover {background-color: #f8f8f8; color: #f86953;}
+
+
+.page-2 .work-wrap .frontend {width: 100%; background-color: #f8f8f8; padding-top: 1.125em 0;}
 .page-2 .work-wrap .frontend .top-front {width: 100%; display: flex; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw;}
 .page-2 .work-wrap .frontend .top-front .line01 {width: 50px; height: 5px; background-color: #111;}
 .page-2 .work-wrap .frontend .top-front .number {padding: 0 0.25em;}
 .page-2 .work-wrap .frontend .top-front .small-title {padding: 0 0.5em; color: #d7d7d7;}
 .page-2 .work-wrap .frontend .main-front {width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 2em;}
-.page-2 .work-wrap .frontend .main-front .sample {width: 70%; border: 1px solid green; padding: 15em; display: flex; justify-content: center; align-items: center;}
-.page-2 .work-wrap .frontend .main-front .sample .webs {width: 100%; display: flex; justify-content: space-between; border: 1px solid blue;}
+.page-2 .work-wrap .frontend .main-front .sample {width: 60%; display: flex; justify-content: center; align-items: center; padding: 5em 2em;}
+.page-2 .work-wrap .frontend .main-front .sample .webs {width: 33.3333%; display: flex; justify-content: center; position: relative; transition: all 0.5s;}
+.page-2 .work-wrap .frontend .main-front .sample .webs img {width: 11vw; height: auto; transition: all 5s;}
+.page-2 .work-wrap .frontend .main-front .sample .webs .cover {width: 11vw; background-color: #f86953; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #f8f8f8; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
+.page-2 .work-wrap .frontend .main-front .sample .webs:hover .cover {opacity: 1;}
+.page-2 .work-wrap .frontend .main-front .sample .webs:hover {transform: scale(1.1)}
+.page-2 .work-wrap .frontend .main-front .sample .webs .cover .site-name {font-size: 1.25vw;}
+.page-2 .work-wrap .frontend .main-front .sample .webs .cover .program {margin-top: 1em;}
+.page-2 .work-wrap .frontend .main-front .sample .webs .cover .visit-site {border: 1px solid #f8f8f8; color: #f8f8f8; margin-top: 3em; padding: 0.25em 0.5em; cursor: pointer; transition: all 0.3s;}
+.page-2 .work-wrap .frontend .main-front .sample .webs .cover .visit-site:hover {background-color: #f8f8f8; color: #f86953;}
 
-.page-2 .work-wrap .backend {width: 100%; border: 1px solid red; background-color: #f8f8f8; padding: 1.125em 0 3em  0;}
+
+.page-2 .work-wrap .backend {width: 100%; background-color: #f8f8f8; padding: 1.125em 0 3em  0;}
 .page-2 .work-wrap .backend .top-back {width: 100%; display: flex; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw;}
 .page-2 .work-wrap .backend .top-back .line01 {width: 50px; height: 5px; background-color: #111;}
 .page-2 .work-wrap .backend .top-back .number {padding: 0 0.25em;}
 .page-2 .work-wrap .backend .top-back .small-title {padding: 0 0.5em; color: #d7d7d7;}
 .page-2 .work-wrap .backend .main-back {width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 2em;}
-.page-2 .work-wrap .backend .main-back .sample {width: 70%; border: 1px solid green; padding: 15em; display: flex; justify-content: center; align-items: center;}
-.page-2 .work-wrap .backend .main-back .sample .webs {width: 100%; display: flex; justify-content: space-between; border: 1px solid blue;}
+.page-2 .work-wrap .backend .main-back .sample {width: 50%; display: flex; justify-content: center; align-items: center; padding: 5em 2em;}
+.page-2 .work-wrap .backend .main-back .sample .webs {width: 50%; display: flex; justify-content: center; position: relative; transition: all 0.5s;}
+.page-2 .work-wrap .backend .main-back .sample .webs img {width: 11vw; height: auto; transition: all 5s;}
+.page-2 .work-wrap .backend .main-back .sample .webs .cover {width: 11vw; background-color: #f86953; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #f8f8f8; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
+.page-2 .work-wrap .backend .main-back .sample .webs:hover .cover {opacity: 1;}
+.page-2 .work-wrap .backend .main-back .sample .webs:hover {transform: scale(1.1)}
+.page-2 .work-wrap .backend .main-back .sample .webs .cover .site-name {font-size: 1.25vw;}
+.page-2 .work-wrap .backend .main-back .sample .webs .cover .program {margin-top: 1em;}
+.page-2 .work-wrap .backend .main-back .sample .webs .cover .visit-site {border: 1px solid #f8f8f8; color: #f8f8f8; margin-top: 3em; padding: 0.25em 0.5em; cursor: pointer; transition: all 0.3s;}
+.page-2 .work-wrap .backend .main-back .sample .webs .cover .visit-site:hover {background-color: #f8f8f8; color: #f86953;}
 
 
 
