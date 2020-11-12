@@ -87,20 +87,23 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .scroll-wrap .bar3 {background-color: #f8f8f8; transition: all 0.3s; padding-bottom: 0.25em; margin-bottom: 2.5em;}
 .scroll-wrap .bar4 {background-color: #f8f8f8; transition: all 0.3s; padding-bottom: 0.25em; margin-bottom: 2.5em;}
 
+
+/* ******** scroll-down ******************* */
+.scroll-down {width: 5%; position: relative; bottom: 5%; left: 0; height: 12em; position: fixed; z-index: 9999;}
+.scroll-down .text {font-size: 0.75em; color: #f8f8f8; font-weight: 400; transform: rotate(90deg); position: absolute; top: 20%; left: 0; font-family: 'Frank Ruhl Libre', serif; width: 100%;}
+.scroll-down .box {width: 1%; border-bottom: 1px solid #f8f8f8; height: 0; position: absolute; left: 50%; bottom: 30%; background-color: #f8f8f8; animation-name: down; animation-duration: 1s; animation-iteration-count: infinite;}
+
+@keyframes down {
+	0% {height: 3em;}
+	100% {height: 0}
+}
+
 /*
 .scrollbar-down {width: 3%; position: absolute; top: 40%; left: 0; cursor: pointer;}
 .scroll-wrap .bar1 {width: 150%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;}
 .scroll-wrap .bar2 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;}
 .scroll-wrap .bar3 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;}
 .scroll-wrap .bar4 {width: 100%; height: 1%; border-bottom: 1px solid #f8f8f8; padding-bottom: 1em;} */
-
-
-/* ******** scroll-down ******************* */
-.scroll-down {width: 7%; position: relative; bottom: 10%; left: 0;}
-.scroll-down .text {font-size: 1em; color: #f8f8f8; font-weight: 400; transform: rotate(90deg); position: absolute; top: 0; left: 0; font-family: 'Frank Ruhl Libre', serif;}
-.scroll-down .box {width: 30%; border-bottom: 1px solid #f8f8f8; height: 2%; transform: rotate(90deg); position: absolute; left: 26%; bottom: 0;}
-
-
 
 /* ********************menu-page***************** */
 .menu-wrap {width: 100%; height: 100vh; background-color: #f86953;  display: none; position: absolute; top: 0; }
@@ -195,12 +198,13 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .page-1 .skills .top-skills .small-title {padding: 0 0.5em; color: #d7d7d7;}
 .page-1 .skills .skill-box {width: 100%; display: flex; justify-content: center; align-items: center; margin: 0.75em 0;}
 .page-1 .skills .skill-wrap {padding: 0.5em 0;}
-.page-1 .skills .skill-box .skills {width: 60%; display: flex; justify-content: space-between; align-items: center; padding: 0.5em 0;}
-.page-1 .skills .skill-box .skills .type {width: 15%; display: flex; justify-content: flex-start; align-items: center; font-family: 'Roboto', sans-serif; font-size: 1vw; font-weight: 500;}
-.page-1 .skills .skill-box .skills .names {width: 45%; display: flex; justify-content: flex-start; align-items: center; font-family: 'Roboto', sans-serif; font-size: 1vw;}
-.page-1 .skills .skill-box .skills .s-percent {width: 40%; display: flex; justify-content: flex-start; align-items: center;}
+.page-1 .skills .skill-box .skills {width: 80%; border: 1px solid blue; display: flex; justify-content: center; align-items: center;}
+.page-1 .skills .skill-box .skills .s-txt {width: 50%; display: flex; justify-content: space-between; align-items: center; padding: 0.5em 0;}
+.page-1 .skills .skill-box .skills .s-txt .type {width: 20%; display: flex; justify-content: flex-start; align-items: center; font-family: 'Roboto', sans-serif; font-size: 1.25vw; font-weight: 500;}
+.page-1 .skills .skill-box .skills .s-txt .names {width: 80%; display: flex; justify-content: flex-start; align-items: center; font-family: 'Roboto', sans-serif; font-size: 1.125vw;}
+.page-1 .skills .skill-box .skills .s-percent {width: 50%; display: flex; justify-content: flex-start; align-items: center;}
 .page-1 .skills .skill-box .skills .s-percent .main-box {width: 100%; display: flex; justify-content: flex-start; align-items: center; border: 1px solid #f86953;}
-.page-1 .skills .skill-box .skills .s-percent .main-box .box {width: 10%; border: 1px solid #f8f8f8; background-color: #f86953; height: 0.335em; animation-name: per; animation-duration: 1s;}
+.page-1 .skills .skill-box .skills .s-percent .main-box .box {width: 10%; border: 1px solid #f8f8f8; background-color: #f86953; height: 0.5em; animation-name: per; animation-duration: 1s;}
 
 @keyframes per {
 	0% {width: 0;}
@@ -212,7 +216,8 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .page-1 .skills .lang-line {width: 100%; display: flex; justify-content: center; align-items: center; }
 .page-1 .skills .lang-line div {width: 60%; height: 1px; background-color: #ddd;}
 
-
+.page-1 .skills .skill-box .skills .type-3 {width: 40%; display: flex; justify-content: flex-start; align-items: center; font-family: 'Roboto', sans-serif; font-size: 1.25vw; font-weight: 500;}
+.page-1 .skills .skill-box .skills {padding-bottom: 3em;}
 
 /* ********************works********************** */
 .page-2 .works-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; /* display: none; */ background-image: url(../img/main-1.png); background-size: cover;}
@@ -260,11 +265,11 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .page-2 .work-wrap .publishing .top-publish .number {padding: 0 0.25em;}
 .page-2 .work-wrap .publishing .top-publish .small-title {padding: 0 0.5em; color: #d7d7d7;}
 .page-2 .work-wrap .publishing .main-publish {width: 100%; display: flex; justify-content: center; align-items: center;}
-.page-2 .work-wrap .publishing .main-publish .sample {width: 70%; display: flex; justify-content: center; align-items: center; padding: 5em 2em;}
+.page-2 .work-wrap .publishing .main-publish .sample {width: 80%; display: flex; justify-content: center; align-items: center; padding: 5em 2em;}
 
 .page-2 .work-wrap .publishing .main-publish .sample .webs {width: 25%; display: flex; justify-content: center; position: relative; transition: all 0.5s;}
-.page-2 .work-wrap .publishing .main-publish .sample .webs img {width: 11vw; height: auto; transition: all 5s;}
-.page-2 .work-wrap .publishing .main-publish .sample .webs .cover {width: 11vw; background-color: #f86953; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #f8f8f8; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
+.page-2 .work-wrap .publishing .main-publish .sample .webs img {width: 14vw; height: auto; transition: all 5s;}
+.page-2 .work-wrap .publishing .main-publish .sample .webs .cover {width: 14vw; background-color: #f86953; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #f8f8f8; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
 .page-2 .work-wrap .publishing .main-publish .sample .webs:hover .cover {opacity: 1;}
 .page-2 .work-wrap .publishing .main-publish .sample .webs:hover {transform: scale(1.1)}
 .page-2 .work-wrap .publishing .main-publish .sample .webs .cover .site-name {font-size: 1.25vw;}
@@ -279,10 +284,10 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .page-2 .work-wrap .frontend .top-front .number {padding: 0 0.25em;}
 .page-2 .work-wrap .frontend .top-front .small-title {padding: 0 0.5em; color: #d7d7d7;}
 .page-2 .work-wrap .frontend .main-front {width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 2em;}
-.page-2 .work-wrap .frontend .main-front .sample {width: 60%; display: flex; justify-content: center; align-items: center; padding: 5em 2em;}
+.page-2 .work-wrap .frontend .main-front .sample {width: 70%; display: flex; justify-content: center; align-items: center; padding: 5em 2em;}
 .page-2 .work-wrap .frontend .main-front .sample .webs {width: 33.3333%; display: flex; justify-content: center; position: relative; transition: all 0.5s;}
-.page-2 .work-wrap .frontend .main-front .sample .webs img {width: 11vw; height: auto; transition: all 5s;}
-.page-2 .work-wrap .frontend .main-front .sample .webs .cover {width: 11vw; background-color: #f86953; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #f8f8f8; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
+.page-2 .work-wrap .frontend .main-front .sample .webs img {width: 14vw; height: auto; transition: all 5s;}
+.page-2 .work-wrap .frontend .main-front .sample .webs .cover {width: 14vw; background-color: #f86953; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #f8f8f8; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
 .page-2 .work-wrap .frontend .main-front .sample .webs:hover .cover {opacity: 1;}
 .page-2 .work-wrap .frontend .main-front .sample .webs:hover {transform: scale(1.1)}
 .page-2 .work-wrap .frontend .main-front .sample .webs .cover .site-name {font-size: 1.25vw;}
@@ -297,10 +302,10 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .page-2 .work-wrap .backend .top-back .number {padding: 0 0.25em;}
 .page-2 .work-wrap .backend .top-back .small-title {padding: 0 0.5em; color: #d7d7d7;}
 .page-2 .work-wrap .backend .main-back {width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 2em;}
-.page-2 .work-wrap .backend .main-back .sample {width: 50%; display: flex; justify-content: center; align-items: center; padding: 5em 2em;}
+.page-2 .work-wrap .backend .main-back .sample {width: 60%; display: flex; justify-content: center; align-items: center; padding: 5em 2em;}
 .page-2 .work-wrap .backend .main-back .sample .webs {width: 50%; display: flex; justify-content: center; position: relative; transition: all 0.5s;}
-.page-2 .work-wrap .backend .main-back .sample .webs img {width: 11vw; height: auto; transition: all 5s;}
-.page-2 .work-wrap .backend .main-back .sample .webs .cover {width: 11vw; background-color: #f86953; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #f8f8f8; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
+.page-2 .work-wrap .backend .main-back .sample .webs img {width: 14vw; height: auto; transition: all 5s;}
+.page-2 .work-wrap .backend .main-back .sample .webs .cover {width: 14vw; background-color: #f86953; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #f8f8f8; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
 .page-2 .work-wrap .backend .main-back .sample .webs:hover .cover {opacity: 1;}
 .page-2 .work-wrap .backend .main-back .sample .webs:hover {transform: scale(1.1)}
 .page-2 .work-wrap .backend .main-back .sample .webs .cover .site-name {font-size: 1.25vw;}
@@ -357,23 +362,25 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.main {font-size: 10vw;}
 	.header-top .left-wrap i {font-size: 3vw; padding-left: 0.125em;}
 	.menu-wrap .contents .menus {font-size: 8vw;}
-	.about-wrap .moon2 {top: 25%; left: 5%;}
-	.about-wrap .moon2 img {width: 40vw;}
-	.about-wrap .moon2 .line {width: 40vw;}
-	.about-wrap .about-small .txt {right: 6vw; top: 10%;}
-	.about-wrap .about-small .txt .title-about {font-size: 15vw;}
-	.about-wrap .about-small .txt .title-me {font-size: 15vw; top: 1em; }
-	.about-wrap .about-small .msg {font-size: 1.75em; top: 14em; right: 0.25em;}
-	.about-wrap .about-bg .number {font-size: 14vw; top: 55%; left: 28%;}
-	.skills .skill-wrap {padding: 2em 0;}
-	.works-wrap .moon2 {top: 25%; left: 5%;}
-	.works-wrap .moon2 img {width: 40vw;}
-	.works-wrap .moon2 .line {width: 40vw;}
-	.works-wrap .works-small .txt {right: 6vw; top: 10%;}
-	.works-wrap .works-small .txt .title-about {font-size: 15vw;}
-	.works-wrap .works-small .txt .title-me {font-size: 15vw; top: 1em; }
-	.works-wrap .works-small .msg {font-size: 1.75em; top: 14em; right: 0.25em;}
-	.works-wrap .works-bg .number {font-size: 14vw; top: 55%; left: 28%;}
+	.page-1 .about-wrap .moon2 {top: 25%; left: 5%;}
+	.page-1 .about-wrap .moon2 img {width: 40vw;}
+	.page-1 .about-wrap .moon2 .line {width: 40vw;}
+	.page-1 .about-wrap .about-small .txt {right: 6vw; top: 10%;}
+	.page-1 .about-wrap .about-small .txt .title-about {font-size: 15vw;}
+	.page-1 .about-wrap .about-small .txt .title-me {font-size: 15vw; top: 1em; }
+	.page-1 .about-wrap .about-small .msg {font-size: 1.75em; top: 14em; right: 0.25em;}
+	.page-1 .about-wrap .about-bg .number {font-size: 14vw; top: 55%; left: 28%;}
+	.page-1 .skills .skill-wrap {padding: 2em 0;}
+	.page-1 .skills .skill-box .skills .s-txt .type {width: 15%; font-size: 1.75vw;}
+	.page-1 .skills .skill-box .skills .s-txt .names {width: 45%; font-size: 1.5vw;}
+	.page-2 .works-wrap .moon2 {top: 25%; left: 5%;}
+	.page-2 .works-wrap .moon2 img {width: 40vw;}
+	.page-2 .works-wrap .moon2 .line {width: 40vw;}
+	.page-2 .works-wrap .works-small .txt {right: 6vw; top: 10%;}
+	.page-2 .works-wrap .works-small .txt .title-about {font-size: 15vw;}
+	.page-2 .works-wrap .works-small .txt .title-me {font-size: 15vw; top: 1em; }
+	.page-2 .works-wrap .works-small .msg {font-size: 1.75em; top: 14em; right: 0.25em;}
+	.page-2 .works-wrap .works-bg .number {font-size: 14vw; top: 55%; left: 28%;}
 	.contact-wrap .moon4 {top: 20%; right: -23%;}
 	.contact-wrap .moon4 img {width: 28vw;}
 	.contact-wrap .moon4 .line {width: 28vw;}
@@ -392,26 +399,28 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.main .name {font-size: 6vw; color: #313642; left: 36%; top: -26%;}
 	.header-top .left-wrap i {font-size: 4vw; padding-left: 0.25em;}
 	.menu-wrap .contents .menus {font-size: 10vw;}
-	.about-wrap .moon2 {top: 30%; left: 0;}
-	.about-wrap .moon2 img {width: 45vw;}
-	.about-wrap .moon2 .line {width: 45vw;}
-	.about-wrap .about-small .txt {right: 6vw; top: 15%;}
-	.about-wrap .about-small .txt .title-about {font-size: 15vw;}
-	.about-wrap .about-small .txt .title-me {font-size: 15vw; top: 1em; }
-	.about-wrap .about-small .msg {font-size: 1.5em; top: 13.5em; right: 0.25em;}
-	.about-wrap .about-bg .number {font-size: 14vw; top: 55%; left: 28%;}
-	.who .bottom-who {width: 80%;}
-	.who .pass .know {width: 80%;}
-	.skills .skill-box .skills {width: 80%;}
-	.skills .skill-wrap {padding: 1em 0;}
-	.wroks-wrap .moon2 {top: 30%; left: 0;}
-	.wroks-wrap .moon2 img {width: 45vw;}
-	.wroks-wrap .moon2 .line {width: 45vw;}
-	.wroks-wrap .wroks-small .txt {right: 6vw; top: 15%;}
-	.wroks-wrap .wroks-small .txt .title-wo {font-size: 15vw;}
-	.wroks-wrap .wroks-small .txt .title-rks {font-size: 15vw; top: 1em; }
-	.wroks-wrap .wroks-small .msg {font-size: 1.5em; top: 13.5em; right: 0.25em;}
-	.wroks-wrap .wroks-bg .number {font-size: 14vw; top: 55%; left: 28%;}
+	.page-1 .about-wrap .moon2 {top: 30%; left: 0;}
+	.page-1 .about-wrap .moon2 img {width: 45vw;}
+	.page-1 .about-wrap .moon2 .line {width: 45vw;}
+	.page-1 .about-wrap .about-small .txt {right: 6vw; top: 15%;}
+	.page-1 .about-wrap .about-small .txt .title-about {font-size: 15vw;}
+	.page-1 .about-wrap .about-small .txt .title-me {font-size: 15vw; top: 1em; }
+	.page-1 .about-wrap .about-small .msg {font-size: 1.5em; top: 13.5em; right: 0.25em;}
+	.page-1 .about-wrap .about-bg .number {font-size: 14vw; top: 55%; left: 28%;}
+	.page-1 .who .bottom-who {width: 80%;}
+	.page-1 .who .pass .know {width: 80%;}
+	.page-1 .skills .skill-box .skills {width: 90%;}
+	.page-1 .skills .skill-wrap {padding: 1em 0;}
+	.page-1 .skills .skill-box .skills .s-txt .type {width: 10%; font-size: 1em;}
+	.page-1 .skills .skill-box .skills .s-txt .names {width: 80%; font-size: 1em;}
+	.page-2 .wroks-wrap .moon2 {top: 30%; left: 0;}
+	.page-2 .wroks-wrap .moon2 img {width: 45vw;}
+	.page-2 .wroks-wrap .moon2 .line {width: 45vw;}
+	.page-2 .wroks-wrap .wroks-small .txt {right: 6vw; top: 15%;}
+	.page-2 .wroks-wrap .wroks-small .txt .title-wo {font-size: 15vw;}
+	.page-2 .wroks-wrap .wroks-small .txt .title-rks {font-size: 15vw; top: 1em; }
+	.page-2 .wroks-wrap .wroks-small .msg {font-size: 1.5em; top: 13.5em; right: 0.25em;}
+	.page-2 .wroks-wrap .wroks-bg .number {font-size: 14vw; top: 55%; left: 28%;}
 }
 
 @media screen and (max-width: 767px) {
@@ -425,55 +434,57 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.moon .line {width: 65vw; height: auto;}
 	.main {font-size: 10vw;}
 	.main .name {font-size: 7vw; color: #313642; left: 36%; top: -40%; animation: none;}
-	.header-top .left-wrap i {font-size: 5vw; padding-left: 0.125em;}
-	.menu-wrap .contents .menus {font-size: 10vw;}
-	.about-wrap .moon2 {top: 42%; left: -25%;}
-	.about-wrap .moon2 img {width: 75vw;}
-	.about-wrap .moon2 .line {width: 75vw;}
-	.about-wrap .about-small .txt {right: 6vw; top: 20%;}
-	.about-wrap .about-small .txt .title-about {font-size: 15vw;}
-	.about-wrap .about-small .txt .title-me {font-size: 15vw; top: 1em; }
-	.about-wrap .about-small .msg {font-size: 1.5em; top: 10em; right: 0.25em;}
-	.about-wrap .about-bg .number {font-size: 22vw; top: 70%; left: 35%;}
-	.about-wrap .show-me {bottom: 4em; right: 9vw;}
-	.who .bottom-who {flex-direction: column;}
-	.who .bottom-who .img-bg {width: 60vw; height: 61vw;}
-	.who .bottom-who .img img {width: 60vw; height: auto;}
-	.who .bottom-who .intro-text {margin-top: 1.5em;}
-	.who .bottom-who .intro-text .name {font-size: 8vw;}
-	.who .bottom-who .intro-text .intro {font-size: 3vw;}
-	.who .bottom-who .myself {font-size: 5vw;}
-	.who .pass .know {flex-direction: column;}
-	.who .pass .part {flex: 100% 0 0; padding-bottom: 2em;}
-	.who .pass .part img {width: 25vw; height: auto;}
-	.who .pass .part .tech {width: 27vw; height: auto;}
-	.who .pass .part .sector {font-size: 5vw;}
-	.who .top-who {font-size: 6vw;}
-	.who .top-pass {font-size: 6vw; padding: 1em 0;}
 	.main .web {font-size: 8vw; left: 29%; top: 115%; animation: none;}
 	.main .develop {font-size: 6vw; left: 11%; top: 170%; animation: none;}
 	.main .design {font-size: 6vw;  left: 22%; top: 210%; animation: none;}
 	.main .and {top: 88%; left: 46%; font-size: 18vw; animation: none;}
 	.scroll-wrap {display: none;}
+	.header-top .left-wrap i {font-size: 5vw; padding-left: 0.125em;}
 	.header-wrapper .header-top .top-left {width: 85%;}
 	.header-wrapper .header-top .top-left i {font-size: 5vw;}
-	.who .bottom-who {width: 90%;}
-	.who .pass .know {width: 90%;}
-	.skills .skill-box .skills {width: 95%;}
-	.skills .skill-box .skills .type {width: 15%; font-size: 1.75vw;}
-	.skills .skill-box .skills .names {width: 45%; font-size: 1.75vw;}
-	.skills .skill-box .skills .s-percent {width: 40%;}
-	.skills .top-skills {font-size: 6vw; padding: 0.5em 0;}
-	.skills .skill-wrap {padding-bottom: 2em;}
-	.works-wrap .moon2 {top: 42%; left: -25%;}
-	.works-wrap .moon2 img {width: 75vw;}
-	.works-wrap .moon2 .line {width: 75vw;}
-	.works-wrap .works-small .txt {right: 6vw; top: 20%;}
-	.works-wrap .works-small .txt .title-wo {font-size: 17vw;}
-	.works-wrap .works-small .txt .title-rks {font-size: 17vw; top: 1em; }
-	.works-wrap .works-small .msg {font-size: 1.5em; top: 10em; right: 0.25em;}
-	.works-wrap .works-bg .number {font-size: 22vw; top: 70%; left: 35%;}
-	.works-wrap .show-me {bottom: 4em; right: 9vw;}
+	.menu-wrap .contents .menus {font-size: 10vw;}
+	.page-1 .about-wrap .moon2 {top: 42%; left: -25%;}
+	.page-1 .about-wrap .moon2 img {width: 75vw;}
+	.page-1 .about-wrap .moon2 .line {width: 75vw;}
+	.page-1 .about-wrap .about-small .txt {right: 6vw; top: 20%;}
+	.page-1 .about-wrap .about-small .txt .title-about {font-size: 15vw;}
+	.page-1 .about-wrap .about-small .txt .title-me {font-size: 15vw; top: 1em; }
+	.page-1 .about-wrap .about-small .msg {font-size: 1.5em; top: 10em; right: 0.25em;}
+	.page-1 .about-wrap .about-bg .number {font-size: 22vw; top: 70%; left: 35%;}
+	.page-1 .about-wrap .show-me {bottom: 4em; right: 9vw;}
+	.page-1 .who .bottom-who {flex-direction: column;}
+	.page-1 .who .bottom-who .img-bg {width: 60vw; height: 61vw;}
+	.page-1 .who .bottom-who .img img {width: 60vw; height: auto;}
+	.page-1 .who .bottom-who .intro-text {margin-top: 1.5em;}
+	.page-1 .who .bottom-who .intro-text .name {font-size: 8vw;}
+	.page-1 .who .bottom-who .intro-text .intro {font-size: 3vw;}
+	.page-1 .who .bottom-who .myself {font-size: 5vw;}
+	.page-1 .who .pass .know {flex-direction: column;}
+	.page-1 .who .pass .part {flex: 100% 0 0; padding-bottom: 2em;}
+	.page-1 .who .pass .part img {width: 25vw; height: auto;}
+	.page-1 .who .pass .part .tech {width: 27vw; height: auto;}
+	.page-1 .who .pass .part .sector {font-size: 5vw;}
+	.page-1 .who .top-who {font-size: 6vw;}
+	.page-1 .who .top-pass {font-size: 6vw; padding: 1em 0;}
+	.page-1 .who .bottom-who {width: 90%;}
+	.page-1 .who .pass .know {width: 90%;}
+	.page-1 .skills .skill-box .skills {width: 100%;}
+	.page-1 .skills .skill-wrap .skills {display: flex; flex-direction: column;}
+	.page-1 .skills .skill-box .skills .s-txt {width: 80%;}
+	.page-1 .skills .skill-box .skills .s-txt .type {width: 20%; font-size: 2.25vw;}
+	.page-1 .skills .skill-box .skills .s-txt .names {width: 80%; font-size: 2.25vw;}
+	.page-1 .skills .skill-box .skills .s-percent {width: 80%;}
+	.page-1 .skills .top-skills {font-size: 6vw; padding: 0.5em 0;}
+	.page-1 .skills .skill-wrap {padding-bottom: 2em;}
+	.page-2 .works-wrap .moon2 {top: 42%; left: -25%;}
+	.page-2 .works-wrap .moon2 img {width: 75vw;}
+	.page-2 .works-wrap .moon2 .line {width: 75vw;}
+	.page-2 .works-wrap .works-small .txt {right: 6vw; top: 20%;}
+	.page-2 .works-wrap .works-small .txt .title-wo {font-size: 17vw;}
+	.page-2 .works-wrap .works-small .txt .title-rks {font-size: 17vw; top: 1em; }
+	.page-2 .works-wrap .works-small .msg {font-size: 1.5em; top: 10em; right: 0.25em;}
+	.page-2 .works-wrap .works-bg .number {font-size: 22vw; top: 70%; left: 35%;}
+	.page-2 .works-wrap .show-me {bottom: 4em; right: 9vw;}
 	.contact-wrap .moon4 {top: 40%; right: -23%;}
 	.contact-wrap .moon4 img {width: 45vw; height: auto;}
 	.contact-wrap .moon4 .line {width: 45vw; height: auto;}
@@ -489,31 +500,33 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.moon img {width: 85vw; height: auto;}
 	.moon .line {width: 85vw; height: auto;}
 	.menu-wrap .contents .menus {font-size: 10vw;}
-	.about-wrap .moon2 {top: 40%; left: -20%;}
-	.about-wrap .moon2 img {width: 70vw;}
-	.about-wrap .moon2 .line {width: 70vw;}
-	.about-wrap .show-me {bottom: 3em; right: 10vw;}
-	.about-wrap .show-me .show-bg {width: 150px; height: 30px; font-size: 1em;}
-	.about-wrap .show-me .show-bg .circle {font-size: 4px; line-height: 15px; }
-	.about-wrap .show-me .show-bg .circle i {cursor: pointer; font-size: 1vw;}
-	.about-wrap .show-me .show-line {width: 30vw; top: 60%; right: -30vw;}
-	.about-wrap .about-small .txt .title-about {font-size: 17vw; }
-	.about-wrap .about-small .txt .title-me {font-size: 17vw; top: 1em; }
-	.about-wrap .about-small .msg {font-size: 1em; top: 14em; right: 0.25em;}
-	.about-wrap .about-bg .number {font-size: 22vw; top: 70%; left: 40%;}
-	.skills .skill-box .skills .type {width: 12%; font-size: 2vw;}
-	.skills .skill-box .skills .names {width: 48%; font-size: 2vw;}
-	.works-wrap .moon2 {top: 40%; left: -20%;}
-	.works-wrap .moon2 img {width: 70vw;}
-	.works-wrap .moon2 .line {width: 70vw;}
-	.works-wrap .show-me {bottom: 3em; right: 10vw;}
-	.works-wrap .show-me .show-bg {width: 150px; height: 30px; font-size: 1em;}
-	.works-wrap .show-me .show-bg .circle {font-size: 4px; line-height: 15px; }
-	.works-wrap .show-me .show-bg .circle i {cursor: pointer; font-size: 1vw;}
-	.works-wrap .show-me .show-line {width: 30vw; top: 60%; right: -30vw;}
-	.works-wrap .works-small .txt .title-wo {font-size: 20vw; left: 24%; top: 0.125em;}
-	.works-wrap .works-small .txt .title-rks {font-size: 20vw; top: 1em; left:  50%;}
-	.works-wrap .works-bg .number {font-size: 22vw; top: 70%; left: 40%;}
+	.page-1 .about-wrap .moon2 {top: 40%; left: -20%;}
+	.page-1 .about-wrap .moon2 img {width: 70vw;}
+	.page-1 .about-wrap .moon2 .line {width: 70vw;}
+	.page-1 .about-wrap .show-me {bottom: 3em; right: 10vw;}
+	.page-1 .about-wrap .show-me .show-bg {width: 150px; height: 30px; font-size: 1em;}
+	.page-1 .about-wrap .show-me .show-bg .circle {font-size: 4px; line-height: 15px; }
+	.page-1 .about-wrap .show-me .show-bg .circle i {cursor: pointer; font-size: 1vw;}
+	.page-1 .about-wrap .show-me .show-line {width: 30vw; top: 60%; right: -30vw;}
+	.page-1 .about-wrap .about-small .txt .title-about {font-size: 17vw; }
+	.page-1 .about-wrap .about-small .txt .title-me {font-size: 17vw; top: 1em; }
+	.page-1 .about-wrap .about-small .msg {font-size: 1em; top: 14em; right: 0.25em;}
+	.page-1 .about-wrap .about-bg .number {font-size: 22vw; top: 70%; left: 40%;}
+	.page-1 .about-wrap .about-bg .number {f-3ont-size: 22vw; top: 70%; left: 40%;}
+	.page-1 .skills .skill-box .skills .type {width: 12%; font-size: 2vw;}
+	.page-1 .skills .skill-box .skills .type-3 {width: 50%; font-size: 2.25vw;}
+	.page-1 .skills .skill-box .skills .names {width: 48%; font-size: 2vw;}
+	.page-2 .works-wrap .moon2 {top: 40%; left: -20%;}
+	.page-2 .works-wrap .moon2 img {width: 70vw;}
+	.page-2 .works-wrap .moon2 .line {width: 70vw;}
+	.page-2 .works-wrap .show-me {bottom: 3em; right: 10vw;}
+	.page-2 .works-wrap .show-me .show-bg {width: 150px; height: 30px; font-size: 1em;}
+	.page-2 .works-wrap .show-me .show-bg .circle {font-size: 4px; line-height: 15px; }
+	.page-2 .works-wrap .show-me .show-bg .circle i {cursor: pointer; font-size: 1vw;}
+	.page-2 .works-wrap .show-me .show-line {width: 30vw; top: 60%; right: -30vw;}
+	.page-2 .works-wrap .works-small .txt .title-wo {font-size: 20vw; left: 24%; top: 0.125em;}
+	.page-2 .works-wrap .works-small .txt .title-rks {font-size: 20vw; top: 1em; left:  50%;}
+	.page-2 .works-wrap .works-bg .number {font-size: 22vw; top: 70%; left: 40%;}
 	.contact-wrap .moon4 {top: 40%; right: -60%; animation: none;}
 	.contact-wrap .moon4 img {width: 70vw; height: auto;}
 	.contact-wrap .moon4 .line {width: 70vw; height: auto;}
