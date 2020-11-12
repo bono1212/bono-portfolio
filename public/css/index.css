@@ -17,7 +17,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .header-top .left-wrap {display: flex; justify-content: flex-end; align-items: center;}
 /* .header-top .left-wrap .icon-wrap {color: #f8f8f8; font-size: 2vw;}
 .header-top .left-wrap i {padding-left: 0.25em; cursor: pointer;} */
-.header-top .top-right {display: flex; width: 10%; cursor: pointer; position: fixed; right: 0; top: 0; height: 100px; justify-content: center; align-items: center;}
+.header-top .top-right {display: flex; width: 10%; cursor: pointer; position: fixed; right: 1em; top: 0; height: 100px; justify-content: center; align-items: center;}
 .header-top .top-right .bar-box {width: 50%; height: 50%; display: flex; justify-content: center; align-items: center; flex-direction: column;}
 .header-top .bar-wrap1 {width: 50%; background-color: #f8f8f8; height: 2px;  transition: transform 0.5s; transform: translateY(-6px);}
 .header-top .bar-wrap2 {width: 50%; background-color: #f8f8f8; height: 2px;  transition: transform 0.5s; transform: translateY(6px);}
@@ -34,7 +34,6 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	0% {left: 100%;}
 	100% {left: 66%;}
 }
-
 
 /* ******** main ******************* */
 .main {width: 100%; position: relative; position: absolute; top: 30%; left: 0; font-size: 10vw; display: flex; justify-content: center;}
@@ -89,13 +88,13 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ******** scroll-down ******************* */
-.scroll-down {width: 5%; position: relative; bottom: 5%; left: 0; height: 12em; position: fixed; z-index: 9999;}
-.scroll-down .text {font-size: 0.75em; color: #f8f8f8; font-weight: 400; transform: rotate(90deg); position: absolute; top: 20%; left: 0; font-family: 'Frank Ruhl Libre', serif; width: 100%;}
-.scroll-down .box {width: 1%; border-bottom: 1px solid #f8f8f8; height: 0; position: absolute; left: 50%; bottom: 30%; background-color: #f8f8f8; animation-name: down; animation-duration: 1s; animation-iteration-count: infinite;}
+.scroll-down {width: 8vw; position: relative; bottom: 3%; left: 0; height: 12vh; position: fixed; z-index: 9999;}
+.scroll-down .text {font-size: 0.75em; color: #f8f8f8; font-weight: 400; transform: rotate(90deg); position: absolute; top: 10%; left: 0; font-family: 'Frank Ruhl Libre', serif; width: 100%;}
+.scroll-down .box {width: 1%; border-bottom: 1px solid #f8f8f8; height: 4em; position: absolute; left: 50%; top: 50%; background-color: #f8f8f8; animation-name: down; animation-duration: 1s; animation-iteration-count: infinite; transform-origin: top;}
 
 @keyframes down {
-	0% {height: 3em;}
-	100% {height: 0}
+	0% {height: 0;}
+	100% {height: 3em}
 }
 
 /*
@@ -120,6 +119,9 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	0% {transform: translateY(100px);}
 	100% {transform: translateY(0);}
 }
+
+.mouse {position: fixed; display: none;}
+
 
 
 /* ********************aboutme***************** */
@@ -198,7 +200,8 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .page-1 .skills .top-skills .small-title {padding: 0 0.5em; color: #d7d7d7;}
 .page-1 .skills .skill-box {width: 100%; display: flex; justify-content: center; align-items: center; margin: 0.75em 0;}
 .page-1 .skills .skill-wrap {padding: 0.5em 0;}
-.page-1 .skills .skill-box .skills {width: 80%; border: 1px solid blue; display: flex; justify-content: center; align-items: center;}
+.page-1 .skills .skill-all {padding: 2em 0 4em 0;}
+.page-1 .skills .skill-box .skills {width: 80%; display: flex; justify-content: center; align-items: center;}
 .page-1 .skills .skill-box .skills .s-txt {width: 50%; display: flex; justify-content: space-between; align-items: center; padding: 0.5em 0;}
 .page-1 .skills .skill-box .skills .s-txt .type {width: 20%; display: flex; justify-content: flex-start; align-items: center; font-family: 'Roboto', sans-serif; font-size: 1.25vw; font-weight: 500;}
 .page-1 .skills .skill-box .skills .s-txt .names {width: 80%; display: flex; justify-content: flex-start; align-items: center; font-family: 'Roboto', sans-serif; font-size: 1.125vw;}
@@ -216,8 +219,9 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .page-1 .skills .lang-line {width: 100%; display: flex; justify-content: center; align-items: center; }
 .page-1 .skills .lang-line div {width: 60%; height: 1px; background-color: #ddd;}
 
-.page-1 .skills .skill-box .skills .type-3 {width: 40%; display: flex; justify-content: flex-start; align-items: center; font-family: 'Roboto', sans-serif; font-size: 1.25vw; font-weight: 500;}
-.page-1 .skills .skill-box .skills {padding-bottom: 3em;}
+.page-1 .skills .skill-box .skills .type-3 {width: 40%; display: flex; justify-content: flex-start; align-items: center; font-family: 'Roboto', sans-serif; font-size: 1.125vw; font-weight: 500;}
+
+
 
 /* ********************works********************** */
 .page-2 .works-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; /* display: none; */ background-image: url(../img/main-1.png); background-size: cover;}
@@ -389,6 +393,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.contact-wrap .email {font-size: 2vw; top: 60%; left: 12%;}
 	.contact-wrap .icon-wrap {font-size: 2vw; top: 65%; left: 12%;}
 	.contact-wrap .icon-wrap i {margin-right: 0.5em;}
+	.scroll-down {width: 10vw;}
 }
 
 @media screen and (max-width: 991px) {
@@ -421,6 +426,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.page-2 .wroks-wrap .wroks-small .txt .title-rks {font-size: 15vw; top: 1em; }
 	.page-2 .wroks-wrap .wroks-small .msg {font-size: 1.5em; top: 13.5em; right: 0.25em;}
 	.page-2 .wroks-wrap .wroks-bg .number {font-size: 14vw; top: 55%; left: 28%;}
+	.scroll-down {width: 15vw;}
 }
 
 @media screen and (max-width: 767px) {
@@ -468,12 +474,12 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.page-1 .who .top-pass {font-size: 6vw; padding: 1em 0;}
 	.page-1 .who .bottom-who {width: 90%;}
 	.page-1 .who .pass .know {width: 90%;}
-	.page-1 .skills .skill-box .skills {width: 100%;}
+	.page-1 .skills .skill-box .skills {width: 80%;}
 	.page-1 .skills .skill-wrap .skills {display: flex; flex-direction: column;}
-	.page-1 .skills .skill-box .skills .s-txt {width: 80%;}
+	.page-1 .skills .skill-box .skills .s-txt {width: 100%;}
 	.page-1 .skills .skill-box .skills .s-txt .type {width: 20%; font-size: 2.25vw;}
 	.page-1 .skills .skill-box .skills .s-txt .names {width: 80%; font-size: 2.25vw;}
-	.page-1 .skills .skill-box .skills .s-percent {width: 80%;}
+	.page-1 .skills .skill-box .skills .s-percent {width: 100%;}
 	.page-1 .skills .top-skills {font-size: 6vw; padding: 0.5em 0;}
 	.page-1 .skills .skill-wrap {padding-bottom: 2em;}
 	.page-2 .works-wrap .moon2 {top: 42%; left: -25%;}
@@ -493,6 +499,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.contact-wrap .email {font-size: 2vw; top: 60%; left: 12%;}
 	.contact-wrap .icon-wrap {font-size: 2vw; top: 65%; left: 12%;}
 	.contact-wrap .icon-wrap i {margin-right: 0.5em;}
+	.scroll-down {width: 20vw;}
 }
 
 @media screen and (max-width: 575px) {
@@ -500,6 +507,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.moon img {width: 85vw; height: auto;}
 	.moon .line {width: 85vw; height: auto;}
 	.menu-wrap .contents .menus {font-size: 10vw;}
+	.header-top .top-right {display: flex; width: 20%;}
 	.page-1 .about-wrap .moon2 {top: 40%; left: -20%;}
 	.page-1 .about-wrap .moon2 img {width: 70vw;}
 	.page-1 .about-wrap .moon2 .line {width: 70vw;}
@@ -512,7 +520,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.page-1 .about-wrap .about-small .txt .title-me {font-size: 17vw; top: 1em; }
 	.page-1 .about-wrap .about-small .msg {font-size: 1em; top: 14em; right: 0.25em;}
 	.page-1 .about-wrap .about-bg .number {font-size: 22vw; top: 70%; left: 40%;}
-	.page-1 .about-wrap .about-bg .number {f-3ont-size: 22vw; top: 70%; left: 40%;}
+	.page-1 .about-wrap .about-bg .number {font-size: 22vw; top: 70%; left: 40%;}
 	.page-1 .skills .skill-box .skills .type {width: 12%; font-size: 2vw;}
 	.page-1 .skills .skill-box .skills .type-3 {width: 50%; font-size: 2.25vw;}
 	.page-1 .skills .skill-box .skills .names {width: 48%; font-size: 2vw;}
