@@ -27,6 +27,18 @@ $(".top-right .bar-box").on("click", function(){
 	$(".menu-wrap").stop().slideToggle();
 });
 
+$(".page-1 .about-wrap .show-me").on("click", function(){
+	$(".page-1 .about-cont").stop().slideToggle();
+})
+
+$(".page-2 .works-wrap .show-me").on("click", function(){
+	$(".page-2 .work-wrap").stop().slideToggle();
+})
+
+
+$(window).scrollTop()
+
+
 
 
 
