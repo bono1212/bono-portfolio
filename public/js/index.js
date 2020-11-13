@@ -29,10 +29,17 @@ $(".top-right .bar-box").on("click", function(){
 
 /* *******show me********* */
 $(".page-1 .about-wrap .show-me").on("click", function(){
-	$(".page-1 .about-cont").stop().slideToggle();
-})
+	$(".page-1 .about-cont").stop().slideDown();
+});
+$(".page-1 .skills .skills-bottom .bg").on("click", function(){
+	$(".page-1 .about-cont").stop().slideUp();
+});
+
 $(".page-2 .works-wrap .show-me").on("click", function(){
-	$(".page-2 .work-wrap").stop().slideToggle();
+	$(".page-2 .work-wrap").stop().slideDown();
+})
+$(".page-2 .work-wrap .skills-bottom .bg").on("click", function(){
+	$(".page-2 .work-wrap").stop().slideUp();
 })
 
 
