@@ -26,9 +26,9 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ******** moon******************* */
-.moon {position: absolute; top: 20%; left: 66%; animation-name: aniMoon; animation-duration: 0.5s;}
-.moon img {width: 26vw; height: auto;}
-.moon .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
+.page-0 .moon {position: absolute; top: 20%; left: 66%; animation-name: aniMoon; animation-duration: 0.5s;}
+.page-0 .moon img {width: 26vw; height: auto;}
+.page-0 .moon .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
 
 @keyframes aniMoon {
 	0% {left: 100%;}
@@ -36,17 +36,17 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 }
 
 /* ******** main ******************* */
-.main {width: 100%; position: relative; position: absolute; top: 30%; left: 0; font-size: 10vw; display: flex; justify-content: center;}
-.main img {width: 10vw; height: auto; border: 1px solid #f8f8f8; border-radius: 50%; height: 10vw; opacity: 1; animation-name: aniSmoon; animation-duration: 2s;}
-.main .name {font-size: 4vw; color: #313642; letter-spacing: -0.065em; position: absolute; left: 47%; top: -12%; animation: animated-text 3s steps(50,end) 3s 1 normal both; overflow: hidden;}
-.main .port-p {font-size: 10vw; color: #f8f8f8; font-family: 'Frank Ruhl Libre', serif; text-align: center; display: flex; justify-content: center; align-items: center; width: 80%;}
-.main .port-p .portfolio {display: flex; justify-content: center; align-items: center; animation-name: aniPort; animation-duration: 2s;}
-.main .port-p .portfolio div { margin: 0 4px}
-.main .line {width: 43%; height: 5%; border-bottom: 1px solid #f8f8f8; position: absolute; left: 33%; top: 70%;}
-.main .web {font-size: 5vw; font-family: 'Frank Ruhl Libre', serif; color: #313642; left: 55%; position: absolute; top: 66%; animation-name: aniWeb; animation-duration: 0.5s;}
-.main .develop {font-size: 3.5vw; color: #313642; left: 45%; position: absolute; top: 98%; animation-name: aniDev; animation-duration: 1s;}
-.main .design {font-size: 3.5vw; color: #313642; left: 50%; position: absolute; top: 119%; animation-name: aniDes; animation-duration: 0.2s;}
-.main .and {position: absolute; top: 50%; left: 65.2%; font-size: 11vw; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8; animation-name: aniAnd; animation-duration: 0.5s;}
+.page-0 .main {width: 100%; position: relative; position: absolute; top: 30%; left: 0; font-size: 10vw; display: flex; justify-content: center;}
+.page-0 .main img {width: 10vw; height: auto; border: 1px solid #f8f8f8; border-radius: 50%; height: 10vw; opacity: 1; animation-name: aniSmoon; animation-duration: 2s;}
+.page-0 .main .name {font-size: 4vw; color: #313642; letter-spacing: -0.065em; position: absolute; left: 47%; top: -12%; animation: animated-text 3s steps(50,end) 3s 1 normal both; overflow: hidden;}
+.page-0 .main .port-p {font-size: 10vw; color: #f8f8f8; font-family: 'Frank Ruhl Libre', serif; text-align: center; display: flex; justify-content: center; align-items: center; width: 80%;}
+.page-0 .main .port-p .portfolio {display: flex; justify-content: center; align-items: center; animation-name: aniPort; animation-duration: 2s;}
+.page-0 .main .port-p .portfolio div { margin: 0 4px}
+.page-0 .main .line {width: 43%; height: 5%; border-bottom: 1px solid #f8f8f8; position: absolute; left: 33%; top: 70%;}
+.page-0 .main .web {font-size: 5vw; font-family: 'Frank Ruhl Libre', serif; color: #313642; left: 55%; position: absolute; top: 66%; animation-name: aniWeb; animation-duration: 0.5s;}
+.page-0 .main .develop {font-size: 3.5vw; color: #313642; left: 45%; position: absolute; top: 98%; animation-name: aniDev; animation-duration: 1s;}
+.page-0 .main .design {font-size: 3.5vw; color: #313642; left: 50%; position: absolute; top: 119%; animation-name: aniDes; animation-duration: 0.2s;}
+.page-0 .main .and {position: absolute; top: 50%; left: 65.2%; font-size: 11vw; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8; animation-name: aniAnd; animation-duration: 0.5s;}
 
 @keyframes animated-text{
   from{width: 0;}
@@ -362,11 +362,12 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 @media screen and (max-width: 1199px) {
 	.header-top .top-right {width: 10%;}
 	.header-top .top-right .bar-box {width: 80%;}
-	.moon img {width: 30vw; height: auto;}
-	.moon .line {width: 30vw; height: auto;}
-	.main {font-size: 10vw;}
 	.header-top .left-wrap i {font-size: 3vw; padding-left: 0.125em;}
 	.menu-wrap .contents .menus {font-size: 8vw;}
+	.scroll-down {width: 10vw;}
+	.page-0 .moon img {width: 30vw; height: auto;}
+	.page-0 .moon .line {width: 30vw; height: auto;}
+	.page-0 .main {font-size: 10vw;}
 	.page-1 .about-wrap .moon2 {top: 25%; left: 5%;}
 	.page-1 .about-wrap .moon2 img {width: 40vw;}
 	.page-1 .about-wrap .moon2 .line {width: 40vw;}
@@ -386,6 +387,12 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.page-2 .works-wrap .works-small .txt .title-me {font-size: 15vw; top: 1em; }
 	.page-2 .works-wrap .works-small .msg {font-size: 1.75em; top: 14em; right: 0.25em;}
 	.page-2 .works-wrap .works-bg .number {font-size: 14vw; top: 55%; left: 28%;}
+	.page-2 .work-wrap .publishing .main-publish .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
+	.page-2 .work-wrap .publishing .main-publish .sample .webs {margin-bottom: 1em; width: 60%;}
+	.page-2 .work-wrap .frontend .main-front .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
+	.page-2 .work-wrap .frontend .main-front .sample .webs {margin-bottom: 1em; width: 60%;}
+	.page-2 .work-wrap .backend .main-back .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
+	.page-2 .work-wrap .backend .main-back .sample .webs {margin-bottom: 1em; width: 60%;}
 	.contact-wrap .moon4 {top: 20%; right: -23%;}
 	.contact-wrap .moon4 img {width: 28vw;}
 	.contact-wrap .moon4 .line {width: 28vw;}
@@ -394,23 +401,17 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.contact-wrap .email {font-size: 2vw; top: 60%; left: 12%;}
 	.contact-wrap .icon-wrap {font-size: 2vw; top: 65%; left: 12%;}
 	.contact-wrap .icon-wrap i {margin-right: 0.5em;}
-	.scroll-down {width: 10vw;}
-	.page-2 .work-wrap .publishing .main-publish .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
-	.page-2 .work-wrap .publishing .main-publish .sample .webs {margin-bottom: 1em; width: 60%;}
-	.page-2 .work-wrap .frontend .main-front .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
-	.page-2 .work-wrap .frontend .main-front .sample .webs {margin-bottom: 1em; width: 60%;}
-	.page-2 .work-wrap .backend .main-back .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
-	.page-2 .work-wrap .backend .main-back .sample .webs {margin-bottom: 1em; width: 60%;}
 }
 
 @media screen and (max-width: 991px) {
-	.main .port-p {width: 90%; animation: none;}
-	.moon img {width: 35vw; height: auto;}
-	.moon .line {width: 35vw; height: auto;}
-	.main {font-size: 10vw;}
-	.main .name {font-size: 6vw; color: #313642; left: 36%; top: -26%;}
 	.header-top .left-wrap i {font-size: 4vw; padding-left: 0.25em;}
 	.menu-wrap .contents .menus {font-size: 10vw;}
+	.scroll-down {width: 15vw;}
+	.page-0 .main .port-p {width: 90%; animation: none;}
+	.page-0 .moon img {width: 35vw; height: auto;}
+	.page-0 .moon .line {width: 35vw; height: auto;}
+	.page-0 .main {font-size: 10vw;}
+	.page-0 .main .name {font-size: 6vw; color: #313642; left: 36%; top: -26%;}
 	.page-1 .about-wrap .moon2 {top: 30%; left: 0;}
 	.page-1 .about-wrap .moon2 img {width: 45vw;}
 	.page-1 .about-wrap .moon2 .line {width: 45vw;}
@@ -433,29 +434,29 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.page-2 .wroks-wrap .wroks-small .txt .title-rks {font-size: 15vw; top: 1em; }
 	.page-2 .wroks-wrap .wroks-small .msg {font-size: 1.5em; top: 13.5em; right: 0.25em;}
 	.page-2 .wroks-wrap .wroks-bg .number {font-size: 14vw; top: 55%; left: 28%;}
-	.scroll-down {width: 15vw;}
 }
 
 @media screen and (max-width: 767px) {
 	.header-top .top-right {width: 10%;}
 	.header-top .top-right .bar-box {width: 80%;}
-	.main .port-p {width: 90%; animation: none;}
-	.main .port-p .portfolio {animation: none;}
-	.main .port-p .portfolio img {animation: none;}
-	.moon {top: 45%; left: 50%;}
-	.moon img {width: 65vw; height: auto;}
-	.moon .line {width: 65vw; height: auto;}
-	.main {font-size: 10vw;}
-	.main .name {font-size: 7vw; color: #313642; left: 36%; top: -40%; animation: none;}
-	.main .web {font-size: 8vw; left: 29%; top: 115%; animation: none;}
-	.main .develop {font-size: 6vw; left: 11%; top: 170%; animation: none;}
-	.main .design {font-size: 6vw;  left: 22%; top: 210%; animation: none;}
-	.main .and {top: 88%; left: 46%; font-size: 18vw; animation: none;}
-	.scroll-wrap {display: none;}
 	.header-top .left-wrap i {font-size: 5vw; padding-left: 0.125em;}
 	.header-wrapper .header-top .top-left {width: 85%;}
 	.header-wrapper .header-top .top-left i {font-size: 5vw;}
 	.menu-wrap .contents .menus {font-size: 10vw;}
+	.scroll-wrap {display: none;}
+	.scroll-down {width: 20vw;}
+	.page-0 .main .port-p {width: 90%; animation: none;}
+	.page-0 .main .port-p .portfolio {animation: none;}
+	.page-0 .main .port-p .portfolio img {animation: none;}
+	.page-0 .moon {top: 45%; left: 50%;}
+	.page-0 .moon img {width: 65vw; height: auto;}
+	.page-0 .moon .line {width: 65vw; height: auto;}
+	.page-0 .main {font-size: 10vw;}
+	.page-0 .main .name {font-size: 7vw; color: #313642; left: 36%; top: -40%; animation: none;}
+	.page-0 .main .web {font-size: 8vw; left: 29%; top: 115%; animation: none;}
+	.page-0 .main .develop {font-size: 6vw; left: 11%; top: 170%; animation: none;}
+	.page-0 .main .design {font-size: 6vw;  left: 22%; top: 210%; animation: none;}
+	.page-0 .main .and {top: 88%; left: 46%; font-size: 18vw; animation: none;}
 	.page-1 .about-wrap .moon2 {top: 42%; left: -25%;}
 	.page-1 .about-wrap .moon2 img {width: 75vw;}
 	.page-1 .about-wrap .moon2 .line {width: 75vw;}
@@ -501,6 +502,12 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.page-2 .works-wrap .works-small .msg {font-size: 1.5em; top: 10em; right: 0.25em;}
 	.page-2 .works-wrap .works-bg .number {font-size: 22vw; top: 70%; left: 35%;}
 	.page-2 .works-wrap .show-me {bottom: 4em; right: 9vw;}
+	.page-2 .work-wrap .publishing .main-publish .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
+	.page-2 .work-wrap .publishing .main-publish .sample .webs {margin-bottom: 1em; width: 80%;}
+	.page-2 .work-wrap .frontend .main-front .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
+	.page-2 .work-wrap .frontend .main-front .sample .webs {margin-bottom: 1em; width: 80%;}
+	.page-2 .work-wrap .backend .main-back .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
+	.page-2 .work-wrap .backend .main-back .sample .webs {margin-bottom: 1em; width: 80%;}
 	.contact-wrap .moon4 {top: 40%; right: -23%;}
 	.contact-wrap .moon4 img {width: 45vw; height: auto;}
 	.contact-wrap .moon4 .line {width: 45vw; height: auto;}
@@ -509,19 +516,12 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.contact-wrap .email {font-size: 2vw; top: 60%; left: 12%;}
 	.contact-wrap .icon-wrap {font-size: 2vw; top: 65%; left: 12%;}
 	.contact-wrap .icon-wrap i {margin-right: 0.5em;}
-	.scroll-down {width: 20vw;}
-	.page-2 .work-wrap .publishing .main-publish .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
-	.page-2 .work-wrap .publishing .main-publish .sample .webs {margin-bottom: 1em; width: 80%;}
-	.page-2 .work-wrap .frontend .main-front .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
-	.page-2 .work-wrap .frontend .main-front .sample .webs {margin-bottom: 1em; width: 80%;}
-	.page-2 .work-wrap .backend .main-back .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
-	.page-2 .work-wrap .backend .main-back .sample .webs {margin-bottom: 1em; width: 80%;}
 }
 
 @media screen and (max-width: 575px) {
-	.moon {top: 40%; left: 50%; animation: none;}
-	.moon img {width: 85vw; height: auto;}
-	.moon .line {width: 85vw; height: auto;}
+	.page-0 .moon {top: 40%; left: 50%; animation: none;}
+	.page-0 .moon img {width: 85vw; height: auto;}
+	.page-0 .moon .line {width: 85vw; height: auto;}
 	.menu-wrap .contents .menus {font-size: 10vw;}
 	.header-top .top-right {display: flex; width: 20%;}
 	.page-1 .about-wrap .moon2 {top: 40%; left: -20%;}
@@ -551,6 +551,12 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.page-2 .works-wrap .works-small .txt .title-wo {font-size: 20vw; left: 24%; top: 0.125em;}
 	.page-2 .works-wrap .works-small .txt .title-rks {font-size: 20vw; top: 1em; left:  50%;}
 	.page-2 .works-wrap .works-bg .number {font-size: 22vw; top: 70%; left: 40%;}
+	.page-2 .work-wrap .publishing .main-publish .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
+	.page-2 .work-wrap .publishing .main-publish .sample .webs {margin-bottom: 2em; width: 90%;}
+	.page-2 .work-wrap .frontend .main-front .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
+	.page-2 .work-wrap .frontend .main-front .sample .webs {margin-bottom: 1em; width: 90%;}
+	.page-2 .work-wrap .backend .main-back .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
+	.page-2 .work-wrap .backend .main-back .sample .webs {margin-bottom: 1em; width: 90%;}
 	.contact-wrap .moon4 {top: 40%; right: -60%; animation: none;}
 	.contact-wrap .moon4 img {width: 70vw; height: auto;}
 	.contact-wrap .moon4 .line {width: 70vw; height: auto;}
@@ -559,10 +565,4 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 	.contact-wrap .email {font-size: 2.5vw; top: 55%; left: 12%;}
 	.contact-wrap .icon-wrap {font-size: 4vw; top: 60%; left: 12%;}
 	.contact-wrap .icon-wrap i {margin-right: 0.25em;}
-	.page-2 .work-wrap .publishing .main-publish .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
-	.page-2 .work-wrap .publishing .main-publish .sample .webs {margin-bottom: 2em; width: 90%;}
-	.page-2 .work-wrap .frontend .main-front .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
-	.page-2 .work-wrap .frontend .main-front .sample .webs {margin-bottom: 1em; width: 90%;}
-	.page-2 .work-wrap .backend .main-back .sample {width: 80%; padding: 5em 2em; display: flex; flex-direction: column;}
-	.page-2 .work-wrap .backend .main-back .sample .webs {margin-bottom: 1em; width: 90%;}
 }
