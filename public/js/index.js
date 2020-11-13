@@ -22,18 +22,28 @@
 
 
 
-
+/* *******menu page - show******* */
 $(".top-right .bar-box").on("click", function(){
 	$(".menu-wrap").stop().slideToggle();
 });
 
+/* *******show me********* */
 $(".page-1 .about-wrap .show-me").on("click", function(){
 	$(".page-1 .about-cont").stop().slideToggle();
 })
-
 $(".page-2 .works-wrap .show-me").on("click", function(){
 	$(".page-2 .work-wrap").stop().slideToggle();
 })
+
+
+/* *******menu page에서 넘어가기******** */
+$(".scroll-wrap .bar2").on("click", function(){
+	$(".page1").stop().show();
+});
+
+
+
+
 
 
 $(window).scrollTop()
