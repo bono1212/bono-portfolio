@@ -44,9 +44,7 @@ $(".page-2 .work-wrap .skills-bottom .bg").on("click", function(){
 
 
 /* *******menu page에서 넘어가기******** */
-$(".scroll-wrap .bar2").on("click", function(){
-	$(".page1").stop().show();
-});
+
 
 
 
