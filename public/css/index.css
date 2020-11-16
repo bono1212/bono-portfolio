@@ -128,7 +128,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* ********************aboutme***************** */
-.page-1 .about-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; background-image: url(../img/main-1.png); background-size: cover;}
+.page-1 .about-wrap {width: 100%; position: relative; height: 100vh; background-image: url(../img/main-1.png); background-size: cover;}
 .page-1 .about-wrap .about-small {width: 75%; background: url(../img/About2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; right: 0; animation-name: about; animation-duration: 2s;}
 .page-1 .about-wrap .moon2 {position: absolute; top: 22%; left: 10%; animation-name: Moon2; animation-duration: 2s; z-index: 9999;}
 .page-1 .about-wrap .moon2 img {width: 26vw; height: auto;}
@@ -332,7 +332,7 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 
 
 /* **********contact************* */
-.contact-wrap {width: 100%; position: relative; overflow: hidden; height: 100vh; background-image: url(../img/main-1.png); background-size: cover; /* display: none; */}
+.contact-wrap {width: 100%; position: relative; height: 100vh; background-image: url(../img/main-1.png); background-size: cover;}
 .contact-wrap .bg-contact {width: 75%; background: url(../img/contact-bg.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; left: 0; animation-name: bg; animation-duration: 2s;}
 .contact-wrap .moon4 {position: absolute; top: 20%; right: -23%; animation-name: Moon; animation-duration: 2s;}
 .contact-wrap .moon4 img {width: 26vw; height: auto;}
