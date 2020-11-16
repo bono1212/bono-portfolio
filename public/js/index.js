@@ -20,7 +20,7 @@ new Wheel (document, function(direction, e){
 
 
 
-/* 	$(".mouse").mouseover(function() {
+	$(".mouse").mouseover(function() {
 		$(this).css("display", "block");
 	});
 	$("html, body").mousemove(onMove).hover(onHover, onLeave);
@@ -38,19 +38,11 @@ new Wheel (document, function(direction, e){
 		var _x = e.pageX;
 		var _y = e.pageY;
 		$(".mouse").css({"left": _x+"px", "top": _y+"px"});
-	} */
+	}
 
 
 /* *******scroll******** */
 
-$(window).on("scroll", onScroll);
-function onScroll() {
-	var sctop = $(this).scrollTop();
-	var page0 = $(".page-0").offset().top - $(this).height();
-	if(sctop > page0) {
-		$(".page-0").scrollTop();
-	}
-}
 
 
 
