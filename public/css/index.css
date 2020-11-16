@@ -6,8 +6,8 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 /* font-family: 'Frank Ruhl Libre', serif; font-family: 'Roboto', sans-serif; font-family: 'Fredericka the Great', cursive; font-family: 'Mrs Saint Delafield', cursive;*/
-
-html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; position: relative; overflow: hidden; height: 100vh;}
+.page {border: 10px solid red;}
+html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed; position: relative; /*overflow: hidden;*/}
 .header-wrapper {width: 100%;}
 .header-wrapper .bg-image {width: 75%; background: url(../img/main-3.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh;} 
 .header-wrapper .bg-cover {width: 75%; height: 100vh; background-color: #f86953; opacity: 0.8;}
@@ -21,11 +21,12 @@ html, body {width: 100%; background: url(../img/main-1.png) no-repeat center; ba
 .header-top .top-right .bar-box {width: 50%; height: 50%; display: flex; justify-content: center; align-items: center; flex-direction: column;}
 .header-top .bar-wrap1 {width: 50%; background-color: #f8f8f8; height: 2px;  transition: transform 0.5s; transform: translateY(-6px);}
 .header-top .bar-wrap2 {width: 50%; background-color: #f8f8f8; height: 2px;  transition: transform 0.5s; transform: translateY(6px);}
-.header-top .top-right .bar-box:hover .bar-wrap1 {transform: rotate(45deg) translateY(0);}
-.header-top .top-right .bar-box:hover .bar-wrap2 {transform: rotate(-45deg) translateY(0);}
+.header-top .top-right .bar-box:hover .bar-wrap1 {transform: rotate(225deg) translateY(0);}
+.header-top .top-right .bar-box:hover .bar-wrap2 {transform: rotate(-225deg) translateY(0);}
 
 
 /* ******** moon******************* */
+.page-0 {width: 100%; height: 100vh;}
 .page-0 .moon {position: absolute; top: 20%; left: 66%; animation-name: aniMoon; animation-duration: 0.5s;}
 .page-0 .moon img {width: 26vw; height: auto;}
 .page-0 .moon .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}

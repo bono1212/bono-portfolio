@@ -1,70 +1,78 @@
 var now = 0;
-new Wheel (document, function(direction, e){
+new Wheel(document, function (direction, e) {
 	e.preventDefault();
-	var target = e.path.filter(function(v){
-	return $(v).hasClass('page');
+	var pageY = e.pageY;
+	var pageEnds = [];
+	$(".page").each(function(i) {
+		pageEnds[i] = $(this).offset().top + $(this).outerHeight();
 	});
-	var present = $(target[0]).index();
-	if(direction == 'up' && now > 0 ) {now--;} 
-	if(direction == 'down' && now < $(".page").length - 1) {now++;
+
+	console.log(pageEnds);
+
+	for(var i=pageEnds.length - 1; i>0; i--) {
+		if(pageY > pageEnds[i] && pageY < pageEnds[i-1]) {
+			now = i;
+			break;
+		}
+	}
+	console.log(now);
+	//now = $(target[0]).index();
+	if (direction == 'up' && now > 0) {
+		now--;
+	}
+	if (direction == 'down' && now < $(".page").length - 1) {
+		now++;
 	}
 	pageAni();
 
-	function pageAni (){
-		$("html, body").stop().animate({"scrollTop": $(".page").eq(now).offset().top+"px"}, 800);
+	function pageAni() {
+		$("html, body").stop().animate({ "scrollTop": $(".page").eq(now).offset().top + "px" }, 800);
 	}
 });
 
 
+$(".mouse").mouseover(function () {
+	$(this).css("display", "block");
+});
+$("html, body").mousemove(onMove).hover(onHover, onLeave);
 
+function onHover() {
+	$(".mouse").css("display", "block");
+}
 
+function onLeave() {
+	$(".mouse").css("display", "none");
+}
 
-
-	$(".mouse").mouseover(function() {
-		$(this).css("display", "block");
-	});
-	$("html, body").mousemove(onMove).hover(onHover, onLeave);
-
-	function onHover() {
-		$(".mouse").css("display", "block");
-	}
-
-	function onLeave() {
-		$(".mouse").css("display", "none");
-	}
-
-	function onMove(e) {
-		console.log(e)
-		var _x = e.pageX;
-		var _y = e.pageY;
-		$(".mouse").css({"left": _x+"px", "top": _y+"px"});
-	}
+function onMove(e) {
+	//console.log(e)
+	var _x = e.pageX;
+	var _y = e.pageY;
+	$(".mouse").css({ "left": _x + "px", "top": _y + "px" });
+}
 
 
 /* *******scroll******** */
 
 
-
-
-
 /* *******menu page - show******* */
-$(".top-right .bar-box").on("click", function(){
+$(".top-right .bar-box").on("click", function () {
 	$(".menu-wrap").stop().slideToggle();
 });
 
 
 /* *******show me********* */
-$(".page-1 .about-wrap .show-me").on("click", function(){
+$(".page-1 .about-wrap .show-me").on("click", function () {
 	$(".page-1 .about-cont").stop().slideDown();
 });
-$(".page-1 .skills .skills-bottom .bg").on("click", function(){
+$(".page-1 .skills .skills-bottom .bg").on("click", function () {
 	$(".page-1 .about-cont").stop().slideUp();
 });
 
-$(".page-2 .works-wrap .show-me").on("click", function(){
+$(".page-2 .works-wrap .show-me").on("click", function () {
 	$(".page-2 .work-wrap").stop().slideDown();
 })
-$(".page-2 .work-wrap .skills-bottom .bg").on("click", function(){
+$(".page-2 .work-wrap .skills-bottom .bg").on("click", function () {
 	$(".page-2 .work-wrap").stop().slideUp();
 })
 
