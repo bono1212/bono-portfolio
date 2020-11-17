@@ -26,6 +26,9 @@ new Wheel(document, function (direction, e) {
 	pageAni();
 
 	function pageAni() {
+		if(now == 1) {
+			$('.page-1 .about-wrap .about-bg .number').css('animation-name', 'num');
+		}
 		$("html, body").stop().animate({ "scrollTop": $(".page").eq(now).offset().top + "px" }, 800);
 	}
 });

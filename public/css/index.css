@@ -140,7 +140,7 @@ html, body {width: 100%; overflow: hidden;}
 .about-wrap .show-me .show-bg .circle {width: 4em; height: 4em; border-radius: 50%; border: 1px solid #f86953; background-color: #f86953; color: #f8f8f8; position: absolute; left: 1.5em; text-align: center; font-size: 4px; line-height: 15px; transition: all 0.5s; margin-left: 1em;}
 .page-1 .about-wrap .show-me .show-bg .circle i {cursor: pointer; font-size: 0.5vw;}
 .page-1 .about-wrap .show-me .show-bg:hover .circle {transform: scale(1.1);}
-.page-1 .about-wrap .about-bg .number {font-size: 12vw; position: absolute; top: 51%; left: 28%; font-family: 'Frank Ruhl Libre', serif; letter-spacing: -0.125em; z-index: 1; animation-name: num; animation-duration: 2s;}
+.page-1 .about-wrap .about-bg .number {font-size: 12vw; position: absolute; top: 51%; left: 28%; font-family: 'Frank Ruhl Libre', serif; letter-spacing: -0.125em; z-index: 1; animation-duration: 2s;}
 
 @keyframes Moon2 {
 	0% {left: 100%}
