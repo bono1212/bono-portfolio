@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<style>
+		.box {width: 200px; height: 200px; background-color: #0b2e13; position: absolute; top: 100px; left: 100px; animation-duration: 0.5s; animation-fill-mode: forwards;}
+		@keyframes ani {
+			0% {left: 100px;}
+			100% {left: 1500px;}
+		}
+	</style>
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<button id="bt">동작</button>
+	<div class="box"></div>
+
+	<script>
+		var chk = true;
+		$("#bt").click(function() {
+			if(chk) {
+				$(".box").css("animation-name", "");
+				$(".box").css("animation-name");
+				$(".box").css({
+					"animation-name": "ani",
+					"animation-direction": "normal"
+				});
+			}
+			else {
+				$(".box").css("animation-name", "");
+				$(".box").css("animation-name");
+				$(".box").css({
+					"animation-name": "ani",
+					"animation-direction": "reverse"
+				});
+			}
+			chk = !chk;
+		});
+	</script>
+</body>
+</html>
