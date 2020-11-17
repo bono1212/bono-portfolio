@@ -34,10 +34,10 @@ new Wheel(document, function (direction, e) {
 });
 
 
-$(".mouse").mouseover(function () {
+/*$(".mouse").mouseover(function () {
 	$(this).css("display", "block");
 });
-$("html, body").mousemove(onMove).hover(onHover, onLeave);
+$("html, body").mousemove(onMove).hover(onHover, onLeave);*/
 
 function onHover() {
 	$(".mouse").css("display", "block");
@@ -52,6 +52,7 @@ function onMove(e) {
 	var _x = e.pageX;
 	var _y = e.pageY;
 	$(".mouse").css({ "left": _x + "px", "top": _y + "px" });
+	console.log(_x, _y);
 }
 
 
