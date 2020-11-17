@@ -7,7 +7,7 @@
 
 /* font-family: 'Frank Ruhl Libre', serif; font-family: 'Roboto', sans-serif; font-family: 'Fredericka the Great', cursive; font-family: 'Mrs Saint Delafield', cursive;*/
 
-html, body {width: 100%; overflow: hidden;}
+html, body {width: 100%; overflow: hidden; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed;}
 .header-wrapper .header-top {width: 100%; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center; position: fixed; z-index: 9999;}
 .header-wrapper .header-top .top-left {width: 90%; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0;}
 .header-top .right-wrap img {width: 150px; height: auto; padding: 25px;}
@@ -21,7 +21,7 @@ html, body {width: 100%; overflow: hidden;}
 
 
 /* ******** page-0 ******************* */
-.page-0 {width: 100%; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed;}
+.page-0 {width: 100%;}
 .page-0 .bg-main {width: 75%; background: url(../img/contact-bg.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; left: 0;}
 .page-0 .main {width: 100%; position: relative; position: absolute; top: 30%; left: 0; font-size: 10vw; display: flex; justify-content: center; }
 .page-0 .main img {width: 10vw; height: auto; border: 1px solid #f8f8f8; border-radius: 50%; height: 10vw; opacity: 1; animation-name: aniSmoon; animation-duration: 2s;}
@@ -78,11 +78,11 @@ html, body {width: 100%; overflow: hidden;}
 
 /* ******** scroll-bar ******************* */
 .scroll-wrap {width: 1.5%; position: absolute; top: 40%; left: 1%; cursor: pointer; position: fixed; z-index: 9999;}
-.scroll-wrap .bar1 {background-color: #f8f8f8; transition: all 0.3s; margin-bottom: 2.5em; width: 200%; height: 0.25em;}
+.scroll-wrap .bar1 {background-color: #f8f8f8; transition: all 0.3s; margin-bottom: 2.5em; width: 100%; height: 0.25em;}
 .scroll-wrap .bar2 {background-color: #f8f8f8; transition: all 0.3s; margin-bottom: 2.5em; width: 100%; height: 0.25em;}
 .scroll-wrap .bar3 {background-color: #f8f8f8; transition: all 0.3s; margin-bottom: 2.5em; width: 100%; height: 0.25em;}
 .scroll-wrap .bar4 {background-color: #f8f8f8; transition: all 0.3s; margin-bottom: 2.5em; width: 100%; height: 0.25em;}
-
+.scroll-wrap .bar.active {width: 200%;}
 
 /* ******** scroll-mobile ******************* */
 .scroll-mobile {height:3%; position: absolute; bottom: 1%; left: 33%; cursor: pointer; display: flex; display: none;}
@@ -123,22 +123,22 @@ html, body {width: 100%; overflow: hidden;}
 
 
 /* ********************aboutme***************** */
-.page-1 .about-wrap {width: 100%; position: relative; height: 100vh; background-image: url(../img/main-1.png); background-size: cover; /* display: none; */}
-.page-1 .about-wrap .about-small {width: 75%; background: url(../img/About2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; right: 0; animation-duration: 2s;}
-.page-1 .about-wrap .moon2 {position: absolute; top: 22%; left: 10%;  animation-duration: 2s; z-index: 9999;}
+.page-1 .about-wrap {width: 100%; position: relative; height: 100vh; /* display: none; */}
+.page-1 .about-wrap .about-small {width: 75%; background: url(../img/About2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; right: 0; animation-duration: 2s; animation-fill-mode: forwards;}
+.page-1 .about-wrap .moon2 {position: absolute; top: 22%; left: 10%;  animation-duration: 2s; z-index: 9999; animation-fill-mode: forwards;}
 .page-1 .about-wrap .moon2 img {width: 26vw; height: auto;}
 .page-1 .about-wrap .moon2 .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
 .page-1 .about-wrap .about-small .txt {display: flex; flex-direction: column; justify-content: center; align-items: flex-end; position: relative; font-family: 'Roboto', sans-serif; right: 12vw; top: 20%;  animation-duration: 1s;}
 .page-1 .about-wrap .about-small .txt .title-about {font-size: 10vw; color: #f8f8f8;}
 .page-1 .about-wrap .about-small .txt .title-me {font-size: 10vw; color: #f8f8f8; top: 1em; position: absolute;}
 .page-1 .about-wrap .about-small .msg {font-size: 1.5em; position: absolute; top: 22em; right: 0.25em; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8;}
-.page-1 .about-wrap .show-me {position: absolute; bottom: 6em; right: 30vw; animation-duration: 1s;}
+.page-1 .about-wrap .show-me {position: absolute; bottom: 6em; right: 30vw; animation-duration: 1s; animation-fill-mode: forwards;}
 .page-1 .about-wrap .show-me .show-line {position: absolute; width: 30vw; background-color: #f8f8f8; height: 1px; position: absolute; top: 50%; right: -30vw;}
 .page-1 .about-wrap .show-me .show-bg {width: 140px; height: 30px; border-radius: 25px; border: 1px solid #313642; display: flex; justify-content: flex-end; align-items: center; font-size: 0.875em; background-color: #313642; color: #f86953; padding-right: 0.75em; cursor: pointer; box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3); right: 0;}
 .about-wrap .show-me .show-bg .circle {width: 4em; height: 4em; border-radius: 50%; border: 1px solid #f86953; background-color: #f86953; color: #f8f8f8; position: absolute; left: 1.5em; text-align: center; font-size: 4px; line-height: 15px; transition: all 0.5s; margin-left: 1em;}
 .page-1 .about-wrap .show-me .show-bg .circle i {cursor: pointer; font-size: 0.5vw;}
 .page-1 .about-wrap .show-me .show-bg:hover .circle {transform: scale(1.1);}
-.page-1 .about-wrap .about-bg .number {font-size: 12vw; position: absolute; top: 51%; left: 28%; font-family: 'Frank Ruhl Libre', serif; letter-spacing: -0.125em; z-index: 1; animation-duration: 2s;}
+.page-1 .about-wrap .about-bg .number {font-size: 12vw; position: absolute; top: 51%; left: 28%; font-family: 'Frank Ruhl Libre', serif; letter-spacing: -0.125em; z-index: 1; animation-duration: 2s; animation-fill-mode: forwards;}
 
 @keyframes Moon2 {
 	0% {left: 100%}
@@ -192,7 +192,7 @@ html, body {width: 100%; overflow: hidden;}
 
 
 /* *********skills******** */
-.page-1 .skills {width: 100%; background-color: #f8f8f8; display: none;}
+.page-1 .skills {width: 100%; background-color: #f8f8f8;}
 .page-1 .skills .top-skills {width: 100%; display: flex; padding-top: 0em; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw; padding-top: 3em;}
 .page-1 .skills .top-skills .line03 {width: 50px; height: 5px; background-color: #111;}
 .page-1 .skills .top-skills .number {padding: 0 0.25em;}
@@ -228,21 +228,21 @@ html, body {width: 100%; overflow: hidden;}
 
 
 /* ********************works********************** */
-.page-2 .works-wrap {width: 100%; position: relative; height: 100vh; background-image: url(../img/main-1.png); background-size: cover; /* display: none; */}
-.page-2 .works-wrap .works-small {width: 75%; background: url(../img/works.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; right: 0; animation-duration: 2s;}
+.page-2 .works-wrap {width: 100%; position: relative; height: 100vh; /* display: none; */}
+.page-2 .works-wrap .works-small {width: 75%; background: url(../img/works.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; right: 0; animation-duration: 2s; animation-fill-mode: forwards;}
 .page-2 .works-wrap .moon2 {position: absolute; top: 22%; left: 10%;  animation-duration: 2s; z-index: 9999;}
 .page-2 .works-wrap .moon2 img {width: 26vw; height: auto;}
 .page-2 .works-wrap .moon2 .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
-.page-2 .works-wrap .works-small .txt {display: flex; flex-direction: column; justify-content: center; align-items: flex-end; position: relative; font-family: 'Roboto', sans-serif; right: 7vw; top: 15%; animation-duration: 2s;}
+.page-2 .works-wrap .works-small .txt {display: flex; flex-direction: column; justify-content: center; align-items: flex-end; position: relative; font-family: 'Roboto', sans-serif; right: 7vw; top: 15%; animation-duration: 2s; animation-fill-mode: forwards;}
 .page-2 .works-wrap .works-small .txt .title-wo {font-size: 14vw; color: #f8f8f8; position: absolute; top: 0; left: 38%;}
 .page-2 .works-wrap .works-small .txt .title-rks {font-size: 14vw; color: #f8f8f8; top: 0.875em; position: absolute;left: 56%;}
-.page-2 .works-wrap .show-me {position: absolute; bottom: 6em; right: 30vw; animation-duration: 2s;}
+.page-2 .works-wrap .show-me {position: absolute; bottom: 6em; right: 30vw; animation-duration: 2s; animation-fill-mode: forwards;}
 .page-2 .works-wrap .show-me .show-line {position: absolute; width: 30vw; background-color: #f8f8f8; height: 1px; position: absolute; top: 50%; right: -30vw;}
 .page-2 .works-wrap .show-me .show-bg {width: 140px; height: 30px; border-radius: 25px; border: 1px solid #f86953; display: flex; justify-content: flex-end; align-items: center; font-size: 0.875em; background-color: #f86953; color: #f8f8f8; padding-right: 0.75em; cursor: pointer; box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3); right: 0;}
 .works-wrap .show-me .show-bg .circle {width: 4em; height: 4em; border-radius: 50%; border: 1px solid #f8f8f8; background-color: #f8f8f8; color: #f8f8f8; position: absolute; left: 1.5em; text-align: center; font-size: 4px; line-height: 15px; transition: all 0.5s; margin-left: 1em;}
 .page-2 .works-wrap .show-me .show-bg .circle i {cursor: pointer; font-size: 0.5vw; color: #f86953;}
 .page-2 .works-wrap .show-me .show-bg:hover .circle {transform: scale(1.1);}
-.page-2 .works-wrap .works-bg .number {font-size: 12vw; position: absolute; top: 50%; left: 28%; font-family: 'Frank Ruhl Libre', serif; letter-spacing: -0.125em; z-index: 1; color: #f8f8f8; animation-duration: 2s;}
+.page-2 .works-wrap .works-bg .number {font-size: 12vw; position: absolute; top: 50%; left: 28%; font-family: 'Frank Ruhl Libre', serif; letter-spacing: -0.125em; z-index: 1; color: #f8f8f8; animation-duration: 2s; animation-fill-mode: forwards;}
 
 	@keyframes Moon2 {
 		0% {left: 100%}
@@ -327,16 +327,16 @@ html, body {width: 100%; overflow: hidden;}
 
 
 /* **********contact************* */
-.contact-wrap {width: 100%; position: relative; height: 100vh; background-image: url(../img/main-1.png); background-size: cover; /* display: none; */}
-.contact-wrap .bg-contact {width: 75%; background: url(../img/contact-bg.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; left: 0; animation-duration: 2s;}
-.contact-wrap .moon4 {position: absolute; top: 20%; right: -23%; animation-duration: 2s;}
+.contact-wrap {width: 100%; position: relative; height: 100vh; /* display: none; */}
+.contact-wrap .bg-contact {width: 75%; background: url(../img/contact-bg.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; left: 0; animation-duration: 2s; animation-fill-mode: forwards;}
+.contact-wrap .moon4 {position: absolute; top: 20%; right: -23%; animation-duration: 2s; animation-fill-mode: forwards;}
 .contact-wrap .moon4 img {width: 26vw; height: auto;}
 .contact-wrap .moon4 .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
 
-.contact-wrap .title {position: absolute; left: 10%; top: 30%; font-size: 8vw; color: #f8f8f8; letter-spacing: -1px; animation-duration: 2s;}
+.contact-wrap .title {position: absolute; left: 10%; top: 30%; font-size: 8vw; color: #f8f8f8; letter-spacing: -1px; animation-duration: 2s; animation-fill-mode: forwards;}
 
 .contact-wrap .lines {width: 10%;}
-.contact-wrap .lines div {width: 5%; height: 1px; background-color: #f8f8f8; position: absolute; top: 55%; left: 12%; animation-duration: 2s; animation-iteration-count: infinite;}
+.contact-wrap .lines div {width: 5%; height: 1px; background-color: #f8f8f8; position: absolute; top: 55%; left: 12%; animation-duration: 2s; animation-iteration-count: infinite; animation-fill-mode: forwards;}
 .contact-wrap .lines div:last-child {margin-top: 1em; left: 14%; animation-delay: 1s;}
 .contact-wrap .email {font-size: 1vw; color: #f8f8f8; position: absolute; top: 65%; left: 12%;}
 .contact-wrap .icon-wrap {font-size: 1.5vw; color: #f8f8f8; position: absolute; top: 70%; left: 12%;}

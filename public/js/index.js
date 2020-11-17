@@ -27,42 +27,147 @@ new Wheel(document, function (direction, e) {
 
 	function pageAni() {
 		if(now == 0) {
-			$('.scroll-wrap .bar2').css('width', '100%');
 			$('.scroll-wrap .bar1').css('width', '200%');
+			$('.scroll-wrap .bar2').css('width', '100%');
 			$('.scroll-wrap .bar3').css('width', '100%');
 			$('.scroll-wrap .bar4').css('width', '100%');
 		}
 		if(now == 1) {
-			$('.page-1 .about-wrap .about-bg .number').css('animation-name', 'num');
-			$('.page-1 .about-wrap .show-me').css('animation-name', 'show');
-			$('.page-1 .about-wrap .about-small .txt').css('animation-name', 'txt');
-			$('.page-1 .about-wrap .moon2').css('animation-name', 'Moon2');
-			$('.page-1 .about-wrap .about-small ').css('animation-name', 'about');
+			$('.page-1 .about-wrap .about-bg .number').css('animation-name', '');
+			$('.page-1 .about-wrap .about-bg .number').css('animation-name');
+			$('.page-1 .about-wrap .about-bg .number').css({'animation-name': 'num', 'animation-direction': 'normal'});
+
+			$('.page-1 .about-wrap .show-me').css('animation-name', '');
+			$('.page-1 .about-wrap .show-me').css('animation-name');
+			$('.page-1 .about-wrap .show-me').css({'animation-name': 'show', 'animation-direction': 'normal'});
+
+			$('.page-1 .about-wrap .about-small .txt').css('animation-name', '');
+			$('.page-1 .about-wrap .about-small .txt').css('animation-name');
+			$('.page-1 .about-wrap .about-small .txt').css({'animation-name': 'txt', 'animation-direction': 'normal'});
+
+			$('.page-1 .about-wrap .moon2').css('animation-name', '');
+			$('.page-1 .about-wrap .moon2').css('animation-name');
+			$('.page-1 .about-wrap .moon2').css({'animation-name': 'Moon2', 'animation-direction': 'normal'});
+
+			$('.page-1 .about-wrap .about-small ').css('animation-name', '');
+			$('.page-1 .about-wrap .about-small ').css('animation-name');
+			$('.page-1 .about-wrap .about-small ').css({'animation-name': 'about', 'animation-direction': 'normal'});
+
 			$('.scroll-wrap .bar2').css('width', '200%');
 			$('.scroll-wrap .bar1').css('width', '100%');
 			$('.scroll-wrap .bar3').css('width', '100%');
 			$('.scroll-wrap .bar4').css('width', '100%');
 		}
+		else {
+			$('.page-1 .about-wrap .about-bg .number').css('animation-name', '');
+			$('.page-1 .about-wrap .about-bg .number').css('animation-name');
+			$('.page-1 .about-wrap .about-bg .number').css({'animation-name': 'num', 'animation-direction': 'reverse'});
+
+			$('.page-1 .about-wrap .show-me').css('animation-name', '');
+			$('.page-1 .about-wrap .show-me').css('animation-name');
+			$('.page-1 .about-wrap .show-me').css({'animation-name': 'show', 'animation-direction': 'reverse'});
+
+			$('.page-1 .about-wrap .about-small .txt').css('animation-name', '');
+			$('.page-1 .about-wrap .about-small .txt').css('animation-name');
+			$('.page-1 .about-wrap .about-small .txt').css({'animation-name': 'txt', 'animation-direction': 'reverse'});
+
+			$('.page-1 .about-wrap .moon2').css('animation-name', '');
+			$('.page-1 .about-wrap .moon2').css('animation-name');
+			$('.page-1 .about-wrap .moon2').css({'animation-name': 'Moon2', 'animation-direction': 'reverse'});
+
+			$('.page-1 .about-wrap .about-small ').css('animation-name', '');
+			$('.page-1 .about-wrap .about-small ').css('animation-name');
+			$('.page-1 .about-wrap .about-small ').css({'animation-name': 'about', 'animation-direction': 'reverse'});
+		}
+
 		if(now == 2) {
-			$(".page-2 .works-wrap .moon2").css('animation-name', 'Moon2');
-			$(".page-2 .works-wrap .works-small").css('animation-name', 'works');
-			$(".page-2 .works-wrap .works-small .txt").css('animation-name', 'txt');
-			$(".page-2 .works-wrap .show-me").css('animation-name', 'show');
-			$(".page-2 .works-wrap .works-bg .number").css('animation-name', 'num');
+			$(".page-2 .works-wrap .moon2").css('animation-name', '');
+			$(".page-2 .works-wrap .moon2").css('animation-name');
+			$(".page-2 .works-wrap .moon2").css({'animation-name': 'Moon2', 'animation-direction': 'normal'});
+
+			$(".page-2 .works-wrap .works-small").css('animation-name', '');
+			$(".page-2 .works-wrap .works-small").css('animation-name');
+			$(".page-2 .works-wrap .works-small").css({'animation-name': 'works', 'animation-direction': 'normal'});
+
+			$(".page-2 .works-wrap .works-small .txt").css('animation-name', '');
+			$(".page-2 .works-wrap .works-small .txt").css('animation-name');
+			$(".page-2 .works-wrap .works-small .txt").css({'animation-name': 'txt', 'animation-direction': 'normal'});
+
+			$(".page-2 .works-wrap .show-me").css('animation-name', '');
+			$(".page-2 .works-wrap .show-me").css('animation-name');
+			$(".page-2 .works-wrap .show-me").css({'animation-name': 'show', 'animation-direction': 'normal'});
+
+			$(".page-2 .works-wrap .works-bg .number").css('animation-name', '');
+			$(".page-2 .works-wrap .works-bg .number").css('animation-name');
+			$(".page-2 .works-wrap .works-bg .number").css({'animation-name': 'num', 'animation-direction': 'normal'});
+
 			$('.scroll-wrap .bar2').css('width', '100%');
 			$('.scroll-wrap .bar1').css('width', '100%');
 			$('.scroll-wrap .bar3').css('width', '200%');
 			$('.scroll-wrap .bar4').css('width', '100%');
 		}
-		else if(now == 3) {
-			$(".contact-wrap .bg-contact").css('animation-name', 'bg');
-			$(".contact-wrap .moon4").css('animation-name', 'Moon');
-			$(".contact-wrap .title").css('animation-name', 'tit');
-			$(".contact-wrap .lines div").css('animation-name', 'line');
+		else {
+			$(".page-2 .works-wrap .moon2").css('animation-name', '');
+			$(".page-2 .works-wrap .moon2").css('animation-name');
+			$(".page-2 .works-wrap .moon2").css({'animation-name': 'Moon2', 'animation-direction': 'reverse'});
+			
+			$(".page-2 .works-wrap .works-small").css('animation-name', '');
+			$(".page-2 .works-wrap .works-small").css('animation-name');
+			$(".page-2 .works-wrap .works-small").css({'animation-name': 'works', 'animation-direction': 'reverse'});
+
+			$(".page-2 .works-wrap .works-small .txt").css('animation-name', '');
+			$(".page-2 .works-wrap .works-small .txt").css('animation-name');
+			$(".page-2 .works-wrap .works-small .txt").css({'animation-name': 'txt', 'animation-direction': 'reverse'});
+
+			$(".page-2 .works-wrap .show-me").css('animation-name', '');
+			$(".page-2 .works-wrap .show-me").css('animation-name');
+			$(".page-2 .works-wrap .show-me").css({'animation-name': 'show', 'animation-direction': 'reverse'});
+
+			$(".page-2 .works-wrap .works-bg .number").css('animation-name', '');
+			$(".page-2 .works-wrap .works-bg .number").css('animation-name');
+			$(".page-2 .works-wrap .works-bg .number").css({'animation-name': 'num', 'animation-direction': 'reverse'});
+		}
+
+
+		if(now == 3) {
+			$(".contact-wrap .bg-contact").css('animation-name', '');
+			$(".contact-wrap .bg-contact").css('animation-name');
+			$(".contact-wrap .bg-contact").css({'animation-name': 'bg', 'animation-direction': 'normal'});
+
+			$(".contact-wrap .moon4").css('animation-name', '');
+			$(".contact-wrap .moon4").css('animation-name');
+			$(".contact-wrap .moon4").css({'animation-name': 'Moon', 'animation-direction': 'normal'});
+
+			$(".contact-wrap .title").css('animation-name', '');
+			$(".contact-wrap .title").css('animation-name');
+			$(".contact-wrap .title").css({'animation-name': 'tit', 'animation-direction': 'normal'});
+
+			$(".contact-wrap .lines div").css('animation-name', '');
+			$(".contact-wrap .lines div").css('animation-name');
+			$(".contact-wrap .lines div").css({'animation-name': 'line', 'animation-direction': 'normal'});
+
+
 			$('.scroll-wrap .bar2').css('width', '100%');
 			$('.scroll-wrap .bar1').css('width', '100%');
 			$('.scroll-wrap .bar3').css('width', '100%');
 			$('.scroll-wrap .bar4').css('width', '200%');
+		}
+		else {
+			$(".contact-wrap .bg-contact").css('animation-name', '');
+			$(".contact-wrap .bg-contact").css('animation-name');
+			$(".contact-wrap .bg-contact").css({'animation-name': 'bg', 'animation-direction': 'reverse'});
+
+			$(".contact-wrap .moon4").css('animation-name', '');
+			$(".contact-wrap .moon4").css('animation-name');
+			$(".contact-wrap .moon4").css({'animation-name': 'Moon', 'animation-direction': 'reverse'});
+
+			$(".contact-wrap .title").css('animation-name', '');
+			$(".contact-wrap .title").css('animation-name');
+			$(".contact-wrap .title").css({'animation-name': 'tit', 'animation-direction': 'reverse'});
+
+			$(".contact-wrap .lines div").css('animation-name', '');
+			$(".contact-wrap .lines div").css('animation-name');
+			$(".contact-wrap .lines div").css({'animation-name': 'line', 'animation-direction': 'reverse'});
 		}
 
 		$("html, body").stop().animate({ "scrollTop": $(".page").eq(now).offset().top + "px" }, 800);
@@ -70,27 +175,15 @@ new Wheel(document, function (direction, e) {
 });
 
 
-/* $(".mouse").mouseover(function () {
-	$(this).css("display", "block");
-});
-$("html, body").mousemove(onMove).hover(onHover, onLeave);
+$(".scroll-wrap .bar").eq(0).trigger("click");
+$(".scroll-wrap .bar").on("click", onBarClick);
 
-function onHover() {
-	$(".mouse").css("display", "block");
+function onBarClick() {
+	$(this).siblings().removeClass("active");
+	$(this).addClass("active");
+	console.log(this);
 }
 
-function onLeave() {
-	$(".mouse").css("display", "none");
-}
-
-function onMove(e) {
-	//console.log(e)
-	var _x = e.pageX;
-	var _y = e.pageY;
-	$(".mouse").css({ "left": _x + "px", "top": _y + "px" });
-	console.log(_x, _y);
-}
- */
 
 
 
