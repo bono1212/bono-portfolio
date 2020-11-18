@@ -95,7 +95,7 @@ html, body {width: 100%; overflow: hidden; background: url(../img/main-1.png) no
 
 /* ******** scroll-down ******************* */
 .scroll-down {width: 8vw; position: relative; bottom: 5%; left: 0; height: 12vh; position: fixed; z-index: 9999;}
-.scroll-down .text {font-size: 1em; color: #f8f8f8; font-weight: 400; transform: rotate(90deg); position: absolute; top: 10%; left: 0; font-family: 'Frank Ruhl Libre', serif; width: 100%;}
+.scroll-down .text {font-size: 0.75em; color: #f8f8f8; font-weight: 400; transform: rotate(90deg); position: absolute; top: 10%; left: 0; font-family: 'Frank Ruhl Libre', serif; width: 100%;}
 .scroll-down .box {width: 1%; border-bottom: 1px solid #f8f8f8; height: 4em; position: absolute; left: 50%; top: 50%; background-color: #f8f8f8; animation-name: down; animation-duration: 1s; animation-iteration-count: infinite; transform-origin: top;}
 
 @keyframes down {
@@ -125,13 +125,13 @@ html, body {width: 100%; overflow: hidden; background: url(../img/main-1.png) no
 /* ********************aboutme***************** */
 .page-1 .about-wrap {width: 100%; position: relative; height: 100vh; /* display: none; */}
 .page-1 .about-wrap .about-small {width: 75%; background: url(../img/About2.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; right: 0; animation-duration: 2s; animation-fill-mode: forwards;}
-.page-1 .about-wrap .moon2 {position: absolute; top: 22%; left: 10%;  animation-duration: 2s; z-index: 9999; animation-fill-mode: forwards;}
+.page-1 .about-wrap .moon2 {position: absolute; top: 22%; left: 10%;  animation-duration: 2s; animation-fill-mode: forwards; z-index: 1;}
 .page-1 .about-wrap .moon2 img {width: 26vw; height: auto;}
 .page-1 .about-wrap .moon2 .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
 .page-1 .about-wrap .about-small .txt {display: flex; flex-direction: column; justify-content: center; align-items: flex-end; position: relative; font-family: 'Roboto', sans-serif; right: 12vw; top: 20%;  animation-duration: 1s;}
 .page-1 .about-wrap .about-small .txt .title-about {font-size: 10vw; color: #f8f8f8;}
 .page-1 .about-wrap .about-small .txt .title-me {font-size: 10vw; color: #f8f8f8; top: 1em; position: absolute;}
-.page-1 .about-wrap .about-small .msg {font-size: 1.5em; position: absolute; top: 22em; right: 0.25em; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8;}
+.page-1 .about-wrap .about-small .msg {font-size: 1.5em; position: absolute; top: 20em; right: 0.25em; font-family: 'Frank Ruhl Libre', serif; color: #f8f8f8;}
 .page-1 .about-wrap .show-me {position: absolute; bottom: 6em; right: 30vw; animation-duration: 1s; animation-fill-mode: forwards;}
 .page-1 .about-wrap .show-me .show-line {position: absolute; width: 30vw; background-color: #f8f8f8; height: 1px; position: absolute; top: 50%; right: -30vw;}
 .page-1 .about-wrap .show-me .show-bg {width: 140px; height: 30px; border-radius: 25px; border: 1px solid #313642; display: flex; justify-content: flex-end; align-items: center; font-size: 0.875em; background-color: #313642; color: #f86953; padding-right: 0.75em; cursor: pointer; box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.3); right: 0;}
@@ -230,7 +230,7 @@ html, body {width: 100%; overflow: hidden; background: url(../img/main-1.png) no
 /* ********************works********************** */
 .page-2 .works-wrap {width: 100%; position: relative; height: 100vh; /* display: none; */}
 .page-2 .works-wrap .works-small {width: 75%; background: url(../img/works.png) no-repeat center; background-size: cover; background-attachment: fixed; position: absolute; height: 100vh; right: 0; animation-duration: 2s; animation-fill-mode: forwards;}
-.page-2 .works-wrap .moon2 {position: absolute; top: 22%; left: 10%;  animation-duration: 2s; z-index: 9999;}
+.page-2 .works-wrap .moon2 {position: absolute; top: 22%; left: 10%;  animation-duration: 2s; z-index: 1;}
 .page-2 .works-wrap .moon2 img {width: 26vw; height: auto;}
 .page-2 .works-wrap .moon2 .line {width: 26vw; height: auto; border-radius: 50%; border: 2px solid #f8f8f8; border-right: 2px solid #404248; transform: rotate(45deg);}
 .page-2 .works-wrap .works-small .txt {display: flex; flex-direction: column; justify-content: center; align-items: flex-end; position: relative; font-family: 'Roboto', sans-serif; right: 7vw; top: 15%; animation-duration: 2s; animation-fill-mode: forwards;}

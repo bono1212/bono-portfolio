@@ -181,8 +181,18 @@ $(".scroll-wrap .bar").on("click", onBarClick);
 function onBarClick() {
 	$(this).siblings().removeClass("active");
 	$(this).addClass("active");
-	console.log(this);
+	//console.log(this);
 }
+
+$(".menu-wrap .contents .menu").eq(0).trigger("click");
+$(".menu-wrap .contents .menu").on("click", onPageChange);
+
+function onPageChange(){
+	$(this).siblings().removeClass("active");
+	$(".page-0").stop().show();
+}
+
+
 
 
 
