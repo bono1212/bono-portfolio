@@ -1,5 +1,43 @@
 var now = 0;
-var wheel = new Wheel(document, function (direction, e) {
+var elem = document;
+var marker = true;
+var delta;
+var direction;
+var interval = 100;
+var counter1 = 0;
+var counter2;
+
+function wheelCb(e) {
+	onWheel(e, wheelFn);
+}
+
+function onWheel(e, cb){
+	counter1++;
+	delta = e.deltaY;
+	direction = delta > 0 ? 'down' : 'up';
+	if (marker) wheelStart(e, cb);
+	return false;
+}
+function wheelStart(e, cb){
+	marker = false;
+	wheelAct(e, cb);
+}
+function wheelAct(e, cb){
+	counter2 = counter1;
+	setTimeout(function(){
+		if (counter2 == counter1) wheelEnd(e, cb);
+		else wheelAct(e, cb);
+	},interval);
+}
+function wheelEnd(e, cb){
+	cb(direction, e);
+	marker = true;
+	counter1 = 0;
+	counter2 = false;
+}
+
+
+function wheelFn(direction, e) {
 	e.preventDefault();
 	var pageY = e.pageY;
 	var pageEnds = [];
@@ -24,15 +62,9 @@ var wheel = new Wheel(document, function (direction, e) {
 		now++;
 	}
 	pageAni();
-	$(".menu-wrap .contents .menu").eq(now).trigger("click");
-
-});
-
-console.log(wheel);
-
-document.addEventListener('wheel', wheel.onWheel, {passive: true});
 
 
+}
 function pageAni() {
 	if(now == 0) {
 		$('.scroll-wrap .bar1').css('width', '200%');
@@ -180,6 +212,7 @@ function pageAni() {
 
 	$("html, body").stop().animate({ "scrollTop": $(".page").eq(now).offset().top + "px" }, 800);
 }
+document.addEventListener('wheel', wheelCb, {passive: true});
 
 
 $(".scroll-wrap .bar").eq(0).trigger("click");
@@ -188,8 +221,6 @@ $(".scroll-wrap .bar").on("click", onBarClick);
 function onBarClick() {
 	$(this).siblings().removeClass("active");
 	$(this).addClass("active");
-	now = $(this).index();
-	pageAni();
 	//console.log(this);
 }
 
@@ -211,21 +242,31 @@ $(".top-right .bar-box").on("click", function () {
 	$(".menu-wrap").stop().slideToggle();
 });
 
-
 /* *******show me********* */
-$(".page-1 .about-wrap .show-me").on("click", function (e) {
-	e.stopPropagation();
+$(".page-1 .about-wrap .show-me").on("click", function () {
+	document.removeEventListener('wheel', wheelCb);
+	$('html, body').css("overflow", "auto").stop().animate({"scrollTop": "+=300px" }, 300);
 	$(".page-1 .about-cont").stop().slideDown();
+	$(".page-2 .work-wrap").stop().slideDown();
 });
 $(".page-1 .skills .skills-bottom .bg").on("click", function () {
-	$(".page-1 .about-cont").stop().slideUp();
+	$(".page-2 .work-wrap").stop().slideUp();
+	$(".page-1 .about-cont").stop().slideUp(400, pageAni);
+	document.addEventListener('wheel', wheelCb);
+	$('html, body').css("overflow", "hidden");
 });
 
 $(".page-2 .works-wrap .show-me").on("click", function () {
+	document.removeEventListener('wheel', wheelCb);
+	$('html, body').css("overflow", "auto").stop().animate({"scrollTop": "+=300px" }, 300);
+	$(".page-1 .about-cont").stop().slideDown();
 	$(".page-2 .work-wrap").stop().slideDown();
 })
 $(".page-2 .work-wrap .skills-bottom .bg").on("click", function () {
-	$(".page-2 .work-wrap").stop().slideUp();
+	$(".page-1 .about-cont").stop().slideUp();
+	$(".page-2 .work-wrap").stop().slideUp(400, pageAni);
+	document.addEventListener('wheel', wheelCb);
+	$('html, body').css("overflow", "hidden");
 })
 
 
