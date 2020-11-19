@@ -11,6 +11,8 @@ function wheelCb(e) {
 	onWheel(e, wheelFn);
 }
 
+
+
 function onWheel(e, cb){
 	counter1++;
 	delta = e.deltaY;
