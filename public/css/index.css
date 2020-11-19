@@ -7,7 +7,7 @@
 
 /* font-family: 'Frank Ruhl Libre', serif; font-family: 'Roboto', sans-serif; font-family: 'Fredericka the Great', cursive; font-family: 'Mrs Saint Delafield', cursive;*/
 
-html, body {width: 100%; overflow: hidden; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed;}
+html, body {width: 100%; overflow-y: hidden; background: url(../img/main-1.png) no-repeat center; background-size: cover; background-attachment: fixed;}
 .header-wrapper .header-top {width: 100%; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center; position: fixed; z-index: 9999;}
 .header-wrapper .header-top .top-left {width: 90%; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0;}
 .header-top .right-wrap img {width: 150px; height: auto; padding: 25px;}
@@ -276,6 +276,11 @@ html, body {width: 100%; overflow: hidden; background: url(../img/main-1.png) no
 .page-2 .work-wrap .publishing .main-publish .sample {width: 80%; display: flex; justify-content: center; align-items: center; padding: 5em 2em;}
 .page-2 .work-wrap .publishing .main-publish .sample .webs {width: 24%; display: flex; justify-content: center; position: relative; transition: all 0.5s; margin: 0 2.5em;}
 .page-2 .work-wrap .publishing .main-publish .sample .webs img {width: 100%; height: auto; transition: all 5s;}
+
+.page-2 .work-wrap .publishing .main-publish .sample .webs .modal {width: 70vw; height: 70vh; background-color: green; position: absolute; top: 0%; left: 0%; display: flex; z-index: 9999; justify-content: center; align-items: center;}
+.page-2 .work-wrap .publishing .main-publish .sample .webs .modal .window {display: flex; justify-content: flex-end; align-items: flex-start; width: 90%; height: 90%; background-color: red;}
+.page-2 .work-wrap .publishing .main-publish .sample .webs .modal .window .close {font-size: 2em;color: #111 ; border: 1px solid #f8f8f8; background-color: #f8f8f8;}
+
 .page-2 .work-wrap .publishing .main-publish .sample .webs .cover {width: 100%; background-color: #f86953; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #f8f8f8; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
 .page-2 .work-wrap .publishing .main-publish .sample .webs:hover .cover {opacity: 1;}
 .page-2 .work-wrap .publishing .main-publish .sample .webs:hover {transform: scale(1.1)}
