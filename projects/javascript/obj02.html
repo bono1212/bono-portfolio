@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+        <p id="carname"></p>
+        <p id="carspeed"></p>
+        <p id="carcolor"></p>
+    <script>
+        var car = {
+            name :'song',
+            speed : 50,
+            color : 'yellow',
+            start : function(){
+                return this.speed+10;
+            }
+        };
+            document.getElementById("carname").innerHTML="name: "+car.name;
+            document.getElementById("carcolor").innerHTML="color: "+car.color;
+            document.getElementById("carspeed").innerHTML="speed: "+car.start();
+    </script>
+</body>
+</html>

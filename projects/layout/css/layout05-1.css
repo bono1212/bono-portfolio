@@ -1,0 +1,318 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    border: 0;
+}
+
+body {
+
+    color: #333;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: darkseagreen;
+}
+
+header h1 {
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+
+header nav {
+    width: 700px;
+    float: right;
+    padding-top: 60px;
+    padding-right: 20px;
+}
+
+header nav ul.gnb {
+    width: 100%;
+    /*border: 1px solid #111;*/
+}
+
+header nav ul.gnb > li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+header nav ul.gnb > li > a {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    background-color: darkkhaki;
+    color: #000;
+    box-sizing: border-box;
+    border-right: 1px solid #fff;
+}
+
+
+header nav ul.gnb > li > ul.sub {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 40px;
+    box-sizing: border-box;
+    border: 1px solid #111;
+    border-right: 0;
+    display: none;
+}
+
+header nav ul.gnb > li:last-child > ul.sub {
+    border-right: 1px solid #111;
+}
+
+header nav ul.gnb > li > ul.sub > li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+header nav ul.gnb > li > ul.sub > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+header nav ul.gnb > li > ul.sub > li > a:hover {
+    background: blue;
+}
+
+
+
+header nav ul.gnb > li:last-child > a {
+    border-right: 0;
+}
+
+header nav ul.gnb > li:hover > a {
+    background-color: darkslateblue;
+}
+
+.main-visual {
+    width: 100%;
+    height: 300px;
+    background-color: darkslategrey;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.main-visual ul.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+}
+.main-visual ul.slide li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.contents {
+    width: 100%;
+    height: 200px;
+    background-color: darkcyan;
+}
+
+.contents .notice_gal {
+    width: 600px;
+    height: 200px;
+    background-color: cadetblue;
+    float: left;
+    position: relative;
+    
+}
+
+
+.contents .notice_gal .moveleft100 {
+    left: 102px;
+}
+
+
+.contents .notice_gal h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px 10px 0 0;
+    background: #fff;
+    color: orangered;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    border-bottom: 0;
+    z-index: 2;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.contents .notice_gal h2.on{
+    border:1px solid #333;
+    background: #fff;
+    color: #333;
+    border-bottom: 0;
+}
+
+.contents .notice_gal ul {
+    display: none;
+    width: 100%;
+    height: 171px;
+    position: absolute;
+    left: 0;
+    top: 29px;
+    background: #fff;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+.contents .notice_gal ul.on {
+    background: #fff;
+    border: 1px solid #333;
+    color: #333;
+   display: block;
+}
+
+
+.contents .notice_gal ul.not {
+
+
+}
+
+.contents .notice_gal ul.not > li {
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+}
+
+.contents .notice_gal ul.not > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.contents .notice_gal ul.not > li > a > span {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.contents .notice_gal ul.gal {
+    width: 100%;
+}
+
+.contents .notice_gal ul.gal li {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 35px;
+    margin-top: 25px;
+}
+
+.contents .notice_gal ul.gal li:nth-child(1) {
+    background-image: url(../img/gal1.jpg);
+}
+
+.contents .notice_gal ul.gal li:nth-child(2) {
+    background-image: url(../img/gal2.jpg);
+}
+
+.contents .notice_gal ul.gal li:nth-child(3) {
+    background-image: url(../img/gal3.jpg);
+}
+
+.contents .notice_gal ul.gal li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.contents .banner {
+    width: 300px;
+    height: 200px;
+    background-color: gold;
+    float: left;
+    text-align: center;
+}
+
+.contents .baro {
+    width: 300px;
+    height: 200px;
+    background-color: greenyellow;
+    float: left;
+    text-align: center;
+}
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: darkolivegreen;
+}
+
+footer .blogo {
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    float: left;
+}
+
+footer .bmenu {
+    width: 1000px;
+    height: 50px;
+    background-color: purple;
+    line-height: 50px;
+    float: left;
+}
+
+footer .copy {
+    width: 1000px;
+    line-height: 50px;
+    height: 50px;
+    background-color: palegreen;
+    float: left;
+}

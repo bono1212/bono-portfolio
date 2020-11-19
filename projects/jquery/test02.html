@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <script>
+    $(document).ready(function(){
+        //속성을 추출 합니다
+        var src = $("script").attr("src");
+        alert(src);
+        
+        var src2= $("#image1").attr("src");
+        console.log(src2);
+        
+        var alt1 = $("#image1").attr("alt");
+        console.log(alt1);
+    });//ready end
+    </script>
+    <img src="img/img01.jpg" alt="송중기1" id="image1">
+</body>
+</html>
+
+
+
+
+
+

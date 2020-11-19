@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스를 클릭하여 박스크기와 색상 변경</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        //var zWidth=('div').width;
+        var xWidth=100;
+        var xHeight=100;
+       // console.log(zWidth);
+        $('div').click(function(){
+           $(this).addClass('box').width(xWidth).height(xHeight);
+            xWidth=xWidth-10;
+            xHeight=xHeight-10;
+        });
+    });
+    </script>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 5px;
+            background-color: yellow;
+        }
+        .box{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>박스1</div>
+    <div>박스2</div>
+    <div>박스3</div>
+    <div>박스4</div>
+    <div>박스5</div>
+</body>
+</html>

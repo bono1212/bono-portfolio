@@ -1,0 +1,254 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    border: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    color: #222328;
+}
+
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    width: 200px;
+    height: 650px;
+    float: left;
+    background: white;
+}
+
+header h1 {
+    width: 200px;
+    padding: 30px 0;
+    text-align: center;
+    background: #222;
+    color: yellow;
+}
+
+header nav {
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+header nav ul.gnb {
+    width: 100%;
+}
+
+header nav ul.gnb > li {
+    width: 100%;
+    text-align: center;
+}
+
+header nav ul.gnb > li > a {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #fff;
+}
+
+header nav ul.gnb > li > ul.sub {
+    width: 100%;
+    display: none;
+}
+
+header nav ul.gnb > li > ul.sub > li {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+header nav ul.gnb > li > ul.sub > li:hover {
+    background: black;
+    color: red;
+}
+
+header nav ul.gnb > li > ul.sub > li > a {
+    display: block;
+}
+
+header nav ul.gnb > li:hover > a {
+    background: black;
+    color: #fff;
+}
+
+.contents {
+    width: 800px;
+    height: 650px;
+    background: #ccc;
+    float: left;
+}
+
+.contents .main {
+    width: 100%;
+    height: 350px;
+    background: grey;
+    line-height: 350px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contents .main a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.contents .main a:hover {
+    background: yellow;
+}
+
+.contents .notice_gal {
+    width: 300px;
+    height: 200px;
+    background: blue;
+    float: left;
+}
+
+.contents section h2 {
+    width: 70px;
+    height: 30px;
+    background: pink;
+    border-radius: 6px 10px 0 0;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.contents .notice_gal ul {
+    width: 100%;
+    height: 164px;
+    background: #fff;
+    padding: 0 5px;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+.contents .notice_gal ul li {
+    font-size: 8px;
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.contents .notice_gal ul li a {
+    display: block;
+    border-bottom: 1px solid #111;
+}
+
+.contents .notice_gal ul li:hover {
+    background: orange;
+    color: #fff;
+}
+
+.contents .notice_gal ul li a span {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.contents .gal {
+    width: 350px;
+    height: 200px;
+    background: red;
+    float: left;
+}
+
+.contents .baro {
+    width: 150px;
+    height: 200px;
+    background: orange;
+    float: left;
+}
+
+.contents .gal ul {
+    text-indent: -9999px;
+}
+
+.contents .gal ul li {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    float: left;
+    margin-top: 20px;
+}
+
+.contents .gal ul li:nth-child(1) {
+    background-image: url(../img/gal1.jpg);
+}
+
+.contents .gal ul li:nth-child(2) {
+    background-image: url(../img/gal2.jpg);
+}
+
+.contents .gal ul li:nth-child(3) {
+    background-image: url(../img/gal3.jpg);
+}
+
+.contents .gal ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 800px;
+    height: 100px;
+    background: brown;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer .copy {
+    width: 600px;
+    height: 100px;
+    background: aqua;
+    line-height: 100px;
+    float: left;
+}
+
+footer .sns {
+    width: 200px;
+    height: 50px;
+    background: lightblue;
+    line-height: 50px;
+    float: left;
+}
+
+footer .fam {
+    width: 200px;
+    height: 50px;
+    background: lightgreen;
+    line-height: 50px;
+    float: left;
+}

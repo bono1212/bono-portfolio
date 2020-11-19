@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>html</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+
+</head>
+
+<body>
+    <h1>header - 0</h1>
+    <h2>header - 1</h2>
+    <div class="box">
+        <img src="img/img01.jpg" alt="iu1">
+    </div>
+    <script>
+        $(document).ready(function() {
+            var text = $('h1').text();
+            console.log(text);
+            var html = $('h2').html();
+            console.log(html);
+            var html2 = $('.box').html();
+            console.log(html2);
+        });
+    </script>
+</body>
+
+</html>

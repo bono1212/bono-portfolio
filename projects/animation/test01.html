@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>anim</title>
+    <style type="text/css">
+        div{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            border-radius: 50%;
+        }
+        .box1{
+            background: green;
+            left: 0;
+            top: 0;
+            animation-name: sample1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes sample1{
+            from{background: green;}
+            to{background: yellow;}
+        }
+        .box2{
+            background: blue;
+            left: 50px;
+            top: 150px;
+            animation: sample2 2s infinite;
+          
+        }
+        @keyframes sample2{
+            0%{left: 50px;}
+            25%{left: 300px;}
+            50%{left: 500px; top: 200px;}
+            100%{left: 700px; background: red; top: 300px;}
+        }
+        .box3{
+            background: pink;
+            left: 0;
+            top: 300px;
+            animation: sample3 2s;
+        }
+        @keyframes sample3{
+            0%{}
+            50%{transform: translate(300px, 300px);}
+            100%{transform: translate(0, 0);}
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

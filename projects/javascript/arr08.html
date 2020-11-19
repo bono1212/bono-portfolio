@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배열에 공백 데이터 포함</title>
+</head>
+<body>
+    <script>
+    var city=["seoul",, "busan",,"incheon"];
+        function printArr(){
+            for (var i=0; i<city.length; i++){
+                document.write("index number ["+i+"]="+city[i]+"<br>");
+            }
+        }
+        printArr();
+    </script>
+</body>
+</html>

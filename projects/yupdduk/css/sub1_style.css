@@ -1,0 +1,99 @@
+#sub1_main{
+    margin-top: 120px;
+}
+.tit{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+}
+.tit h2{
+    font-weight: 500;
+    font-size: 2.2rem;
+    color: #8c6239;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.tit p{
+    font-size: 1.5rem;
+    color: #8c6239;
+    margin: 0;    
+}
+
+.tit p span{
+    color: #de1d24;
+    padding-left: 10px;
+}
+
+.slide_tab{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.slide_tab li{
+    float: left;
+    width: 24%;
+    line-height: 70px;
+    text-align: center;
+    font-size: 18px;
+    height: 70px;
+    border-bottom: 1px solid #8c6239;
+    background: #f7f0e4;
+    color: #8c6239;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.slide_tab li.on{
+    border: 1px solid #8c6239;
+    background: #fff;
+    border-bottom: 0;
+}
+
+.contents{
+    width: 100%;
+    height: 850px;
+    position: relative;
+}
+
+.contents section{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.contents section.on{
+    display: block;
+}
+
+.contents section h3{
+    color: #8c6239;
+    border-bottom: 1px solid #f9f5ee;
+    font-size: 28px;
+    font-weight: 100;
+    display: inline-block;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.contents section h3::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: #f9f5ee;
+    left: 0;
+    top: 5px;
+    z-index: -1;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+        .box{
+            width: 600px;
+            height: 600px;
+            background-color: pink;
+            position: relative;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background: rgba(0,0,0,0.4);
+            border-radius: 50%;
+            line-height: 100px;
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+        }
+        .c1{
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 2;
+        }
+        .c2{
+            position: absolute;
+            right: 0;
+            top: 10px;
+        }
+        .c3{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .c4{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <section class="box">
+        <div class="c1">원1</div>
+        <div class="c2">원2</div>
+        <div class="c3">원3</div>
+        <div class="c4">원4</div>
+    </section><!--//.box-->
+</body>
+</html>

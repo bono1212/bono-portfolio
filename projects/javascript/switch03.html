@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>switch03</title>
+</head>
+<body>
+    <script>
+    //heretgeches on sar odrg n awad 
+        //3,4,5 sar n hawar 6,7,8 sar n zun 9,10,11sar n namar, 12-2sar n owol
+        
+        var season = prompt("3,4,5 sar n hawar 6,7,8 sar n zun 9,10,11sar n namar, 12-2sar n owol")
+        var month;
+        switch (season){
+            case "3": 
+            case "4": 
+            case "5": 
+                season = "spring";
+                break; 
+            case "6": 
+            case "7": 
+            case "8": 
+                season = "summer";
+                break;
+            case "9": 
+            case "10": 
+            case "11": 
+                season = "autumn";
+                break;
+            case "12": 
+            case "1": 
+            case "2": 
+                season = "winter";
+                break;
+            default:
+                season="wrong";
+        }
+        document.write(season);
+          
+    </script>
+</body>
+</html>

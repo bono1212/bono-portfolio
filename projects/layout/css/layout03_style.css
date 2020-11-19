@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    z-index: 100;
+    display: none;
+}
+.modal .inner_modal{
+    width: 500px;
+    height: 500px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.modal .inner_modal button{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 50px; right: 50px;
+    font-size: 20px;
+}
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clarfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: #bbb;
+    text-align: center;
+}
+
+header h1 {
+    width: 20%;
+    height: 100px;
+    background-color: forestgreen;
+    float: left;
+}
+
+header nav {
+    width: 800px;
+    margin-top: 40px;
+    margin-right: 20px;
+    float: right;
+}
+
+header nav >ul.menu {
+    width: 100%
+}
+
+header nav> ul.menu >li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+header nav >ul.menu> li> a {
+    display: block;
+    border: 1px solid #ddd;
+    line-height: 50px;
+}
+header nav >ul.menu> li:hover > a{
+    background: #111;
+    color: #fff;
+}
+header nav >ul.menu> li> ul.sub{
+    width: 100%;
+    border: 1px solid #111;
+    box-sizing: border-box;
+    background: #fff;
+    display: none;
+}
+header nav >ul.menu> li> ul.sub >li{
+    width: 100%; 
+    height: 40px;
+    line-height: 40px;
+}
+header nav >ul.menu> li> ul.sub >li>a{
+    display: block;
+    width: 100%;
+    height: 100%
+}
+header nav >ul.menu> li> ul.sub >li>a:hover{
+    background: #111;
+    color: #fff;
+}
+.img {
+    width: 100%;
+    height: 300px;
+    background-color: darkslategray;
+    text-align: center;
+    position: relative;
+}
+
+.img h3{
+    position: absolute;
+    text-indent: -9999px;
+    font-size: 0;
+}
+
+.img ul.slide{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+}
+.img ul.slide li{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.contents {
+    width: 100%;
+    height: 200px;
+    background-color: cadetblue;
+    margin-bottom: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contents .notice {
+    width: 400px;
+    height: 200px;
+    background-color: blueviolet;
+    float: left;
+}
+
+.contents .banner {
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+    float: left;
+}
+
+.contents .baro {
+    width: 400px;
+    height: 200px;
+    background-color: burlywood;
+    float: left;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: firebrick;
+    text-align: center;
+}
+
+footer .logo {
+    width: 20%;
+    height: 100px;
+    float: left;
+    background-color: aqua
+}
+
+footer .me {
+    width: 80%;
+    height: 50px;
+    background-color: darkslategray;
+    float: left;
+}
+
+footer .copy {
+    width: 80%;
+    height: 50px;
+    background-color: darkslateblue;
+    float: left;
+}

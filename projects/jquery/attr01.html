@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>attr</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // $(".img_box img").attr('src','img/img01.jpg');
+            $(".img_box img").attr({
+                src: 'img/img01.jpg',
+                alt: '송중기1'
+            });
+        }); //ready end
+    </script>
+</head>
+
+<body>
+    <div class="img_box">
+        <img src="img/img02.jpg" alt="송중기2">
+    </div>
+    <img src="img/img01.jpg" alt="송중기1">
+    <img src="img/img03.jpg" alt="송중기3">
+</body></html>

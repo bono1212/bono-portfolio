@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>each() 메서드</title>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+    var city=["서울","대구","대전","부산"];       
+        $.each(city,function(index, value){
+            console.log(index + " : " + value);
+        });
+        
+        var subjectInfo={
+            subject:'html',
+            grade : 1,
+            days : 20
+        }
+        $.each(subjectInfo,function(key,value){
+            document.write(key + ":" + value + "<br>");
+        })
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

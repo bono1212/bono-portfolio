@@ -1,0 +1,244 @@
+.modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    display: none;
+    left: 0;
+    top: 0;
+}
+
+.modal .inner_modal{
+    width: 800px;
+    height: 600px;
+    background: #ccc;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #111;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+}
+
+.modal .inner_modal{
+    width: 800px;
+    height: 800px;
+    background: #f1f2f3;
+    position: relative;
+}
+
+.modal .inner_modal .title{
+    width: 100%;
+    height: 50px;
+}
+
+.modal .inner_modal .title h3{
+    height: 50px;
+    font-size: 28px;
+    color: #630505;
+    float: left;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    left: 350px;
+}
+
+.modal .txt1{
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 45px;
+}
+
+.modal .txt1 p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.modal .txt1 p span{
+    color: red;
+    padding: 0 2px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.modal .txt1 input{
+    margin-bottom: 20px;
+    width: 700px;
+    margin-top: 5px;
+}
+
+.modal .txt1 textarea{
+    width: 700px;
+    height: 120px;
+    margin-top: 5px;
+}
+
+.modal .upload{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+.modal .upload p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+.modal .inner_modal button.send {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    width: 100px;
+    height:30px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    background: #630505;
+    color: #fff;
+}
+
+.modal button.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.join{
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+
+.join ul{
+    width: 100%;
+    height: 600px;
+}
+
+.join ul li{
+    width: 500px;
+    height: 600px;
+    float: left;
+    margin: 0 50px;
+    position: relative;
+}
+
+.join ul li a h2{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 36px;
+    position: absolute;
+    left: 0;
+    top: 300px;
+    color: #111;
+    transition: all .6s;
+}
+
+.join ul li a .color{
+    width: 500px;
+    height: 600px;
+    background-color: coral;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .6s;
+}
+
+.join ul li:hover .color{
+    opacity: 0.8;
+}
+
+.join ul li:hover h2{
+    transform: scale(1.1);
+    font-weight: 400;
+    color: #fff;
+}
+
+.join ul li a img{
+    width: 500px;
+    height: 600px;
+}
+
+
+.join .txt_box{
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
+.join .txt_box h3{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    border-bottom: 5px solid #630505;
+    width: 190px;
+    height: 50px;
+}
+
+.join .txt_box p{
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+
+
+
+/*partners*/
+.partners {
+    width: 1280px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.partners ul {
+    line-height: 200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.partners ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+.partners ul li a {
+    display: block;
+}
+
+.partners ul li a img {
+    width: 120px;
+    height: 50px;
+}
+
+.partners ul li {
+    animation: overAni 20s linear infinite;
+}
+
+@keyframes overAni {
+    0% {
+        transform: translateX(0);
+    }
+
+    99% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

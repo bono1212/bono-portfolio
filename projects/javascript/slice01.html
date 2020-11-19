@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>slice 메소드</title>
+</head>
+<body>
+    <script>
+        var kdata=["서울", "부산", "구포", "대구", "인천", "대전", "세종"];
+        var str1 = kdata.slice(0,4);
+        document.write("부분배열1 : "+str1+"<br>");
+        var str2 = kdata.slice(2,-1);
+        document.write("부분배열2 : "+str2+"<br>");
+        var str3 = kdata.slice(-4,-2);
+        document.write("부분배열3 : "+str3+"<br>");
+        var str4 = kdata.slice(1,6);
+        document.write("부분배열4 : "+str4+"<br>");
+    </script>
+</body>
+</html>

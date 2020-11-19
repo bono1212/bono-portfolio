@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>switch02</title>
+</head>
+<body>
+    <script>
+    var site=prompt("naver, daum, nate, google dotros ashigladg portal?");
+        var url;
+        
+        switch(site){
+            case "google" :
+                url="www.google.com";
+                break;
+             case "daum" :
+                url="www.daum.net";
+                break;
+             case "naver" :
+                url="www.naver.com";
+                break;
+             case "nate" :
+                url="www.nate.com";
+                break;
+            default:
+                alert=("no answer");
+        }
+        /*document.write(url);*/
+        location.href="http://"+url;
+        
+    </script>
+</body>
+</html>

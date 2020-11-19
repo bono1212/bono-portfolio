@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p id="upspeed"></p>
+    <p id="downspeed"></p>
+    <script>
+    var car = {
+            name :'sonata',
+            speed : 50,
+            color : 'white',
+            speedup : function(){
+                return this.speed+10;
+            },
+            speeddown : function(){
+                var low=this.speed-10;
+                return low;
+            }
+        };
+            document.getElementById("upspeed").innerHTML="upspeed:" +car.speedup(); 
+            document.getElementById("downspeed").innerHTML="downspeed:" +car.speeddown(); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap');
+
+img {
+    border: 0;
+}
+
+body {
+    color: #111;
+    min-width: 1200px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 180px;
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+}
+
+header .h_top {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Roboto', sans-serif;
+}
+
+header .h_top ul.h_top_left {
+    float: left;
+}
+
+header .h_top ul.h_top_left li {
+    float: left;
+    margin-left: 20px;
+    line-height: 30px;
+
+}
+
+header .h_top ul.h_top_left li i:last-child {
+    margin-right: 10px;
+}
+
+header .h_top ul.h_top_right {
+    float: right;
+    font-size: 12px;
+    text-align: center;
+}
+
+header .h_top ul.h_top_right li {
+    float: left;
+    line-height: 30px;
+    width: 120px;
+}
+
+header .h_top ul.h_top_right i:last-child {
+    width: 30px;
+    height: 30px;
+}
+
+header .h_top_rigth search {
+    width: 200px;
+    height: 10px;
+    border-radius: 10px 10px;
+}
+
+header .h_top ul.h_top_right i {
+    width: 70px;
+    line-height: 30px;
+}
+
+header .h_mid {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    position: relative;
+}
+
+header .h_bottom {
+    width: 100%;
+    height: 31px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    box-sizing: border-box;
+}
+
+header .h_bottom a {
+    float: right;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+
+header .h_bottom i {
+    font-size: 18px;
+}
+
+header .h_bottom nav {
+    width: 50%;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/*header nav .nav_bg {
+    width: 100%;
+    height: 180px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    display: none;
+}*/
+
+header .h_bottom nav > ul {
+    width: 100%;
+    text-align: center;
+}
+
+header .h_bottom nav > ul > li {
+    width: 16.66%;
+    float: left;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+header .h_bottom nav > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+header .h_bottom nav > ul > li:nth-child(1) {
+    color: #630505;
+}
+
+header .h_bottom nav > ul > li:hover > a {
+    background: #630505;
+    color: #fff;
+
+}
+
+header .h_bottom nav > ul > li > ul.sub {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    color: #111;
+    font-size: 13px;
+    display:none;
+}
+
+header .h_bottom nav > ul > li > ul.sub > li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #fff;
+}
+
+header .h_bottom nav > ul > li > ul.sub > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+header .h_bottom nav > ul > li > ul.sub > li:hover > a{  
+    background: #630505;  
+    color: #fff;
+}
+
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: 350px;
+    background: #630505;
+    position: relative;
+}
+
+footer .f_bg {
+    width: 800px;
+    height: 314px;
+    background-image: url(../img/map.png);
+    position: absolute;
+    left: 1000px;
+    top: 50px;
+    background-size: 500px;
+    background-repeat: no-repeat;
+}
+
+footer .f_left {
+    padding-top: 70px;
+    float: left;
+}
+
+footer .f_left ul {
+    width: 800px;
+}
+
+footer .f_left ul li {
+
+    line-height: 1.5;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+footer .f_left .copy {
+    width: 100%;
+    font-size: 12px;
+    color: #fff;
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer .f_right {
+    float: right;
+    width: 345px;
+    height: 120px;
+    padding-top: 120px;
+}
+
+footer .bg {
+    background-image: url(../img/map.png);
+    width: 400px;
+    height: 100px;
+}
+
+footer .f_right img {
+    width: 345px;
+    height: 100px;
+    padding-right: 50px;
+}

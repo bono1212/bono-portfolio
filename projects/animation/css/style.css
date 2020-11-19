@@ -1,0 +1,73 @@
+*{margin: 0; padding: 0;}
+#wrap{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/background.png);
+    min-width: 1600px;
+    overflow: hidden;
+}
+.train{
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    animation-name: trainAni;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+}
+@keyframes trainAni{
+    0%{}
+    100%{right: 50%;}
+}
+.biking{
+    position: absolute;
+    right: 70%;
+    top: 150px;
+}
+.biking img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.biking img:nth-child(2){
+    transform: rotate(70deg);
+    transform-origin: top;
+    animation: bikingAni 2s infinite;
+}
+@keyframes bikingAni{
+    0%{transform: rotate(70deg);}
+    50%{transform: rotate(-70deg);}
+    100%{transform: rotate(70deg);}
+}
+.swing{
+    position: absolute;
+    right: 30%;
+    top: 250px;
+}
+.swing img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.swing img:nth-child(2){
+    transform: rotate(30deg);
+    transform-origin: top;
+    animation: swingAni 2s infinite;
+    
+}
+@keyframes swingAni{
+    0%{transform: rotate(30deg);}
+    50%{transform: rotate(-30deg);}
+    100%{transform: rotate(30deg);}
+}
+
+
+
+
+
+
+
+
+

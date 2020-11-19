@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>inline, block, inline block</title>
+    <style>
+        ul {
+            list-style: none;
+            /*tseg baihgvi bolgoh*/
+        }
+
+        span {
+            background: #aaa;
+            margin-right: 100px;
+            margin-left: 100px;
+            padding: 10px;
+            display: block;
+            width: 200px;
+            height: 50px;
+        }
+        i {
+            background: #ddd;
+        }
+
+        li {
+            display: inline;
+            margin-right: 50px;
+            width: 100px;
+            height: 40px;
+            background-color: red;
+        }
+        ul.inline-block >li{
+            width: 200px;
+            height: 30px;
+            display: inline-block;
+            background-color: blue;
+        }
+        .strong{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <span>inline1-inliniig holbogch!</span>
+    <i>inline2-italic!</i>
+    <strong>inline3-chuhal tod text!</strong>
+    <nav>
+        <ul>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li><a href="#">menu4</a></li>
+        </ul>
+    </nav>
+    <ul class="inline-block">
+        <li>inline block1</li>
+        <li>inline block2</li>
+        <li>inline block3</li>
+        <li>inline block4</li>
+    </ul>
+</body>
+
+</html>

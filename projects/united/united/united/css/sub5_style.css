@@ -1,0 +1,214 @@
+.contact{
+    width: 1280px;
+    height: 900px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 200px;
+    color: #630505;
+    
+}
+
+.contact .contact_l{
+    width: 500px;
+    height: 700px;
+    float: left;
+    background: #f1f2f3;
+    margin-left: 50px;
+}
+
+.contact .contact_l .title{
+    width: 100%;
+    height: 50px;
+    padding-top: 30px;
+}
+
+.contact .contact_l .title h3{
+    height: 50px;
+    font-size: 28px;
+    color: #630505;
+    padding-top: 30px;
+    float: left;
+    text-align: center;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+.contact .contact_l .title .fa-phone{
+   font-size: 28px;
+    float: left;
+    width: 50px;
+    height: 50px;
+    padding-top: 30px;
+    padding-left: 50px;
+    color: #630505;
+    font-weight: bold;
+}
+
+.contact .contact_l .txt{
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+.contact .contact_l p{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px 0;
+    color: #650303;
+}
+
+.contact .contact_l span{
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contact .contact_l i{
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+
+.contact .contact_r{
+    width: 500px;
+    height: 700px;
+    float: left;
+    background: #f1f2f3;
+    margin-left: 100px;
+    position: relative;
+}
+
+.contact .contact_r .title{
+    width: 100%;
+    height: 50px;
+    padding-top: 30px;
+}
+
+.contact .contact_r .title h3{
+    height: 50px;
+    font-size: 28px;
+    color: #630505;
+    padding-top: 30px;
+    float: left;
+    text-align: center;
+    padding-left: 80px;
+    font-weight: bold;
+}
+
+.contact .contact_r .title .fa-comments{
+    font-size: 28px;
+    float: left;
+    width: 50px;
+    height: 50px;
+    padding-top: 30px;
+    padding-left: 50px;
+    color: #630505;
+    font-weight: bold;
+}
+
+.contact .txt1{
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 70px;
+    
+}
+
+.contact .txt1 p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact .txt1 p span{
+    color: red;
+    padding: 0 2px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contact .txt1 input{
+    margin-bottom: 20px;
+    width: 450px;
+    margin-top: 5px;
+}
+
+.contact .txt1 textarea{
+    width: 450px;
+    height: 120px;
+    margin-top: 5px;
+}
+
+.contact .txt1 button{
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    width: 70px;
+    height: 20px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    background: #630505;
+    color: #fff;
+}
+
+.map{
+    width: 900px;
+    margin: 0 auto;
+    height: 500px;
+    background: #ddd;
+    margin-bottom: 80px;
+}
+
+
+/*partners*/
+.partners {
+    width: 1280px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.partners ul {
+    line-height: 200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.partners ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+.partners ul li a {
+    display: block;
+}
+
+.partners ul li a img {
+    width: 120px;
+    height: 50px;
+}
+
+.partners ul li {
+    animation: overAni 20s linear infinite;
+}
+
+@keyframes overAni {
+    0% {
+        transform: translateX(0);
+    }
+
+    99% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

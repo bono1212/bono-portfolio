@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="carname"></p>
+    <p id="carcolor"></p>
+    <p id="carspeed"></p>
+    <script>
+        var car = new Object(); //obj gargah
+        car.name = 'Sonata' //
+        car.speed = 100;
+        car.color = 'blue';
+        car.speedup = function() {
+            return this.speed + 10;
+        };
+        var cname = document.getElementById("carname");
+        var colname = document.getElementById("carcolor");
+        var cspeed = document.getElementById("carspeed");
+            cname.textContent='car name:'+car.name;
+            colname.textContent='car color:'+car.color;
+            cspeed.textContent='car speed:'+car.speedup();
+    </script>
+</body>
+
+</html>

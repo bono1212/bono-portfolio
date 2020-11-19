@@ -1,0 +1,424 @@
+/*main_visual*/
+
+.main_visual {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 80px;
+    display: block;
+    margin-top: 150px;
+}
+
+.main_visual ul.main_banner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 650px;
+    border-bottom: 1px solid #111;
+}
+
+.main_visual ul.main_banner li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 650px;
+}
+
+.main_visual .dot {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+.main_visual .dot a {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.7;
+    float: left;
+    margin: 5px;
+}
+
+.main_visual .ltgt {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 1200px;
+}
+
+.main_visual .ltgt a {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 200px;
+    display: block;
+    color: #333;
+    font-size: 100px;
+    line-height: 200px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.main_visual .ltgt a:nth-child(1) {
+    left: 0;
+}
+
+.main_visual .ltgt a:nth-child(2) {
+    right: 0;
+}
+
+.main_visual .dot a.active {
+    opacity: 1;
+}
+
+
+/*contents*/
+
+.intro {
+    width: 100%;
+    margin-bottom: 150px;
+    padding-top: 150px;
+    position: relative;
+}
+
+.intro::before{
+    content: "";
+    width: 800px;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+}
+
+.intro_left {
+    float: left;
+    width: 600px;
+    height: 400px;
+    box-sizing: border-box;
+    padding-right: 70px;
+}
+
+.intro_left h2 {
+    font-size: 40px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.intro_left p {
+    font-size: 20px;
+    line-height: 1.6;
+    padding-right: 50px;
+    padding: 20px 0;
+}
+
+.intro_right {
+    float: left;
+    width: 600px;
+}
+
+.history {
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.history_left {
+    float: left;
+    width: 600px;
+}
+
+.history_right {
+    float: left;
+    width: 600px;
+    height: 400px;
+    box-sizing: border-box;
+    padding-left: 70px;
+}
+
+.history_right h2 {
+    font-size: 40px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.history_right p {
+    font-size: 20px;
+    line-height: 1.6;
+    padding-right: 50px;
+    padding: 20px;
+}
+
+.events {
+    width: 100%;
+    height: 300px;
+    background: #e8e8e8;
+    margin-bottom: 50px;
+}
+
+.events ul {
+    margin: 0 auto;
+    width: 900px;
+}
+
+.events ul li {
+    float: left;
+    width: 300px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.events ul li .icon {}
+
+.events ul li .txt_box {
+    margin: 20px;
+}
+
+.events ul li .txt_box h3 {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.events ul li .txt_box p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.events ul li .txt_box .morebtn {
+    border-radius: 15px;
+    width: 80px;
+    height: 25px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.events ul li .icon img {
+    width: 100px;
+    height: 70px;
+}
+
+/*attachment*/
+
+.big_image{
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/big.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.big_image .apply{
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 40px;
+    border: 1px solid #630505;
+    border-radius: 20px;
+    background-color: #630505;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+}
+
+.big_image button {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #630505;
+    position: absolute;
+    left: 50%;
+    background: #fff;
+    transform: translateX(-50%);
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.big_image .appbtn {
+    bottom: 200px;
+}
+
+.big_image .downbtn {
+    bottom: 150px;
+}
+
+
+/*projects*/
+.projects {
+    width: 100%;
+    height: 550px;
+    margin-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.projects ul {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.projects .pro {
+    text-align: center;
+    width: 1400px;
+}
+
+.projects h3 {
+    width: 600px;
+    height: 150px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 150px;
+}
+
+.projects .left {
+    width: 600px;
+    height: 400px;
+    float: left;
+    margin: 0 50px;
+}
+
+.projects .right {
+    width: 600px;
+    height: 400px;
+    float: left;
+    margin: 0 50px;
+}
+
+/*home*/
+
+.home {
+    width: 100%;
+    height: 760px;
+    margin-bottom: 100px;
+}
+
+.home h3 {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.home ul {
+    width: 1080px;
+}
+
+.home ul li {
+    width: 500px;
+    height: 300px;
+    float: left;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.home ul li:nth-child(even) {
+    float: right;
+}
+
+.home ul li a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home ul li a  p {
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    transition: all 0.6s;
+    transform: scale(5);
+    opacity: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home ul li:hover a p{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.home ul li a img {
+    transition: all .6s;
+    display: block;
+    width: 600px;
+    height: 400px;
+
+}
+
+.home ul li:hover a img {
+    transform: scale(1.1);
+}
+
+
+
+/*partners*/
+.partners {
+    width: 1280px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.partners ul {
+    line-height: 200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.partners ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+.partners ul li a {
+    display: block;
+}
+
+.partners ul li a img {
+    width: 120px;
+    height: 50px;
+}
+
+.partners ul li {
+    animation: overAni 20s linear infinite;
+}
+
+@keyframes overAni {
+    0% {
+        transform: translateX(0);
+    }
+
+    99% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
