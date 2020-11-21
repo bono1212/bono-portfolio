@@ -14,7 +14,7 @@
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/wow.min.js"></script>
 	<script src="../js/imagesloaded.pkgd.min.js"></script>
-	<!--	<script src="../js/jquery.mb.YTPlayer.min.js"></script>-->
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 	<script src="../js/wheel.js"></script>
 </head>
 <!-- https://kuon.space/ -->
@@ -407,31 +407,63 @@
 			<div class="sms">I love Design and Technology.</div>
 	</div>
 	<div class="projects">
-		<div class="sub-title">
 			<div class="subs">
 				<div class="sub">
-					<div class="publish">PUBLISHING</div>
-					<div class="down-line"></div>
+					<div class="webs">
+						<div class="project">
+							<img src="../img/publish.png" alt="4"></div>
+						<div class="cover">
+							<div class="site-name">PUBLISHING</div>
+							<div class="program">html, css, js, jquery</div>
+							<div class="visit-site">VISIT SITE</div>
+						</div>
 				</div>
+			</div>
 				<div class="sub">
-					<div class="publish">PUBLISHING</div>
-					<div class="down-line"></div>
+					<div class="webs">
+						<div class="project">
+							<img src="../img/publish.png" alt="4"></div>
+						<div class="cover">
+							<div class="site-name">FRONTEND</div>
+							<div class="program">html, css, js, jquery</div>
+							<div class="visit-site">VISIT SITE</div>
+						</div>
 				</div>
+			</div>
 				<div class="sub">
-					<div class="publish">PUBLISHING</div>
-					<div class="down-line"></div>
+					<div class="webs">
+						<div class="project">
+							<img src="../img/publish.png" alt="4"></div>
+						<div class="cover">
+							<div class="site-name">BACKEND</div>
+							<div class="program">html, css, js, jquery</div>
+							<div class="visit-site">VISIT SITE</div>
+						</div>
 				</div>
 			</div>
 		</div>
-		<div class="pro-work">
-			<div class="work"></div>
-			<div class="work"></div>
-			<div class="work"></div>
-		</div>
-	</div>
 	</div>
 </section>
 
+<!-- contact -->
+<section class="contact">
+	<div class="cont-wrap">
+		<div class="con">
+			<div class="txt">CONTACT ME</div>
+		</div>
+		<div class="send">
+			<form method="post" id="contact-form" onsubmit="return mailSend(this);">
+				<input type="hidden" name="contact_number">
+				<div class="email">
+					<i class="fa fa-envelope"></i>
+					<input type="text" name="email" placeholder="Your email address">
+				</div>
+				<textarea class="comment" name="msg" placeholder="Your comment"></textarea>
+				<button type="submit" class="bt-send">SIGN UP</button>
+			</form>
+		</div>
+	</div>
+</section>
 
 <script src="../js/index.js"></script>
 </body>

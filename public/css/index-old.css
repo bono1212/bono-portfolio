@@ -274,20 +274,16 @@ html, body {width: 100%; overflow-y: hidden; background: url(../img/main-1.png) 
 .page-2 .work-wrap .publishing .top-publish .small-title {padding: 0 0.5em; color: #d7d7d7;}
 .page-2 .work-wrap .publishing .main-publish {width: 100%; display: flex; justify-content: center; align-items: center;}
 .page-2 .work-wrap .publishing .main-publish .sample {width: 80%; display: flex; justify-content: center; align-items: center; padding: 5em 2em;}
-.page-2 .work-wrap .publishing .main-publish .sample .webs {width: 24%; display: flex; justify-content: center; position: relative; transition: all 0.5s; margin: 0 2.5em;}
-.page-2 .work-wrap .publishing .main-publish .sample .webs img {width: 100%; height: auto; transition: all 5s;}
+.work .projects .sub-title .subs .sub .webs {width: 24%; display: flex; justify-content: center; position: relative; transition: all 0.5s; margin: 0 2.5em;}
+.work .projects .sub-title .subs .sub .webs img {width: 100%; height: auto; transition: all 5s;}
 
-.page-2 .work-wrap .publishing .main-publish .sample .webs .modal {width: 70vw; height: 70vh; background-color: green; position: absolute; top: 0%; left: 0%; display: flex; z-index: 9999; justify-content: center; align-items: center;}
-.page-2 .work-wrap .publishing .main-publish .sample .webs .modal .window {display: flex; justify-content: flex-end; align-items: flex-start; width: 90%; height: 90%; background-color: red;}
-.page-2 .work-wrap .publishing .main-publish .sample .webs .modal .window .close {font-size: 2em;color: #111 ; border: 1px solid #f8f8f8; background-color: #f8f8f8;}
-
-.page-2 .work-wrap .publishing .main-publish .sample .webs .cover {width: 100%; background-color: #f86953; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #f8f8f8; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
-.page-2 .work-wrap .publishing .main-publish .sample .webs:hover .cover {opacity: 1;}
-.page-2 .work-wrap .publishing .main-publish .sample .webs:hover {transform: scale(1.1)}
-.page-2 .work-wrap .publishing .main-publish .sample .webs .cover .site-name {font-size: 1.25vw;}
-.page-2 .work-wrap .publishing .main-publish .sample .webs .cover .program {margin-top: 1em;}
-.page-2 .work-wrap .publishing .main-publish .sample .webs .cover .visit-site {border: 1px solid #f8f8f8; color: #f8f8f8; margin-top: 3em; padding: 0.25em 0.5em; cursor: pointer; transition: all 0.3s;}
-.page-2 .work-wrap .publishing .main-publish .sample .webs .cover .visit-site:hover {background-color: #f8f8f8; color: #f86953;}
+.work .projects .sub-title .subs .sub .webs .cover {width: 100%; background-color: #f86953; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #f8f8f8; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
+.work .projects .sub-title .subs .sub .webs:hover .cover {opacity: 1;}
+.work .projects .sub-title .subs .sub .webs:hover {transform: scale(1.1)}
+.work .projects .sub-title .subs .sub .webs .cover .site-name {font-size: 1.25vw;}
+.work .projects .sub-title .subs .sub .webs .cover .program {margin-top: 1em;}
+.work .projects .sub-title .subs .sub .webs .cover .visit-site {border: 1px solid #f8f8f8; color: #f8f8f8; margin-top: 3em; padding: 0.25em 0.5em; cursor: pointer; transition: all 0.3s;}
+.work .projects .sub-title .subs .sub .webs .cover .visit-site:hover {background-color: #f8f8f8; color: #f86953;}
 
 .page-2 .work-wrap .frontend {width: 100%; background-color: #f8f8f8; padding-top: 1.125em 0;}
 .page-2 .work-wrap .frontend .top-front {width: 100%; display: flex; font-size: 4em; align-items: center; font-family: 'Frank Ruhl Libre'; font-size: 2vw;}

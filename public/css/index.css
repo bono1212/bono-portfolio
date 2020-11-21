@@ -18,7 +18,7 @@ html, body {width: 100%; overflow-x: hidden;}
 .header-wrapper .wrap {width: 100%; display: flex; justify-content: space-between; align-items: center; height: 10vh; }
 .header-wrapper h1 {padding: 0.25em 0.75em;}
 .header-wrapper h1 img {width: 120px; height: auto;}
-.header-wrapper .menu-bar {width: 200px; height: 90%; padding: 1.75em 1.25em; display: flex; align-self: center;}
+.header-wrapper .menu-bar {width: 200px; height: 100%; padding: 1.75em 1.25em; display: flex; align-self: center;}
 .header-wrapper .menu-bar .menu {font-size: 1.5em; display: flex; width: 40%; justify-content: center; align-items: center;}
 .header-wrapper .menu-bar .menu div {transition: all 0.5s;}
 .header-wrapper .menu-bar .bar-box {width: 50%; height: 100%; display: flex; justify-content: space-between; flex-direction: column; padding-left: 20%;}
@@ -30,8 +30,8 @@ html, body {width: 100%; overflow-x: hidden;}
 
 
 /************** main ************/
-.main {background-color: #6eceb5; width: 100%; height: 80vh; z-index: 2; margin-top: 10vh;}
-.main .main-bg {width: 100%; display: flex; justify-content: center; align-items: center; height: 100%;}
+.main {background-color: #6eceb5; width: 100%; height: 80vh; z-index: 2; margin-top: 10vh; display: flex; justify-content: center;}
+.main .main-bg {width: 100%; display: flex; justify-content: center; align-items: center;}
 .main .main-bg .title-txt {width: 100%; position: relative; height: 100%;}
 .main .main-bg .title-txt .name {font-size: 4vw; color: #f8f8f8;  animation: animated-text 2s steps(50,end) 2s 1 normal both; overflow: hidden; position: absolute; top: 15%; left: 29%; font-family: 'Oswald', sans-serif;}
 @keyframes animated-text{
@@ -66,14 +66,15 @@ html, body {width: 100%; overflow-x: hidden;}
 	100% {top: 45%;}
 }
 
-.sns {width: 100%; height: 10vh; background-color:#f8f8f8; display: flex; justify-content: flex-end; align-items: center;}
+.sns {width: 100%; height: 10vh; background-color:#fff; display: flex; justify-content: flex-end; align-items: center; position: fixed;}
 .sns .icons {display: flex; width: 200px; height: 100%; color: #111; font-size: 2em; justify-content: center; align-items: center;}
 .sns .icons i {padding: 0.25em; transition: all 0.5s;}
 .sns .icons i:hover {color: #6eceb5;}
 
 
+
 /* section 2 */
-.titles {width: 90%; height: 80vh; background-color: #eee; display: flex; justify-content: flex-start; align-items: center; position: absolute; top: 10vh; display: none;}
+.titles {width: 100%; height: 80vh; background-color: #eee; display: flex; justify-content: flex-start; align-items: center; position: absolute; top: 10vh; display: none;}
 .titles .contents {display: flex; flex-direction: column; align-items: flex-start; justify-content: center; position: relative;  height: 100%; width: 100%;}
 .titles .contents .menus {font-size: 4vw; color: #111; text-align: left;  position: relative; overflow: hidden; cursor: pointer; font-family: 'Oswald', sans-serif; padding-left: 3em;}
 .titles .contents .menus .line {width: 0; height: 8%; background-color: #6eceb5; position: absolute; top: 50%;}
@@ -92,6 +93,7 @@ html, body {width: 100%; overflow-x: hidden;}
 .who .intro-text .big-tit .line {width: 15%; display: flex; justify-content: flex-start; align-items: flex-start;}
 .who .intro-text .big-tit .line .green {width: 0%; height: 4px; background-color: #6eceb5; transition: all 0.5s; animation-name: line; animation-duration: 1s; animation-iteration-count: infinite;}
 .who .intro-text .big-tit .title {font-size: 4vw; font-family: 'Oswald', sans-serif;}
+.who .intro-text .big-tit .img img {width: 15.5vw; height: auto; opacity: 0.4;}
 .who .intro-text .small-tit {width: 60%; display: flex; flex-direction: column; height: 100%; padding-left: 3em; justify-content: center;}
 .who .intro-text .small-tit .intro-small {font-size: 1.5em; width: 100%; padding-right: 0; height: 80%;}
 .who .intro-text .small-tit .intro-small .name {font-size: 4.5vw; font-family: 'Fredericka the Great', cursive; color: #6eceb5; letter-spacing: -0.125em; width: 65%;}
@@ -118,7 +120,6 @@ html, body {width: 100%; overflow-x: hidden;}
 .what .passion-box .cont .bg .part {width: 30%; padding: 0 1em; text-align: center; margin: 0 2em;}
 .what .passion-box .cont .bg .part img {width: 4vw; height: auto; color: #fff;}
 .what .passion-box .cont .bg .part .sector {font-size: 1.25vw; padding-top: 0.25em; color: #fff;}
-
 .what .passion-box .bottom {width: 100%; display: flex; display: flex; justify-content: center; align-items: center; margin-top: 1.5em;}
 .what .passion-box .bottom .skill-all {width: 80%; display: flex; justify-content: stretch; align-items: center;flex-direction: column;}
 .what .passion-box .bottom .skill-all .skill-wrap {width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0.5em 0; flex-direction: column;}
@@ -141,20 +142,44 @@ html, body {width: 100%; overflow-x: hidden;}
 
 /* ******my work********** */
 .work {width: 100%; padding: 10vh;}
-.work .intro-text {width: 100%; background-color: #eee; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 80vh; padding-top: 2em;}
-.work .intro-text .top {width: 100%; display: flex;  align-items: center; padding-top: 3em;}
+.work .intro-text {width: 100%; background-color: #eee; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 4em 0;}
+.work .intro-text .top {width: 100%; display: flex;  align-items: center;}
 .work .intro-text .top .big-tit {width: 40%; display: flex; justify-content: center; align-items: flex-end; padding-right: 4em; flex-direction: column; }
 .work .intro-text .top .big-tit .line {width: 10%; display: flex; justify-content: flex-start; align-items: flex-start;}
 .work .intro-text .top .big-tit .line .green {width: 0%; height: 4px; background-color: #6eceb5; transition: all 0.5s; animation-name: line; animation-duration: 1s; animation-iteration-count: infinite;}
 .work .intro-text .top .big-tit .title {font-size: 4vw; font-family: 'Oswald', sans-serif;}
 .work .intro-text .top .sms {font-size: 2vw; font-family: 'Mrs Saint Delafield', cursive; padding-left: 20%;}
-.work .projects {width: 90%; display: flex; justify-content: center; align-items: center;flex-direction: column; padding-top: 3em;}
-.work .projects .sub-title {width: 100%; display: flex; justify-content: center; align-items: center;}
-.work .projects .sub-title .subs {width: 60%; display: flex; justify-content: center; align-items: center;}
-.work .projects .sub-title .subs .sub {padding: 0 3em; font-size: 1.25vw; letter-spacing: -1px; font-family: 'Roboto', sans-serif; letter-spacing: -1px; font-weight: 500;}
-.work .projects .sub-title .subs .sub .down-line {transition: all 0.3s; width: 100%; animation-name: ani; animation-duration: 1s; letter-spacing: 0.125em; height: 2px;}
+
+.work .projects {width: 100%; display: flex; justify-content: center; align-items: center;flex-direction: column; padding-top: 2em;}
+.work .projects .subs {width: 100%; display: flex; justify-content: center; align-items: center;}
+.work .projects .subs .sub {display: flex; justify-content: center; align-items: center; width: 30%; border: 1px solid blue;}
+.work .projects .subs .sub .webs {display: flex; justify-content: center; position: relative; transition: all 0.5s; margin: 0 2.5em; width: 100%;}
+.work .projects .subs .sub .webs img {width: 100%; height: auto; transition: all 5s;}
+.work .projects .subs .sub .webs .cover {width: 100%; background-color: #6eceb5; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
+.work .projects .subs .sub .webs:hover .cover {opacity: 0.8;}
+.work .projects .subs .sub .webs:hover {transform: scale(1.1)}
+.work .projects .subs .sub .webs .cover .site-name {font-size: 3vw;}
+.work .projects .subs .sub .webs .cover .program {margin-top: 1em; font-size: 1.5vw;}
+.work .projects .subs .sub .webs .cover .visit-site {border: 1px solid #f8f8f8; color: #f8f8f8; margin-top: 3em; padding: 0.25em 1em; cursor: pointer; transition: all 0.3s;}
+.work .projects .subs .sub .webs .cover .visit-site:hover {background-color: #f8f8f8; color: #6eceb5;}
 
 
+
+/* *******contact******* */
+.contact {width: 100%; padding: 10vh;}
+.contact .cont-wrap {background-color: #eee; width: 100%; display: flex;}
+.contact .cont-wrap .con {width: 40%; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #6eceb5; padding: 10em 0;}
+.contact .cont-wrap .con .txt {font-size: 5vw; font-family: 'Oswald', sans-serif; letter-spacing: -1px; padding: 1em 0;}
+.contact .cont-wrap .send {width: 50%; margin-left: 10%; display: flex; justify-content: flex-start; align-items: center;}
+.contact .cont-wrap .send form {text-align: left; padding-bottom: 2em; width: 80%;}
+.contact .cont-wrap .send .email {position: relative; border-bottom: 1px solid #555; margin-bottom: 1em;}
+.contact .cont-wrap .send .email > i {position: absolute; top: 12px; color: #999;}
+.contact .cont-wrap .send .email > input {width: 100%; border: none; padding: 0.5em 1.5em; background-color: transparent;}
+.contact .cont-wrap .send .email > input:focus {outline: none; border: none; width: 100%;}
+.contact .cont-wrap .send .comment {margin-top: 1em; width: 100%; border: none; border-bottom: 1px solid #555; height: 200px; padding: 1em 1.5em; background-color: #fff; margin-bottom: 1em;}
+.contact .cont-wrap .send .comment:focus {outline: none;}
+.contact .cont-wrap .send .bt-send {background-color: #111; color: #f8f8f8; padding: 0.5em 1.5em; font-size: 0.875em; transition: all 0.5s; border: none; margin-top: 1em;}
+.contact .cont-wrap .send .bt-send:hover {background-color: #6eceb5;}
 
 
 
@@ -168,6 +193,7 @@ html, body {width: 100%; overflow-x: hidden;}
 	.main .main-bg .title-txt .develop {font-size: 4vw; left: 53%; top: 63.5%;}
 	.main .main-bg .title-txt .and {top: 45%; left: 72%; font-size: 12.5vw;}
 	.titles .contents .menus {font-size: 8vw; padding-left: 1em;}
+	.who {padding: 5vh;}
 	.who .intro-text {flex-direction: column;}
 	.who .intro-text .big-tit {width: 90%; display: flex; height: 40%; align-items: flex-start;}
 	.who .intro-text .big-tit .line {width: 17%;}
@@ -176,11 +202,11 @@ html, body {width: 100%; overflow-x: hidden;}
 	.who .intro-text .small-tit .intro-small .name {font-size: 5.5vw}
 	.who .intro-text .small-tit .intro-small .intro {font-size: 2vw;}
 	.who .intro-text .small-tit .intro-small .myself { font-size: 3.5vw; text-decoration: underline; padding: 2em;}
-	.what .passion-box .top {flex-direction: column; padding: 3em;}
+	.what .passion-box .top {flex-direction: column; padding: 2em;}
 	.what .passion-box .big-tit {width: 100%; align-items: flex-start;}
 	.what .passion-box .big-tit .line {width: 17%;}
 	.what .passion-box .big-tit .title {font-size: 6vw;}
-	.what .passion-box .cont {width: 100%; justify-content: center; padding: 1em 0;}
+	.what .passion-box .cont {width: 100%; justify-content: center;}
 	.what .passion-box .cont .bg {width: 100%; justify-content: center; height: 100%; padding: 1em 0;}
 	.what .passion-box .bottom {margin-top: 0;}
 	.what .passion-box .bottom .skill-all {width: 85%; margin-top: 0;}
@@ -192,10 +218,29 @@ html, body {width: 100%; overflow-x: hidden;}
 	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt .type-3 {font-size: 1.75vw;}
 	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt .names {font-size: 1.75vw;}
 	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills {flex-direction: column;}
+	.work {width: 100%; padding: 5vh;}
+	.work .intro-text .top {flex-direction: column;}
+	.work .intro-text .top .big-tit {width: 100%; align-items: flex-start; padding-left: 2em; flex-direction: column; }
+	.work .intro-text .top .big-tit .line {width: 15%;}
+	.work .intro-text .top .big-tit .line .green {width: 0%; height: 4px; background-color: #6eceb5; transition: all 0.5s; animation-name: line; animation-duration: 1s; animation-iteration-count: infinite;}
+	.work .intro-text .top .big-tit .title {font-size: 8vw; }
+	.work .intro-text .top .sms {font-size: 4vw; padding-top: 1em;}
+	.contact .cont-wrap {flex-direction: column;}
+	.contact .cont-wrap .con {padding: 0; width: 100%}
+	.contact .cont-wrap .con .txt {padding: 0.5em 0;}
+	.contact .cont-wrap .send {width: 100%; padding-top: 3em;}
 }
 
 @media screen and (max-width: 991px) {
-
+	.what .passion-box .top {flex-direction: column; padding: 1em 2em;}
+	.what .passion-box .big-tit {width: 100%;}
+	.what .passion-box .big-tit .line {width: 17%;}
+	.what .passion-box .big-tit .title {font-size: 4vw;}
+	.what .passion-box .cont {width: 100%; justify-content: center; padding: 0;}
+	.what .passion-box .cont .bg {width: 100%; justify-content: center; height: 100%;}
+	.what .passion-box .bottom {margin-top: 0;}
+	.what .passion-box .bottom .skill-all {width: 85%; margin-top: 0;}
+	.what .passion-box .bottom .skill-all .skill-wrap {flex-direction: column; width: 100%; padding: 0;}
 }
 
 @media screen and (max-width: 767px) {
@@ -213,11 +258,11 @@ html, body {width: 100%; overflow-x: hidden;}
 	.who .intro-text .big-tit .line {width: 30%;}
 	.who .intro-text .big-tit .title {font-size: 9vw;}
 	.who .intro-text .small-tit {width: 80%; display: flex; flex-direction: column; height: 100%; justify-content: center; padding-left: 0;}
-	.who .intro-text .small-tit .intro-small .name {font-size: 7vw; padding: 0.5em 0;}
-	.who .intro-text .small-tit .intro-small .intro {font-size: 3vw; padding-top: 1em;}
+	.who .intro-text .small-tit .intro-small .name {font-size: 7vw; padding: 0 0.25em;}
+	.who .intro-text .small-tit .intro-small .intro {font-size: 2.5vw; padding-top: 1em;}
 	.who .intro-text .small-tit .intro-small .myself { font-size: 5.5vw; text-decoration: underline; padding: 1em 2em;}
 	.what {padding: 5vh;}
-	.what .passion-box .top {flex-direction: column; padding: 3em 2em;}
+	.what .passion-box .top {flex-direction: column; padding: 0.25em 2em;}
 	.what .passion-box .big-tit {width: 100%; align-items: flex-start;}
 	.what .passion-box .big-tit .line {width: 17%;}
 	.what .passion-box .big-tit .title {font-size: 6vw;}
@@ -228,12 +273,16 @@ html, body {width: 100%; overflow-x: hidden;}
 	.what .passion-box .bottom {margin-top: 0;}
 	.what .passion-box .bottom .skill-all {width: 85%; margin-top: 0;}
 	.what .passion-box .bottom .skill-all .skill-wrap {flex-direction: column; width: 100%;}
-	.what .passion-box .bottom .skill-all .skill-wrap .skill-box {margin-bottom: 1.25em;}
+	.what .passion-box .bottom .skill-all .skill-wrap .skill-box {margin-bottom: 1em;}
 	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt {width: 100%; margin-bottom: 0.5em;}
 	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt .type {font-size: 2.5vw;}
 	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt .type-3 {font-size: 2.5vw;}
 	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt .names {font-size: 2.125vw;}
 	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills {flex-direction: column;}
+	.contact {padding: 5vh;}
+	.contact .cont-wrap .con {padding: 1em 0; width: 100%}
+	.contact .cont-wrap .con .txt {padding: 0.5em 0; font-size: 8vw;}
+	.contact .cont-wrap .send {width: 100%; padding: 3em; padding-left: 0;}
 }
 
 @media screen and (max-width: 575px) {
