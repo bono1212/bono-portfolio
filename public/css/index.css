@@ -2,9 +2,241 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
 
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 /* font-family: 'Frank Ruhl Libre', serif; font-family: 'Roboto', sans-serif; font-family: 'Fredericka the Great', cursive; font-family: 'Mrs Saint Delafield', cursive;*/
+/* font-family: 'Oswald', sans-serif; */
 
-html, body {}
+/* color: 6eceb5 */
+
+html, body {width: 100%; overflow-x: hidden;}
+
+/************** header ************/
+.header-wrapper {width: 100%; background-color: #fff; height: 10vh; position: fixed;}
+.header-wrapper .wrap {width: 100%; display: flex; justify-content: space-between; align-items: center; height: 10vh; }
+.header-wrapper h1 {padding: 0.25em 0.75em;}
+.header-wrapper h1 img {width: 120px; height: auto;}
+.header-wrapper .menu-bar {width: 200px; height: 90%; padding: 1.75em 1.25em; display: flex; align-self: center;}
+.header-wrapper .menu-bar .menu {font-size: 1.5em; display: flex; width: 40%; justify-content: center; align-items: center;}
+.header-wrapper .menu-bar .menu div {transition: all 0.5s;}
+.header-wrapper .menu-bar .bar-box {width: 50%; height: 100%; display: flex; justify-content: space-between; flex-direction: column; padding-left: 20%;}
+.header-wrapper .menu-bar .bar-box div {width: 70%; height: 2px; background-color: #111; transition: all 0.5s;}
+.header-wrapper .menu-bar:hover .menu div:nth-child(2) {transform: translateY(-10px);}
+.header-wrapper .menu-bar:hover .menu div:nth-child(4) {transform: translateY(-10px);}
+.header-wrapper .menu-bar:hover .bar-box div:nth-child(1) {width: 100%;}
+.header-wrapper .menu-bar:hover .bar-box div:nth-child(3) {width: 100%;}
+
+
+/************** main ************/
+.main {background-color: #6eceb5; width: 100%; height: 80vh; z-index: 2; margin-top: 10vh;}
+.main .main-bg {width: 100%; display: flex; justify-content: center; align-items: center; height: 100%;}
+.main .main-bg .title-txt {width: 100%; position: relative; height: 100%;}
+.main .main-bg .title-txt .name {font-size: 4vw; color: #f8f8f8;  animation: animated-text 2s steps(50,end) 2s 1 normal both; overflow: hidden; position: absolute; top: 15%; left: 29%; font-family: 'Oswald', sans-serif;}
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 100%;}
+}
+.main .main-bg .title-txt .port {font-size: 10vw; color: #111; position: absolute; left: 50%; top: 40%; transform: translate(-50%, -50%); font-family: 'Oswald', sans-serif; animation-name: aniPort; animation-duration: 2s;}
+.main .main-bg .title-txt .line {width: 21%; height: 1px; background-color: #f8f8f8; position: absolute; top: 53.5%; left: 50%;}
+.main .main-bg .title-txt .web {font-size: 4vw; color: #f8f8f8; left: 57%; position: absolute; top: 51%; animation-name: aniWeb; animation-duration: 0.5s; font-family: 'Roboto', sans-serif;}
+.main .main-bg .title-txt .design {font-size: 2.75vw; color: #f8f8f8; left: 51.5%; position: absolute; top: 62%; animation-name: aniDes; animation-duration: 0.2s; font-family: 'Roboto', sans-serif;}
+.main .main-bg .title-txt .develop {font-size: 2.75vw; color: #f8f8f8; left: 53%; position: absolute; top: 69%; animation-name: aniDes; animation-duration: 0.2s; font-family: 'Roboto', sans-serif;}
+.main .main-bg .title-txt .and {position: absolute; top: 45%; left: 65%; font-size: 9.25vw; font-family: 'Frank Ruhl Libre', serif; color: #111; animation-name: aniAnd; animation-duration: 0.5s;}
+
+@keyframes aniPort {
+	0% {margin-left: -100%;}
+	100% {left: 50%;}
+}
+@keyframes aniWeb {
+	0% {margin-left: -100%;}
+	100% {left: 57%;}
+}
+@keyframes aniDev {
+	0% {margin-left: -100%;}
+	100% {left: 45%;}
+}
+@keyframes aniDes {
+	0% {margin-left: -100%;}
+	100% {left: 50%;}
+}
+@keyframes aniAnd {
+	0% {margin-top: -100%;}
+	100% {top: 45%;}
+}
+
+.sns {width: 100%; height: 10vh; background-color:#f8f8f8; display: flex; justify-content: flex-end; align-items: center;}
+.sns .icons {display: flex; width: 200px; height: 100%; color: #111; font-size: 2em; justify-content: center; align-items: center;}
+.sns .icons i {padding: 0.25em; transition: all 0.5s;}
+.sns .icons i:hover {color: #6eceb5;}
+
+
+/* section 2 */
+.titles {width: 90%; height: 80vh; background-color: #eee; display: flex; justify-content: flex-start; align-items: center; position: absolute; top: 10vh; display: none;}
+.titles .contents {display: flex; flex-direction: column; align-items: flex-start; justify-content: center; position: relative;  height: 100%; width: 100%;}
+.titles .contents .menus {font-size: 4vw; color: #111; text-align: left;  position: relative; overflow: hidden; cursor: pointer; font-family: 'Oswald', sans-serif; padding-left: 3em;}
+.titles .contents .menus .line {width: 0; height: 8%; background-color: #6eceb5; position: absolute; top: 50%;}
+.titles .contents .menus div {transition: all 0.3s; width: 100%; animation-name: ani; animation-duration: 1s; letter-spacing: 0.125em;}
+.titles .contents div:hover .line {width: 100%;}
+
+@keyframes ani {
+	0% {transform: translateY(100px);}
+	100% {transform: translateY(0);}
+}
+
+/* *********who********* */
+.who {width: 100%; height: 100vh; padding: 10vh;}
+.who .intro-text {width: 100%; height: 80vh; background-color: #f8f8f8; display: flex;  align-items: center;}
+.who .intro-text .big-tit {width: 40%; display: flex; justify-content: center; height: 100%; align-items: flex-end; padding-right: 4em; flex-direction: column;}
+.who .intro-text .big-tit .line {width: 15%; display: flex; justify-content: flex-start; align-items: flex-start;}
+.who .intro-text .big-tit .line .green {width: 0%; height: 4px; background-color: #6eceb5; transition: all 0.5s; animation-name: line; animation-duration: 1s; animation-iteration-count: infinite;}
+.who .intro-text .big-tit .title {font-size: 4vw; font-family: 'Oswald', sans-serif;}
+.who .intro-text .small-tit {width: 60%; display: flex; flex-direction: column; height: 100%; padding-left: 3em; justify-content: center;}
+.who .intro-text .small-tit .intro-small {font-size: 1.5em; width: 100%; padding-right: 0; height: 80%;}
+.who .intro-text .small-tit .intro-small .name {font-size: 4.5vw; font-family: 'Fredericka the Great', cursive; color: #6eceb5; letter-spacing: -0.125em; width: 65%;}
+.who .intro-text .small-tit .intro-small .intro {font-size: 1.25vw; font-family: 'Roboto', sans-serif; letter-spacing: -1px; padding-top: 3em;}
+.who .intro-text .small-tit .intro-small .myself {font-family: 'Mrs Saint Delafield', cursive; font-size: 2.5vw; display: flex; justify-content: flex-end; text-decoration: underline; padding: 2em 2em 0;}
+
+@keyframes line {
+	0% {width: 0;}
+	100% {width: 100%;}
+}
+
+
+/* *********WHAT********* */
+.what {width: 100%; height: 100vh; padding: 10vh;}
+.what .passion-box {width: 100%; height: 80vh; background-color: #eee; display: flex; flex-direction: column;}
+.what .passion-box .top {width: 100%; display: flex; height: 35%;}
+.what .passion-box .big-tit {width: 60%; display: flex; justify-content: center; height: 100%; align-items: flex-end; padding-right: 4em; flex-direction: column;}
+.what .passion-box .big-tit .line {width: 15%; display: flex; justify-content: flex-start; align-items: flex-start;}
+.what .passion-box .big-tit .line .green {width: 0%; height: 4px; background-color: #6eceb5; transition: all 0.5s; animation-name: line; animation-duration: 1s; animation-iteration-count: infinite;}
+.what .passion-box .big-tit .title {font-size: 4vw; font-family: 'Oswald', sans-serif;}
+.what .passion-box .cont {width: 85%; display: flex; height: 100%; padding: 2em 0; justify-content: flex-end;}
+.what .passion-box .cont .bg {width: 80%; height: 100%; padding: 2em 0; display: flex; background-color: #6eceb5;}
+.what .passion-box .cont .bg .know {width: 100%; display: flex;}
+.what .passion-box .cont .bg .part {width: 30%; padding: 0 1em; text-align: center; margin: 0 2em;}
+.what .passion-box .cont .bg .part img {width: 4vw; height: auto; color: #fff;}
+.what .passion-box .cont .bg .part .sector {font-size: 1.25vw; padding-top: 0.25em; color: #fff;}
+
+.what .passion-box .bottom {width: 100%; display: flex; display: flex; justify-content: center; align-items: center; margin-top: 1.5em;}
+.what .passion-box .bottom .skill-all {width: 80%; display: flex; justify-content: stretch; align-items: center;flex-direction: column;}
+.what .passion-box .bottom .skill-all .skill-wrap {width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0.5em 0; flex-direction: column;}
+.what .passion-box .bottom .skill-all .skill-wrap .skill-box {width: 100%; display: flex; justify-content: stretch; align-items: center; font-size: 1.25vw; font-weight: 500; margin: 0.125em 0;}
+.what .passion-box .bottom .skill-all .skill-wrap .lang {color: #6eceb5;}
+.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills {display: flex; width: 100%;}
+.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt {width: 60%; display: flex;}
+.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt .names {width: 70%; display: flex; justify-content: flex-start; align-items: center; font-family: 'Roboto', sans-serif; font-size: 1vw;}
+.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt .type {width: 25%; font-size: 1.125vw; font-family: 'Oswald', sans-serif;}
+.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt .type-3 {width: 50%; font-size: 1.125vw; font-family: 'Oswald', sans-serif;}
+.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-percent {width: 50%; display: flex; justify-content: flex-start; align-items: center;}
+.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-percent .main-box {width: 100%; display: flex; justify-content: flex-start; align-items: center; border: 1px solid #6eceb5;}
+.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-percent .main-box .box {width: 10%; border: 1px solid #f8f8f8; background-color: #6eceb5; height: 0.5em; animation-name: per; animation-duration: 1s;}
+
+@keyframes per {
+	0% {width: 0;}
+	100% {width: 10%;}
+}
+
+
+/* ******my work********** */
+.work {width: 100%; padding: 10vh;}
+.work .intro-text {width: 100%; background-color: #eee; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 80vh; padding-top: 2em;}
+.work .intro-text .top {width: 100%; display: flex;  align-items: center; padding-top: 3em;}
+.work .intro-text .top .big-tit {width: 40%; display: flex; justify-content: center; align-items: flex-end; padding-right: 4em; flex-direction: column; }
+.work .intro-text .top .big-tit .line {width: 10%; display: flex; justify-content: flex-start; align-items: flex-start;}
+.work .intro-text .top .big-tit .line .green {width: 0%; height: 4px; background-color: #6eceb5; transition: all 0.5s; animation-name: line; animation-duration: 1s; animation-iteration-count: infinite;}
+.work .intro-text .top .big-tit .title {font-size: 4vw; font-family: 'Oswald', sans-serif;}
+.work .intro-text .top .sms {font-size: 2vw; font-family: 'Mrs Saint Delafield', cursive; padding-left: 20%;}
+.work .projects {width: 90%; display: flex; justify-content: center; align-items: center;flex-direction: column; padding-top: 3em;}
+.work .projects .sub-title {width: 100%; display: flex; justify-content: center; align-items: center;}
+.work .projects .sub-title .subs {width: 60%; display: flex; justify-content: center; align-items: center;}
+.work .projects .sub-title .subs .sub {padding: 0 3em; font-size: 1.25vw; letter-spacing: -1px; font-family: 'Roboto', sans-serif; letter-spacing: -1px; font-weight: 500;}
+.work .projects .sub-title .subs .sub .down-line {transition: all 0.3s; width: 100%; animation-name: ani; animation-duration: 1s; letter-spacing: 0.125em; height: 2px;}
+
+
+
+
+
+/* **********반응형************* */
+@media screen and (max-width: 1199px) {
+	.main .main-bg .title-txt .name {font-size: 6vw; top: 20%; left: 20%;}
+	.main .main-bg .title-txt .port {font-size: 14vw; left: 50%; top: 40%;}
+	.main .main-bg .title-txt .line {width: 29%; top: 51%; left: 50%;}
+	.main .main-bg .title-txt .web {font-size: 6vw;left: 60%; top: 49%;}
+	.main .main-bg .title-txt .design {font-size: 4vw; left: 51.5%; top: 58%;}
+	.main .main-bg .title-txt .develop {font-size: 4vw; left: 53%; top: 63.5%;}
+	.main .main-bg .title-txt .and {top: 45%; left: 72%; font-size: 12.5vw;}
+	.titles .contents .menus {font-size: 8vw; padding-left: 1em;}
+	.who .intro-text {flex-direction: column;}
+	.who .intro-text .big-tit {width: 90%; display: flex; height: 40%; align-items: flex-start;}
+	.who .intro-text .big-tit .line {width: 17%;}
+	.who .intro-text .big-tit .title {font-size: 6vw;}
+	.who .intro-text .small-tit {width: 100%; display: flex; flex-direction: column; height: 60%; justify-content: center;}
+	.who .intro-text .small-tit .intro-small .name {font-size: 5.5vw}
+	.who .intro-text .small-tit .intro-small .intro {font-size: 2vw;}
+	.who .intro-text .small-tit .intro-small .myself { font-size: 3.5vw; text-decoration: underline; padding: 2em;}
+	.what .passion-box .top {flex-direction: column; padding: 3em;}
+	.what .passion-box .big-tit {width: 100%; align-items: flex-start;}
+	.what .passion-box .big-tit .line {width: 17%;}
+	.what .passion-box .big-tit .title {font-size: 6vw;}
+	.what .passion-box .cont {width: 100%; justify-content: center; padding: 1em 0;}
+	.what .passion-box .cont .bg {width: 100%; justify-content: center; height: 100%; padding: 1em 0;}
+	.what .passion-box .bottom {margin-top: 0;}
+	.what .passion-box .bottom .skill-all {width: 85%; margin-top: 0;}
+	.what .passion-box .bottom .skill-all .skill-wrap {flex-direction: column; width: 100%;}
+	.what .passion-box .bottom .skill-all .skill-wrap .skill-box {margin-bottom: 1em;}
+	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt {width: 100%; margin-bottom: 0.25em;}
+	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-percent {width: 100%;}
+	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt .type {font-size: 1.75vw;}
+	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt .type-3 {font-size: 1.75vw;}
+	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt .names {font-size: 1.75vw;}
+	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills {flex-direction: column;}
+}
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 767px) {
+	.main .main-bg .title-txt .name {font-size: 9vw; top: 22%; left: 14%;}
+	.main .main-bg .title-txt .port {font-size: 17vw; left: 50%; top: 40%;}
+	.main .main-bg .title-txt .line {width: 36%; top: 48%; left: 50%;}
+	.main .main-bg .title-txt .web {font-size: 9vw; left: 56%; top: 46.5%;}
+	.main .main-bg .title-txt .design {font-size: 6.5vw; left: 42%; top: 55%;}
+	.main .main-bg .title-txt .develop {font-size: 6.5vw; left: 45%; top: 61%;}
+	.main .main-bg .title-txt .and {top: 42%; left: 74%; font-size: 20.5vw;}
+	.titles .contents .menus {font-size: 8vw; padding: 0.125em 0 0.125em 2em;}
+	.who {width: 100%; height: 100vh; padding: 5vh; margin-top: 5vh;}
+	.who .intro-text {flex-direction: column;}
+	.who .intro-text .big-tit {width: 90%; display: flex; height: 30%; padding-top: 3em; padding-left: 2em;}
+	.who .intro-text .big-tit .line {width: 30%;}
+	.who .intro-text .big-tit .title {font-size: 9vw;}
+	.who .intro-text .small-tit {width: 80%; display: flex; flex-direction: column; height: 100%; justify-content: center; padding-left: 0;}
+	.who .intro-text .small-tit .intro-small .name {font-size: 7vw; padding: 0.5em 0;}
+	.who .intro-text .small-tit .intro-small .intro {font-size: 3vw; padding-top: 1em;}
+	.who .intro-text .small-tit .intro-small .myself { font-size: 5.5vw; text-decoration: underline; padding: 1em 2em;}
+	.what {padding: 5vh;}
+	.what .passion-box .top {flex-direction: column; padding: 3em 2em;}
+	.what .passion-box .big-tit {width: 100%; align-items: flex-start;}
+	.what .passion-box .big-tit .line {width: 17%;}
+	.what .passion-box .big-tit .title {font-size: 6vw;}
+	.what .passion-box .cont {width: 100%; justify-content: center; padding: 1em 0;}
+	.what .passion-box .cont .bg {width: 100%; justify-content: center; height: 100%; padding: 1em 0;}
+	.what .passion-box .cont .bg .part {padding: 0 1em; text-align: center; margin: 0 1em;}
+	.what .passion-box .cont .bg .part img {width: 8vw;}
+	.what .passion-box .bottom {margin-top: 0;}
+	.what .passion-box .bottom .skill-all {width: 85%; margin-top: 0;}
+	.what .passion-box .bottom .skill-all .skill-wrap {flex-direction: column; width: 100%;}
+	.what .passion-box .bottom .skill-all .skill-wrap .skill-box {margin-bottom: 1.25em;}
+	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt {width: 100%; margin-bottom: 0.5em;}
+	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt .type {font-size: 2.5vw;}
+	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt .type-3 {font-size: 2.5vw;}
+	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt .names {font-size: 2.125vw;}
+	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills {flex-direction: column;}
+}
+
+@media screen and (max-width: 575px) {
+	.what {padding: 0}
+
+}
