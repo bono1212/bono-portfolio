@@ -74,7 +74,7 @@ html, body {width: 100%; overflow-x: hidden;}
 
 
 /* section 2 */
-.titles {width: 100%; height: 80vh; background-color: #eee; display: flex; justify-content: flex-start; align-items: center; position: absolute; top: 10vh; display: none;}
+.titles {width: 80%; height: 80vh; background-color: #eee; display: flex; justify-content: flex-start; align-items: center; position: absolute; top: 10vh; display: none;}
 .titles .contents {display: flex; flex-direction: column; align-items: flex-start; justify-content: center; position: relative;  height: 100%; width: 100%;}
 .titles .contents .menus {font-size: 4vw; color: #111; text-align: left;  position: relative; overflow: hidden; cursor: pointer; font-family: 'Oswald', sans-serif; padding-left: 3em;}
 .titles .contents .menus .line {width: 0; height: 8%; background-color: #6eceb5; position: absolute; top: 50%;}

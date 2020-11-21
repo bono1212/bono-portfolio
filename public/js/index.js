@@ -1,5 +1,9 @@
-$(".menu-bar").on("click", function () {
+/* $(".menu-bar").on("click", function () {
 	$(".titles").stop().slideToggle({direction: "left"}, 500);
+}); */
+
+$(".menu-bar").on("click", function () {
+	$(".titles").stop().animate({width: "toggle"});
 });
 
 
