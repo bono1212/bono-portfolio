@@ -17,8 +17,8 @@ html, body {width: 100%; overflow-x: hidden;}
 .header-wrapper {width: 100%; background-color: #fff; height: 10vh; position: fixed;}
 .header-wrapper .wrap {width: 100%; display: flex; justify-content: space-between; align-items: center; height: 10vh; }
 .header-wrapper h1 {padding: 0.25em 0.75em;}
-.header-wrapper h1 img {width: 120px; height: auto;}
-.header-wrapper .menu-bar {width: 200px; height: 100%; padding: 1.75em 1.25em; display: flex; align-self: center;}
+.header-wrapper h1 img {width: 100px; height: auto;}
+.header-wrapper .menu-bar {width: 200px; height: 100%; padding: 1.5em 1.25em; display: flex; align-self: center;}
 .header-wrapper .menu-bar .menu {font-size: 1.5em; display: flex; width: 40%; justify-content: center; align-items: center;}
 .header-wrapper .menu-bar .menu div {transition: all 0.5s;}
 .header-wrapper .menu-bar .bar-box {width: 50%; height: 100%; display: flex; justify-content: space-between; flex-direction: column; padding-left: 20%;}
@@ -46,8 +46,7 @@ html, body {width: 100%; overflow-x: hidden;}
 .main .main-bg .title-txt .and {position: absolute; top: 48%; left: 65%; font-size: 8vw; font-family: 'Frank Ruhl Libre', serif; color: #111; animation-name: aniAnd; animation-duration: 0.5s;}
 .main .main-bg .title-txt .down {width: 100%; position: absolute; bottom: 1em; left: 48%; transform: translate(-50%,);}
 .main .main-bg .title-txt .down i {font-size: 1.5em; animation-name: down; animation-duration: 1s; animation-iteration-count: infinite; transition: all 2s;}
-.main .main-bg .image {position: absolute; opacity: 0.7; animation-name: net; animation-duration: 3s; animation-iteration-count: infinite; transition: all 2s; right: -1200px;}
-.main .main-bg:hover .image {right: 0;}
+.main .main-bg .image {position: absolute; opacity: 0.7; animation-name: net; animation-duration: 3s; animation-iteration-count: infinite; transition: all 1s;}
 
 @keyframes net {
 	0% {opacity: 0;}
@@ -81,7 +80,7 @@ html, body {width: 100%; overflow-x: hidden;}
 }
 
 .sns {width: 100%; height: 10vh; background-color:#fff; display: flex; justify-content: flex-end; align-items: center; position: fixed; z-index: 999;}
-.sns #back-top {margin-right: 35.5em; border: 1px solid #111; padding: 0.25em; width: 4em; text-align: center; border-radius: 5px; cursor: pointer; opacity: 0;}
+.sns #back-top {margin-right: 35.5vw; border: 1px solid #111; padding: 0.25em; width: 4em; text-align: center; border-radius: 5px; cursor: pointer; opacity: 0;}
 .sns .icons {display: flex; width: 200px; height: 100%; color: #111; font-size: 2em; justify-content: center; align-items: center;}
 .sns .icons i {padding: 0.25em; transition: all 0.5s;}
 .sns .icons i:hover {color: #6eceb5;}
@@ -253,6 +252,7 @@ html, body {width: 100%; overflow-x: hidden;}
 }
 
 @media screen and (max-width: 991px) {
+	.sns #back-top {margin-right: 30vw;}
 	.what .passion-box .top {flex-direction: column; padding: 1em 2em;}
 	.what .passion-box .big-tit {width: 100%;}
 	.what .passion-box .big-tit .line {width: 17%;}
@@ -265,6 +265,7 @@ html, body {width: 100%; overflow-x: hidden;}
 }
 
 @media screen and (max-width: 767px) {
+	.sns #back-top {margin-right: 19vw;}
 	.main .main-bg .title-txt .name {font-size: 9vw; top: 22%; left: 14%;}
 	.main .main-bg .title-txt .port {font-size: 17vw; left: 50%; top: 40%;}
 	.main .main-bg .title-txt .line {width: 36%; top: 48%; left: 50%;}
@@ -315,6 +316,7 @@ html, body {width: 100%; overflow-x: hidden;}
 }
 
 @media screen and (max-width: 575px) {
+	.sns #back-top {margin-right: 9vw;}
 	.what {padding: 5vh}
 	.work .projects {width: 100%;}
 	.work .projects .subs {width: 100%;}

@@ -3,27 +3,25 @@ $(".menu-bar").on("click", function () {
 });
 
 
-$(function(){
-	var $menu = $(".titles .contents .menu"),
-			$contents = $(".page");
-			
-			$menu.click(function(){
-				var idx = $(this).index();
-				var section = $contents.eq(idx);
-				var sectionDis = section.offset().top;
-				// console.log(sectionDis);
-				$(".titles").stop().hide();
-				$('html, body').stop().animate({scrollTop: sectionDis});
-			});
-});
+/* page change event */
+var $menu = $(".titles .contents .menu");
+var	$contents = $(".page");
+	
+$menu.click(function(){
+		var idx = $(this).index();
+		var section = $contents.eq(idx);
+		var sectionDis = section.offset().top;
+		// console.log(sectionDis);
+		$(".titles").stop().hide();
+		$('html, body').stop().animate({scrollTop: sectionDis});
+	});
 
 
-
+	new WOW().init();
 
 /* back to top */
 var bt = document.getElementById('back-top'),
 		docElem = document.documentElement, offset, scrollPos, docHeight;
-
 		docHeight = Math.max(docElem.offsetHeight, docElem.scrollHeight);
 		if(docHeight == 0) {
 			offset = docHeight / 4;
