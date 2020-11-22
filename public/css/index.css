@@ -32,18 +32,32 @@ html, body {width: 100%; overflow-x: hidden;}
 /************** main ************/
 .main {background-color: #6eceb5; width: 100%; height: 80vh; z-index: 2; margin-top: 10vh; display: flex; justify-content: center;}
 .main .main-bg {width: 100%; display: flex; justify-content: center; align-items: center;}
-.main .main-bg .title-txt {width: 100%; position: relative; height: 100%;}
+.main .main-bg .title-txt {width: 100%; position: relative; height: 100%; z-index: 1;}
 .main .main-bg .title-txt .name {font-size: 4vw; color: #f8f8f8;  animation: animated-text 2s steps(50,end) 2s 1 normal both; overflow: hidden; position: absolute; top: 15%; left: 29%; font-family: 'Oswald', sans-serif;}
 @keyframes animated-text{
   from{width: 0;}
   to{width: 100%;}
 }
-.main .main-bg .title-txt .port {font-size: 10vw; color: #111; position: absolute; left: 50%; top: 40%; transform: translate(-50%, -50%); font-family: 'Oswald', sans-serif; animation-name: aniPort; animation-duration: 2s;}
-.main .main-bg .title-txt .line {width: 21%; height: 1px; background-color: #f8f8f8; position: absolute; top: 53.5%; left: 50%;}
-.main .main-bg .title-txt .web {font-size: 4vw; color: #f8f8f8; left: 57%; position: absolute; top: 51%; animation-name: aniWeb; animation-duration: 0.5s; font-family: 'Roboto', sans-serif;}
-.main .main-bg .title-txt .design {font-size: 2.75vw; color: #f8f8f8; left: 51.5%; position: absolute; top: 62%; animation-name: aniDes; animation-duration: 0.2s; font-family: 'Roboto', sans-serif;}
-.main .main-bg .title-txt .develop {font-size: 2.75vw; color: #f8f8f8; left: 53%; position: absolute; top: 69%; animation-name: aniDes; animation-duration: 0.2s; font-family: 'Roboto', sans-serif;}
-.main .main-bg .title-txt .and {position: absolute; top: 45%; left: 65%; font-size: 9.25vw; font-family: 'Frank Ruhl Libre', serif; color: #111; animation-name: aniAnd; animation-duration: 0.5s;}
+.main .main-bg .title-txt .port {font-size: 10vw; color: #111; position: absolute; left: 50%; top: 41%; transform: translate(-50%, -50%); font-family: 'Oswald', sans-serif; animation-name: aniPort; animation-duration: 2s;}
+.main .main-bg .title-txt .line {width: 21%; height: 1px; background-color: #f8f8f8; position: absolute; top: 55.5%; left: 50%;}
+.main .main-bg .title-txt .web {font-size: 4vw; color: #f8f8f8; left: 57%; position: absolute; top: 53%; animation-name: aniWeb; animation-duration: 0.5s; font-family: 'Roboto', sans-serif;}
+.main .main-bg .title-txt .design {font-size: 2.75vw; color: #f8f8f8; left: 51.5%; position: absolute; top: 64%; animation-name: aniDes; animation-duration: 0.2s; font-family: 'Roboto', sans-serif;}
+.main .main-bg .title-txt .develop {font-size: 2.75vw; color: #f8f8f8; left: 53%; position: absolute; top: 71%; animation-name: aniDes; animation-duration: 0.2s; font-family: 'Roboto', sans-serif;}
+.main .main-bg .title-txt .and {position: absolute; top: 48%; left: 65%; font-size: 8vw; font-family: 'Frank Ruhl Libre', serif; color: #111; animation-name: aniAnd; animation-duration: 0.5s;}
+.main .main-bg .title-txt .down {width: 100%; position: absolute; bottom: 1em; left: 48%; transform: translate(-50%,);}
+.main .main-bg .title-txt .down i {font-size: 1.5em; animation-name: down; animation-duration: 1s; animation-iteration-count: infinite; transition: all 2s;}
+.main .main-bg .image {position: absolute; opacity: 0.7; animation-name: net; animation-duration: 3s; animation-iteration-count: infinite; transition: all 2s; right: -1200px;}
+.main .main-bg:hover .image {right: 0;}
+
+@keyframes net {
+	0% {opacity: 0;}
+	50% {opacity: 0.3;}
+	100% {opacity: 0.7;}
+}
+
+@keyframes down {
+	100% {transform: translateY(10px);}
+}
 
 @keyframes aniPort {
 	0% {margin-left: -100%;}
@@ -66,7 +80,8 @@ html, body {width: 100%; overflow-x: hidden;}
 	100% {top: 45%;}
 }
 
-.sns {width: 100%; height: 10vh; background-color:#fff; display: flex; justify-content: flex-end; align-items: center; position: fixed;}
+.sns {width: 100%; height: 10vh; background-color:#fff; display: flex; justify-content: flex-end; align-items: center; position: fixed; z-index: 999;}
+.sns #back-top {margin-right: 35.5em; border: 1px solid #111; padding: 0.25em; width: 4em; text-align: center; border-radius: 5px; cursor: pointer; opacity: 0;}
 .sns .icons {display: flex; width: 200px; height: 100%; color: #111; font-size: 2em; justify-content: center; align-items: center;}
 .sns .icons i {padding: 0.25em; transition: all 0.5s;}
 .sns .icons i:hover {color: #6eceb5;}
@@ -74,9 +89,9 @@ html, body {width: 100%; overflow-x: hidden;}
 
 
 /* section 2 */
-.titles {width: 80%; height: 80vh; background-color: #eee; display: flex; justify-content: flex-start; align-items: center; position: absolute; top: 10vh; display: none;}
+.titles {width: 80%; height: 80vh; background-color: #eee; display: flex; justify-content: flex-start; align-items: center; position: absolute; top: 10vh; display: none; z-index: 999; position: fixed;}
 .titles .contents {display: flex; flex-direction: column; align-items: flex-start; justify-content: center; position: relative;  height: 100%; width: 100%;}
-.titles .contents .menus {font-size: 4vw; color: #111; text-align: left;  position: relative; overflow: hidden; cursor: pointer; font-family: 'Oswald', sans-serif; padding-left: 3em;}
+.titles .contents .menus {font-size: 3vw; color: #111; text-align: left;  position: relative; overflow: hidden; cursor: pointer; font-family: 'Oswald', sans-serif; padding-left: 3em;}
 .titles .contents .menus .line {width: 0; height: 8%; background-color: #6eceb5; position: absolute; top: 50%;}
 .titles .contents .menus div {transition: all 0.3s; width: 100%; animation-name: ani; animation-duration: 1s; letter-spacing: 0.125em;}
 .titles .contents div:hover .line {width: 100%;}
@@ -108,19 +123,19 @@ html, body {width: 100%; overflow-x: hidden;}
 
 /* *********WHAT********* */
 .what {width: 100%; height: 100vh; padding: 10vh;}
-.what .passion-box {width: 100%; height: 80vh; background-color: #eee; display: flex; flex-direction: column;}
-.what .passion-box .top {width: 100%; display: flex; height: 35%;}
-.what .passion-box .big-tit {width: 60%; display: flex; justify-content: center; height: 100%; align-items: flex-end; padding-right: 4em; flex-direction: column;}
+.what .passion-box {width: 100%; background-color: #eee; display: flex; flex-direction: column; align-items: center;}
+.what .passion-box .top {width: 100%; display: flex; height: 35%; padding: 1.5em 0;}
+.what .passion-box .big-tit {width: 60%; display: flex; justify-content: center; height: 100%; align-items: flex-end; padding-right: 4em; flex-direction: column; padding: 1em 0;}
 .what .passion-box .big-tit .line {width: 15%; display: flex; justify-content: flex-start; align-items: flex-start;}
 .what .passion-box .big-tit .line .green {width: 0%; height: 4px; background-color: #6eceb5; transition: all 0.5s; animation-name: line; animation-duration: 1s; animation-iteration-count: infinite;}
 .what .passion-box .big-tit .title {font-size: 4vw; font-family: 'Oswald', sans-serif;}
-.what .passion-box .cont {width: 85%; display: flex; height: 100%; padding: 2em 0; justify-content: flex-end;}
-.what .passion-box .cont .bg {width: 80%; height: 100%; padding: 2em 0; display: flex; background-color: #6eceb5;}
+.what .passion-box .cont {width: 85%; display: flex; height: 100%; justify-content: flex-end;}
+.what .passion-box .cont .bg {width: 80%; height: 100%; display: flex; background-color: #6eceb5; padding: 1em 0;}
 .what .passion-box .cont .bg .know {width: 100%; display: flex;}
 .what .passion-box .cont .bg .part {width: 30%; padding: 0 1em; text-align: center; margin: 0 2em;}
 .what .passion-box .cont .bg .part img {width: 4vw; height: auto; color: #fff;}
 .what .passion-box .cont .bg .part .sector {font-size: 1.25vw; padding-top: 0.25em; color: #fff;}
-.what .passion-box .bottom {width: 100%; display: flex; display: flex; justify-content: center; align-items: center; margin-top: 1.5em;}
+.what .passion-box .bottom {width: 100%; display: flex; display: flex; justify-content: center; align-items: center; padding: 2em 0;}
 .what .passion-box .bottom .skill-all {width: 80%; display: flex; justify-content: stretch; align-items: center;flex-direction: column;}
 .what .passion-box .bottom .skill-all .skill-wrap {width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 0.5em 0; flex-direction: column;}
 .what .passion-box .bottom .skill-all .skill-wrap .skill-box {width: 100%; display: flex; justify-content: stretch; align-items: center; font-size: 1.25vw; font-weight: 500; margin: 0.125em 0;}
@@ -150,25 +165,24 @@ html, body {width: 100%; overflow-x: hidden;}
 .work .intro-text .top .big-tit .title {font-size: 4vw; font-family: 'Oswald', sans-serif;}
 .work .intro-text .top .sms {font-size: 2vw; font-family: 'Mrs Saint Delafield', cursive; padding-left: 20%;}
 
-.work .projects {width: 100%; display: flex; justify-content: center; align-items: center;flex-direction: column; padding-top: 2em;}
-.work .projects .subs {width: 100%; display: flex; justify-content: center; align-items: center;}
-.work .projects .subs .sub {display: flex; justify-content: center; align-items: center; width: 30%; border: 1px solid blue;}
+.work .projects {width: 90%; display: flex; justify-content: center; align-items: center;flex-direction: column; padding: 1.5em 0;}
+.work .projects .subs {width: 100%; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;}
+.work .projects .subs .sub {display: flex; justify-content: center; align-items: center; width: 30%; border: 1px solid blue; margin: 1em;}
 .work .projects .subs .sub .webs {display: flex; justify-content: center; position: relative; transition: all 0.5s; margin: 0 2.5em; width: 100%;}
-.work .projects .subs .sub .webs img {width: 100%; height: auto; transition: all 5s;}
+.work .projects .subs .sub .webs img {width: 20em; height: auto; transition: all 5s;}
 .work .projects .subs .sub .webs .cover {width: 100%; background-color: #6eceb5; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
 .work .projects .subs .sub .webs:hover .cover {opacity: 0.8;}
 .work .projects .subs .sub .webs:hover {transform: scale(1.1)}
-.work .projects .subs .sub .webs .cover .site-name {font-size: 3vw;}
-.work .projects .subs .sub .webs .cover .program {margin-top: 1em; font-size: 1.5vw;}
-.work .projects .subs .sub .webs .cover .visit-site {border: 1px solid #f8f8f8; color: #f8f8f8; margin-top: 3em; padding: 0.25em 1em; cursor: pointer; transition: all 0.3s;}
+.work .projects .subs .sub .webs .cover .site-name {font-size: 2em;}
+.work .projects .subs .sub .webs .cover .program {margin-top: 0.75em; font-size: 1.5vw;}
+.work .projects .subs .sub .webs .cover .visit-site {border: 1px solid #f8f8f8; color: #f8f8f8; margin-top: 2em; padding: 0.25em 1em; cursor: pointer; transition: all 0.3s;}
 .work .projects .subs .sub .webs .cover .visit-site:hover {background-color: #f8f8f8; color: #6eceb5;}
-
 
 
 /* *******contact******* */
 .contact {width: 100%; padding: 10vh;}
 .contact .cont-wrap {background-color: #eee; width: 100%; display: flex;}
-.contact .cont-wrap .con {width: 40%; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #6eceb5; padding: 10em 0;}
+.contact .cont-wrap .con {width: 40%; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #6eceb5; padding: 9.5em 0;}
 .contact .cont-wrap .con .txt {font-size: 5vw; font-family: 'Oswald', sans-serif; letter-spacing: -1px; padding: 1em 0;}
 .contact .cont-wrap .send {width: 50%; margin-left: 10%; display: flex; justify-content: flex-start; align-items: center;}
 .contact .cont-wrap .send form {text-align: left; padding-bottom: 2em; width: 80%;}
@@ -180,7 +194,8 @@ html, body {width: 100%; overflow-x: hidden;}
 .contact .cont-wrap .send .comment:focus {outline: none;}
 .contact .cont-wrap .send .bt-send {background-color: #111; color: #f8f8f8; padding: 0.5em 1.5em; font-size: 0.875em; transition: all 0.5s; border: none; margin-top: 1em;}
 .contact .cont-wrap .send .bt-send:hover {background-color: #6eceb5;}
-
+.contact .cont-wrap .send .phone {padding-top: 3em; font-size: 1.25em; font-family: 'Oswald', sans-serif; display: flex; justify-content: flex-start; align-items: center;}
+.contact .cont-wrap .send .phone i {font-size: 1em; padding-right: 1em;}
 
 
 /* **********반응형************* */
@@ -225,6 +240,12 @@ html, body {width: 100%; overflow-x: hidden;}
 	.work .intro-text .top .big-tit .line .green {width: 0%; height: 4px; background-color: #6eceb5; transition: all 0.5s; animation-name: line; animation-duration: 1s; animation-iteration-count: infinite;}
 	.work .intro-text .top .big-tit .title {font-size: 8vw; }
 	.work .intro-text .top .sms {font-size: 4vw; padding-top: 1em;}
+	.work .projects {width: 100%;}
+	.work .projects .subs {width: 100%;}
+	.work .projects .subs .sub {width: 30%; margin: 0.5em 0.25em;}
+	.work .projects .subs .sub .webs {width: 100%;}
+	.work .projects .subs .sub .webs img {width: 16em;}
+
 	.contact .cont-wrap {flex-direction: column;}
 	.contact .cont-wrap .con {padding: 0; width: 100%}
 	.contact .cont-wrap .con .txt {padding: 0.5em 0;}
@@ -279,6 +300,14 @@ html, body {width: 100%; overflow-x: hidden;}
 	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt .type-3 {font-size: 2.5vw;}
 	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills .s-txt .names {font-size: 2.125vw;}
 	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills {flex-direction: column;}
+	.work .projects {width: 100%;}
+	.work .projects .subs {width: 100%;}
+	.work .projects .subs .sub {width: 40%; margin: 0.5em 0.25em;}
+	.work .projects .subs .sub .webs {width: 100%;}
+	.work .projects .subs .sub .webs img {width: 15em;}
+	.work .projects .subs .sub .webs .cover .site-name {font-size: 1.25em;}
+	.work .projects .subs .sub .webs .cover .program {margin-top: 0.75em; font-size: 2vw;}
+	.work .projects .subs .sub .webs .cover .visit-site {margin-top: 1em; padding: 0.25em; font-size: 0.75em;}
 	.contact {padding: 5vh;}
 	.contact .cont-wrap .con {padding: 1em 0; width: 100%}
 	.contact .cont-wrap .con .txt {padding: 0.5em 0; font-size: 8vw;}
@@ -286,6 +315,11 @@ html, body {width: 100%; overflow-x: hidden;}
 }
 
 @media screen and (max-width: 575px) {
-	.what {padding: 0}
+	.what {padding: 5vh}
+	.work .projects {width: 100%;}
+	.work .projects .subs {width: 100%;}
+	.work .projects .subs .sub {width: 40%; margin: 0.75em 0.25em;}
+	.work .projects .subs .sub .webs {width: 100%;}
+	.work .projects .subs .sub .webs img {width: 10em;}
 
 }
