@@ -14,7 +14,7 @@
 html, body {width: 100%; overflow-x: hidden;}
 
 /************** header ************/
-.header-wrapper {width: 100%; background-color: #fff; height: 10vh; position: fixed;}
+.header-wrapper {width: 100%; background-color: #fff; height: 10vh; position: fixed; z-index: 9999;}
 .header-wrapper .wrap {width: 100%; display: flex; justify-content: space-between; align-items: center; height: 10vh; }
 .header-wrapper h1 {padding: 0.25em 0.75em;}
 .header-wrapper h1 img {width: 100px; height: auto;}
@@ -80,7 +80,7 @@ html, body {width: 100%; overflow-x: hidden;}
 }
 
 .sns {width: 100%; height: 10vh; background-color:#fff; display: flex; justify-content: flex-end; align-items: center; position: fixed; z-index: 999;}
-.sns #back-top {margin-right: 35.5vw; border: 1px solid #111; padding: 0.25em; width: 4em; text-align: center; border-radius: 5px; cursor: pointer; opacity: 0;}
+.sns #back-top {margin-right: 35.5vw; border: 1px solid #111; padding: 0.25em; width: 4em; text-align: center; border-radius: 5px; cursor: pointer; opacity: 0; z-index: 9999;}
 .sns .icons {display: flex; width: 200px; height: 100%; color: #111; font-size: 2em; justify-content: center; align-items: center;}
 .sns .icons i {padding: 0.25em; transition: all 0.5s;}
 .sns .icons i:hover {color: #6eceb5;}
@@ -88,7 +88,7 @@ html, body {width: 100%; overflow-x: hidden;}
 
 
 /* section 2 */
-.titles {width: 80%; height: 80vh; background-color: #eee; display: flex; justify-content: flex-start; align-items: center; position: absolute; top: 10vh; display: none; z-index: 999; position: fixed;}
+.titles {width: 80%; height: 80vh; background-color: #eee; display: flex; justify-content: flex-start; align-items: center; position: absolute; top: 10vh; display: none; z-index: 9999; position: fixed;}
 .titles .contents {display: flex; flex-direction: column; align-items: flex-start; justify-content: center; position: relative;  height: 100%; width: 100%;}
 .titles .contents .menus {font-size: 3vw; color: #111; text-align: left;  position: relative; overflow: hidden; cursor: pointer; font-family: 'Oswald', sans-serif; padding-left: 3em;}
 .titles .contents .menus .line {width: 0; height: 8%; background-color: #6eceb5; position: absolute; top: 50%;}

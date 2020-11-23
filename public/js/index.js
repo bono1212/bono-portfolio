@@ -30,7 +30,7 @@ var bt = document.getElementById('back-top'),
 		window.addEventListener('scroll', function(){
 			scrollPos = docElem.scrollTop;
 			if(scrollPos > offset) {
-				bt.className = "visible";
+				bt.className = 'visible';
 			} else {
 				bt.className = '';
 			}
@@ -48,7 +48,7 @@ var bt = document.getElementById('back-top'),
 				} else {
 						clearInterval(scrollInterval);
 				}
-			}, 20);
+			}, 15);
 		}
 
 
