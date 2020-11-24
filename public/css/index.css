@@ -122,8 +122,8 @@ html, body {width: 100%; overflow-x: hidden;}
 
 
 /* *********WHAT********* */
-.what {width: 100%; height: 100vh; padding: 10vh;}
-.what .passion-box {width: 100%; background-color: #eee; display: flex; flex-direction: column; align-items: center;}
+.what {width: 100%; padding: 10vh;}
+.what .passion-box {width: 100%; background-color: #eee; display: flex; flex-direction: column; align-items: center; padding: 3em 0;}
 .what .passion-box .top {width: 100%; display: flex; height: 35%; padding: 1.5em 0;}
 .what .passion-box .big-tit {width: 60%; display: flex; justify-content: center; height: 100%; align-items: flex-end; padding-right: 4em; flex-direction: column; padding: 1em 0;}
 .what .passion-box .big-tit .line {width: 15%; display: flex; justify-content: flex-start; align-items: flex-start;}
@@ -169,8 +169,8 @@ html, body {width: 100%; overflow-x: hidden;}
 .work .projects .subs {width: 100%; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;}
 .work .projects .subs .sub {display: flex; justify-content: center; align-items: center; width: 30%; border: 1px solid blue; margin: 1em;}
 .work .projects .subs .sub .webs {display: flex; justify-content: center; position: relative; transition: all 0.5s; margin: 0 2.5em; width: 100%;}
-.work .projects .subs .sub .webs img {width: 20em; height: auto; transition: all 5s;}
-.work .projects .subs .sub .webs .cover {width: 100%; background-color: #6eceb5; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
+.work .projects .subs .sub .webs img {width: 18em; height: auto; transition: all 5s;}
+.work .projects .subs .sub .webs .cover {width: 18em; background-color: #6eceb5; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
 .work .projects .subs .sub .webs:hover .cover {opacity: 0.8;}
 .work .projects .subs .sub .webs:hover {transform: scale(1.1)}
 .work .projects .subs .sub .webs .cover .site-name {font-size: 2em;}
@@ -179,7 +179,7 @@ html, body {width: 100%; overflow-x: hidden;}
 .work .projects .subs .sub .webs .cover .visit-site:hover {background-color: #f8f8f8; color: #6eceb5;}
 
 .work .grid-sizer,
-.work .grid-item { width: 33.3333%; }
+.work .grid-item { width: 30%%; }
 
 
 /* *******contact******* */
@@ -220,6 +220,7 @@ html, body {width: 100%; overflow-x: hidden;}
 	.who .intro-text .small-tit .intro-small .name {font-size: 5.5vw}
 	.who .intro-text .small-tit .intro-small .intro {font-size: 2vw;}
 	.who .intro-text .small-tit .intro-small .myself { font-size: 3.5vw; text-decoration: underline; padding: 2em;}
+	.what {padding: 5vh;}
 	.what .passion-box .top {flex-direction: column; padding: 2em;}
 	.what .passion-box .big-tit {width: 100%; align-items: flex-start;}
 	.what .passion-box .big-tit .line {width: 17%;}
@@ -245,12 +246,9 @@ html, body {width: 100%; overflow-x: hidden;}
 	.work .intro-text .top .sms {font-size: 4vw; padding-top: 1em;}
 	.work .projects {width: 100%;}
 	.work .projects .subs {width: 100%;}
-	.work .projects .subs .sub {width: 30%; margin: 0.5em 0.25em;}
+	.work .projects .subs .sub {margin: 0.5em 0.25em;}
 	.work .projects .subs .sub .webs {width: 100%;}
-	.work .projects .subs .sub .webs img {width: 16em;}
-
 	.contact .cont-wrap {flex-direction: column;}
-	.contact .cont-wrap .con {padding: 0; width: 100%}
 	.contact .cont-wrap .con .txt {padding: 0.5em 0;}
 	.contact .cont-wrap .send {width: 100%; padding-top: 3em;}
 }
@@ -309,9 +307,9 @@ html, body {width: 100%; overflow-x: hidden;}
 	.what .passion-box .bottom .skill-all .skill-wrap .skill-box .skills {flex-direction: column;}
 	.work .projects {width: 100%;}
 	.work .projects .subs {width: 100%;}
-	.work .projects .subs .sub {width: 40%; margin: 0.5em 0.25em;}
+	.work .projects .subs .sub {width: 50%; margin: 0.5em 0.25em;}
 	.work .projects .subs .sub .webs {width: 100%;}
-	.work .projects .subs .sub .webs img {width: 15em;}
+	.work .projects .subs .sub .webs img {width: 20em;}
 	.work .projects .subs .sub .webs .cover .site-name {font-size: 1.25em;}
 	.work .projects .subs .sub .webs .cover .program {margin-top: 0.75em; font-size: 2vw;}
 	.work .projects .subs .sub .webs .cover .visit-site {margin-top: 1em; padding: 0.25em; font-size: 0.75em;}
@@ -324,12 +322,9 @@ html, body {width: 100%; overflow-x: hidden;}
 }
 
 @media screen and (max-width: 575px) {
-	.sns #back-top {margin-right: 9vw;}
 	.what {padding: 5vh}
 	.work .projects {width: 100%;}
 	.work .projects .subs {width: 100%;}
-	.work .projects .subs .sub {width: 40%; margin: 0.75em 0.25em;}
+	.work .projects .subs .sub {width: 100%; margin: 0.75em 0.25em;}
 	.work .projects .subs .sub .webs {width: 100%;}
-	.work .projects .subs .sub .webs img {width: 10em;}
-
 }
