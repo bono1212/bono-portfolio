@@ -22,9 +22,9 @@ html, body {width: 100%; overflow-x: hidden;}
 .header-wrapper .menu-bar .menu {font-size: 1.5em; display: flex; width: 40%; justify-content: center; align-items: center;}
 .header-wrapper .menu-bar .menu div {transition: all 0.5s;}
 .header-wrapper .menu-bar .bar-box {width: 50%; height: 100%; display: flex; justify-content: space-between; flex-direction: column; padding-left: 20%;}
-.header-wrapper .menu-bar .bar-box div {width: 70%; height: 2px; background-color: #111; transition: all 0.5s;}
-.header-wrapper .menu-bar:hover .menu div:nth-child(2) {transform: translateY(-10px);}
-.header-wrapper .menu-bar:hover .menu div:nth-child(4) {transform: translateY(-10px);}
+.header-wrapper .menu-bar .bar-box div {width: 70%; height: 1px; background-color: #111; transition: all 0.5s;}
+.header-wrapper .menu-bar:hover .menu div:nth-child(2) {transform: translateY(-5px);}
+.header-wrapper .menu-bar:hover .menu div:nth-child(4) {transform: translateY(-5px);}
 .header-wrapper .menu-bar:hover .bar-box div:nth-child(1) {width: 100%;}
 .header-wrapper .menu-bar:hover .bar-box div:nth-child(3) {width: 100%;}
 
@@ -80,7 +80,7 @@ html, body {width: 100%; overflow-x: hidden;}
 }
 
 .sns {width: 100%; height: 10vh; background-color:#fff; display: flex; justify-content: flex-end; align-items: center; position: fixed; z-index: 999;}
-.sns #back-top {margin-right: 35.5vw; border: 1px solid #111; padding: 0.25em; width: 4em; text-align: center; border-radius: 5px; cursor: pointer; opacity: 0; z-index: 9999;}
+.sns #back-top {border: 1px solid #111; padding: 0 0.5em; width: 3em; text-align: center; border-radius: 5px; cursor: pointer; opacity: 0; z-index: 9999; background-color: #6eceb5; border-color: #6eceb5; color: #fff;}
 .sns .icons {display: flex; width: 200px; height: 100%; color: #111; font-size: 2em; justify-content: center; align-items: center;}
 .sns .icons i {padding: 0.25em; transition: all 0.5s;}
 .sns .icons i:hover {color: #6eceb5;}
