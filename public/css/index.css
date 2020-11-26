@@ -167,10 +167,10 @@ html, body {width: 100%; overflow-x: hidden;}
 .work .intro-text .top .sms {font-size: 2vw; font-family: 'Mrs Saint Delafield', cursive; padding-left: 20%; letter-spacing: 3px;}
 
 .work .projects {width: 90%; display: flex; justify-content: center; align-items: center;flex-direction: column; padding: 1.5em 0;}
-.work .projects .subs {width: 100%; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;}
-.work .projects .subs .sub {display: flex; justify-content: center; align-items: center; width: 30%; border: 1px solid blue; margin: 1em;}
+.work .projects .subs {width: 100%; display: flex; justify-content: center; align-items: center; flex-wrap: wrap}
+.work .projects .subs .sub {display: flex; justify-content: center; align-items: center; width: 30%; border: 1px solid blue; margin: 0.5em}
 .work .projects .subs .sub .webs {display: flex; justify-content: center; position: relative; transition: all 0.5s; margin: 0 2.5em; width: 100%;}
-.work .projects .subs .sub .webs img {width: 18em; height: auto; transition: all 5s;}
+.work .projects .subs .sub .webs img {width: 18em; transition: all 5s;}
 .work .projects .subs .sub .webs .cover {width: 18em; background-color: #6eceb5; position: absolute; left: 50%; transform: translateX(-50%); top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
 .work .projects .subs .sub .webs:hover .cover {opacity: 0.8;}
 .work .projects .subs .sub .webs:hover {transform: scale(1.1)}
@@ -180,7 +180,7 @@ html, body {width: 100%; overflow-x: hidden;}
 .work .projects .subs .sub .webs .cover .visit-site:hover {background-color: #f8f8f8; color: #6eceb5;}
 
 .work .grid-sizer,
-.work .grid-item { width: 30%%; }
+.work .grid-item { width: 20%; }
 
 
 /* *******contact******* */

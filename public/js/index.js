@@ -74,7 +74,7 @@ function mailSend(f) {
 var $grid = $('.work .grid').imagesLoaded( function() {
 	$grid.masonry({
 		itemSelector: '.grid-item',
-		columnWidth: '.grid-sizer',
+		columnWidth: 'grid-sizer',
 		percentPosition: true
 	});
 });
