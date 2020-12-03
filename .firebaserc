@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "bono-portfolio"
+    "default": "bono-portfolio",
+    "y": "bono12-portfolio"
   }
 }
