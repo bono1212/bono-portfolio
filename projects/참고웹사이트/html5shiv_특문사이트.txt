@@ -1,8 +1,0 @@
-//CDN 이용하는 경우
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	<![endif]-->
-	
-
-html특수문자
-http://htmlarrows.com
