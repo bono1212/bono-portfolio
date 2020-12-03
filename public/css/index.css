@@ -171,13 +171,13 @@ html, body {width: 100%; overflow-x: hidden;}
 .work .projects .subs .sub {display: flex; justify-content: center; align-items: center; padding: 1%;}
 .work .projects .subs .sub .webs {display: flex; justify-content: center; position: relative; transition: all 0.5s; width: 100%;}
 .work .projects .subs .sub .webs img {width: 100%; transition: all 5s;}
-.work .projects .subs .sub .webs .cover {width: 100%; background-color: #6eceb5; position: absolute; left: 0; top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; font-family: 'Roboto', sans-serif; opacity: 0; transition: all 0.5s; height: 100%;}
-.work .projects .subs .sub .webs:hover .cover {opacity: 0.8;}
-.work .projects .subs .sub .webs:hover {transform: scale(1.1)}
-.work .projects .subs .sub .webs .cover .site-name {font-size: 2em;}
-.work .projects .subs .sub .webs .cover .program {margin-top: 0.75em; font-size: 1.5vw;}
-.work .projects .subs .sub .webs .cover .visit-site {border: 1px solid #f8f8f8; color: #f8f8f8; margin-top: 2em; padding: 0.25em 1em; cursor: pointer; transition: all 0.3s;}
-.work .projects .subs .sub .webs .cover .visit-site:hover {background-color: #f8f8f8; color: #6eceb5;}
+.work .projects .subs .sub .webs .cover {width: 100%; background-color: #111; position: absolute; left: 0; bottom: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; font-family: 'Roboto', sans-serif; opacity: 0;; transition: all 0.5s; height: 100%;}
+.work .projects .subs .sub .webs .cover:hover {opacity: 0.7;}
+.work .projects .subs .sub .webs:hover {transform: translateY(-15px)}
+.work .projects .subs .sub .webs .cover .site-name {font-size: 1.5em;}
+.work .projects .subs .sub .webs .cover .program {font-size: 1em; padding: 1em 0;}
+.work .projects .subs .sub .webs .cover .visit-site {border: 1px solid #f8f8f8; color: #f8f8f8; padding: 0.125em 1em; cursor: pointer; transition: all 0.3s; font-size: 1em;}
+.work .projects .subs .sub .webs .cover .visit-site:hover {background-color: #f8f8f8; color: #111;}
 
 .work .grid-sizer,
 .work .grid-item { width: 20%; }
