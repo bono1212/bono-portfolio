@@ -17,9 +17,9 @@ html, body {width: 100%; overflow-x: hidden;}
 .header-wrapper {width: 100%; background-color: #fff; height: 10vh; position: fixed; z-index: 9999;}
 .header-wrapper .wrap {width: 100%; display: flex; justify-content: space-between; align-items: center; height: 10vh; }
 .header-wrapper h1 {padding: 0.25em 0.75em;}
-.header-wrapper h1 img {width: 100px; height: auto;}
-.header-wrapper .menu-bar {width: 200px; height: 100%; padding: 1.5em 1.25em; display: flex; align-self: center;}
-.header-wrapper .menu-bar .menu {font-size: 1.5em; display: flex; width: 40%; justify-content: center; align-items: center;}
+.header-wrapper h1 img {width: 200px; height: auto;}
+.header-wrapper .menu-bar {width: 250px; height: 60%; padding: 1.5em 1.25em; display: flex; align-self: center;}
+.header-wrapper .menu-bar .menu {font-size: 2.5em; display: flex; width: 40%; justify-content: center; align-items: center;}
 .header-wrapper .menu-bar .menu div {transition: all 0.5s;}
 .header-wrapper .menu-bar .bar-box {width: 60%; display: flex; justify-content: space-between; flex-direction: column; padding-left: 20%;}
 .header-wrapper .menu-bar .bar-box div {width: 70%; height: 1px; background-color: #111; transition: all 0.5s;}
@@ -54,11 +54,9 @@ html, body {width: 100%; overflow-x: hidden;}
 	50% {opacity: 0.3;}
 	100% {opacity: 0.7;}
 }
-
 @keyframes down {
 	100% {transform: translateY(10px);}
 }
-
 @keyframes aniPort {
 	0% {margin-left: -100%;}
 	100% {left: 50%;}
@@ -81,9 +79,9 @@ html, body {width: 100%; overflow-x: hidden;}
 }
 
 .sns {width: 100%; height: 10vh; background-color:#fff; display: flex; justify-content: flex-end; align-items: center; position: fixed; z-index: 999;}
-#back-top {padding: 0 0.5em; width: 3em; text-align: center; border-radius: 5px; cursor: pointer; opacity: 0; z-index: 9999; background-color: #6eceb5; border-color: #6eceb5; color: #fff;}
+#back-top {padding: 0 0.75em; width: 3em; text-align: center; border-radius: 5px; cursor: pointer; opacity: 0; z-index: 9999; background-color: #6eceb5; border-color: #6eceb5; color: #fff; font-size: 2em;}
 #back-top.visible {opacity: 1;}
-.sns .icons {display: flex; width: 200px; height: 100%; color: #111; font-size: 2em; justify-content: center; align-items: center;}
+.sns .icons {display: flex; width: 250px; height: 100%; color: #111; font-size: 3em; justify-content: center; align-items: center;}
 .sns .icons i {padding: 0.25em; transition: all 0.5s;}
 .sns .icons i:hover {color: #6eceb5;}
 
@@ -174,9 +172,9 @@ html, body {width: 100%; overflow-x: hidden;}
 .work .projects .subs .sub .webs .cover {width: 100%; background-color: #111; position: absolute; left: 0; bottom: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; font-family: 'Roboto', sans-serif; opacity: 0;; transition: all 0.5s; height: 100%;}
 .work .projects .subs .sub .webs .cover:hover {opacity: 0.7;}
 .work .projects .subs .sub .webs:hover {transform: translateY(-15px)}
-.work .projects .subs .sub .webs .cover .site-name {font-size: 1.25em;}
-.work .projects .subs .sub .webs .cover .program {font-size: 1em; padding: 0.25em 0;}
-.work .projects .subs .sub .webs .cover .visit-site {border: 1px solid #f8f8f8; color: #f8f8f8; padding: 0.125em 1em; cursor: pointer; transition: all 0.3s; font-size: 1em;}
+.work .projects .subs .sub .webs .cover .site-name {font-size: 2em;}
+.work .projects .subs .sub .webs .cover .program {font-size: 1.5em; padding: 0.25em 0;}
+.work .projects .subs .sub .webs .cover .visit-site {border: 1px solid #f8f8f8; color: #f8f8f8; padding: 0.25em 1em; cursor: pointer; transition: all 0.3s; font-size: 1.5em;}
 .work .projects .subs .sub .webs .cover .visit-site:hover {background-color: #f8f8f8; color: #111;}
 
 .work .grid-sizer,
@@ -186,20 +184,20 @@ html, body {width: 100%; overflow-x: hidden;}
 /* *******contact******* */
 .contact {width: 100%; padding: 10vh;}
 .contact .cont-wrap {background-color: #eee; width: 100%; display: flex;}
-.contact .cont-wrap .con {width: 40%; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #6eceb5; padding: 9.5em 0;}
-.contact .cont-wrap .con .txt {font-size: 5vw; font-family: 'Oswald', sans-serif; letter-spacing: -1px; padding: 1em 0;}
+.contact .cont-wrap .con {width: 40%; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #6eceb5; padding: 28em 0;}
+.contact .cont-wrap .con .txt {font-size: 5em; font-family: 'Oswald', sans-serif; letter-spacing: -1px; padding: 1em 0;}
 .contact .cont-wrap .send {width: 50%; margin-left: 10%; display: flex; justify-content: flex-start; align-items: center;}
 .contact .cont-wrap .send form {text-align: left; padding-bottom: 2em; width: 80%;}
 .contact .cont-wrap .send .email {position: relative; border-bottom: 1px solid #555; margin-bottom: 1em;}
-.contact .cont-wrap .send .email > i {position: absolute; top: 12px; color: #999;}
-.contact .cont-wrap .send .email > input {width: 100%; border: none; padding: 0.5em 1.5em; background-color: transparent;}
+.contact .cont-wrap .send .email > i {position: absolute; top: 18px; color: #999; font-size: 1.5em;}
+.contact .cont-wrap .send .email > input {width: 100%; border: none; padding: 0.5em 1.5em; background-color: transparent; font-size: 1.5em;}
 .contact .cont-wrap .send .email > input:focus {outline: none; border: none; width: 100%;}
-.contact .cont-wrap .send .comment {margin-top: 1em; width: 100%; border: none; border-bottom: 1px solid #555; height: 200px; padding: 1em 1.5em; background-color: #fff; margin-bottom: 1em;}
+.contact .cont-wrap .send .comment {margin-top: 1em; width: 100%; border: none; border-bottom: 1px solid #555; height: 500px; padding: 1em 1.5em; background-color: #fff; margin-bottom: 1em; font-size: 1.5em;}
 .contact .cont-wrap .send .comment:focus {outline: none;}
-.contact .cont-wrap .send .bt-send {background-color: #111; color: #f8f8f8; padding: 0.5em 1.5em; font-size: 0.875em; transition: all 0.5s; border: none; margin-top: 1em;}
+.contact .cont-wrap .send .bt-send {background-color: #111; color: #f8f8f8; padding: 0.5em 1.5em; font-size: 1.5em; transition: all 0.5s; border: none; margin-top: 1em;}
 .contact .cont-wrap .send .bt-send:hover {background-color: #6eceb5;}
-.contact .cont-wrap .send .phone {padding-top: 3em; font-size: 1.25em; font-family: 'Oswald', sans-serif; display: flex; justify-content: flex-start; align-items: center;}
-.contact .cont-wrap .send .phone i {font-size: 1em; padding-right: 1em;}
+.contact .cont-wrap .send .phone {padding-top: 3em; font-size: 2em; font-family: 'Oswald', sans-serif; display: flex; justify-content: flex-start; align-items: center;}
+.contact .cont-wrap .send .phone i {font-size: 1.5em; padding-right: 1em;}
 
 
 /* **********반응형************* */
@@ -329,7 +327,7 @@ html, body {width: 100%; overflow-x: hidden;}
 	.work .grid-item { width: 100%; }
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
 	.header-wrapper h1 {padding: 0.25em;}
 	.header-wrapper h1 img {width: 80px; height: auto;}
 	.header-wrapper .menu-bar {width: 150px;}
@@ -346,4 +344,4 @@ html, body {width: 100%; overflow-x: hidden;}
 	.what .passion-box .cont {width: 100%;}
 	.what .passion-box .cont .bg .part {text-align: center;}
 	.what .passion-box .cont .bg .part img {width: 8vw;}
-}
+} */
