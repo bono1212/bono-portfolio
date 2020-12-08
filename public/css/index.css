@@ -226,7 +226,7 @@ html, body {width: 100%; overflow-x: hidden;}
 	.what .passion-box .big-tit {width: 100%; align-items: flex-start;}
 	.what .passion-box .big-tit .line {width: 17%;}
 	.what .passion-box .big-tit .title {font-size: 6vw;}
-	.what .passion-box .cont {width: 100%; justify-content: center;}
+	.what .passion-box .cont {width: 100%; justify-content: flex-end;}
 	.what .passion-box .cont .bg {width: 100%; justify-content: center; height: 100%; padding: 1em 0;}
 	.what .passion-box .bottom {margin-top: 0;}
 	.what .passion-box .bottom .skill-all {width: 85%; margin-top: 0;}
@@ -295,7 +295,7 @@ html, body {width: 100%; overflow-x: hidden;}
 	.what .passion-box .big-tit {width: 100%; align-items: flex-start;}
 	.what .passion-box .big-tit .line {width: 17%;}
 	.what .passion-box .big-tit .title {font-size: 6vw;}
-	.what .passion-box .cont {width: 100%; justify-content: center; padding: 1em 0;}
+	.what .passion-box .cont {width: 100%; justify-content: flex-end; padding: 1em 0;}
 	.what .passion-box .cont .bg {width: 100%; justify-content: center; height: 100%; padding: 1em 0;}
 	.what .passion-box .cont .bg .part {padding: 0 1em; text-align: center; margin: 0 1em;}
 	.what .passion-box .cont .bg .part img {width: 8vw;}
@@ -327,4 +327,23 @@ html, body {width: 100%; overflow-x: hidden;}
 	.work .projects .subs .sub .webs {width: 100%;}
 	.work .grid-sizer,
 	.work .grid-item { width: 100%; }
+}
+
+@media screen and (max-width: 375px) {
+	.header-wrapper h1 {padding: 0.25em;}
+	.header-wrapper h1 img {width: 80px; height: auto;}
+	.header-wrapper .menu-bar {width: 150px;}
+	.header-wrapper .menu-bar .menu {font-size: 1.125em;}
+	.header-wrapper .menu-bar .bar-box {width: 60%; display: flex; justify-content: space-between; flex-direction: column; padding-left: 20%;}
+	.header-wrapper .menu-bar .bar-box div {width: 60%;}
+	.main .main-bg .title-txt .name {font-size: 9vw; top: 25%; left: 14%;}
+	.main .main-bg .title-txt .port {font-size: 17vw; left: 50%; top: 40%;}
+	.main .main-bg .title-txt .line {width: 43%; top: 48%; left: 44%;}
+	.main .main-bg .title-txt .web {font-size: 9vw; left: 56%; top: 47%;}
+	.main .main-bg .title-txt .design {font-size: 6.5vw; left: 42%; top: 54%;}
+	.main .main-bg .title-txt .develop {font-size: 6.5vw; left: 45%; top: 59%;}
+	.main .main-bg .title-txt .and {top: 44%; left: 74%; font-size: 20.5vw;}
+	.what .passion-box .cont {width: 100%;}
+	.what .passion-box .cont .bg .part {text-align: center;}
+	.what .passion-box .cont .bg .part img {width: 8vw;}
 }
