@@ -18,10 +18,10 @@ html, body {width: 100%; overflow-x: hidden;}
 .header-wrapper .wrap {width: 100%; display: flex; justify-content: space-between; align-items: center; height: 10vh; }
 .header-wrapper h1 {padding: 0.25em 0.75em;}
 .header-wrapper h1 img {width: 100px; height: auto;}
-.header-wrapper .menu-bar {width: 200px; height: 100%; padding: 1.5em 1.25em; display: flex; align-self: center;}
+.header-wrapper .menu-bar {width: 200px; height: 80%; padding: 1.5em 1.25em; display: flex; align-self: center;}
 .header-wrapper .menu-bar .menu {font-size: 1.5em; display: flex; width: 40%; justify-content: center; align-items: center;}
 .header-wrapper .menu-bar .menu div {transition: all 0.5s;}
-.header-wrapper .menu-bar .bar-box {width: 50%; height: 100%; display: flex; justify-content: space-between; flex-direction: column; padding-left: 20%;}
+.header-wrapper .menu-bar .bar-box {width: 60%; display: flex; justify-content: space-between; flex-direction: column; padding-left: 20%;}
 .header-wrapper .menu-bar .bar-box div {width: 70%; height: 1px; background-color: #111; transition: all 0.5s;}
 .header-wrapper .menu-bar:hover .menu div:nth-child(2) {transform: translateY(-5px);}
 .header-wrapper .menu-bar:hover .menu div:nth-child(4) {transform: translateY(-5px);}
