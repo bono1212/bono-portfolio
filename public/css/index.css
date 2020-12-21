@@ -110,11 +110,33 @@ html, body {width: 100%; overflow-x: hidden;}
 .who .intro-text .big-tit .line .green {width: 0%; height: 4px; background-color: #6eceb5; transition: all 0.5s; animation-name: line; animation-duration: 1s; animation-iteration-count: infinite;}
 .who .intro-text .big-tit .title {font-size: 4vw; font-family: 'Oswald', sans-serif;}
 .who .intro-text .big-tit .img img {width: 15.5vw; height: auto; opacity: 0.4;}
-.who .intro-text .small-tit {width: 60%; display: flex; flex-direction: column; height: 100%; padding-left: 3em; justify-content: center;}
-.who .intro-text .small-tit .intro-small {font-size: 1.5em; width: 100%; padding-right: 0; height: 80%;}
+.who .intro-text .small-tit {width: 60%; display: flex; flex-direction: column; height: 100%; padding-left: 3em; justify-content: center; border: 1px solid green;}
+.who .intro-text .small-tit .intro-small {font-size: 1.5em; width: 100%; padding-right: 0; border: 1px solid red;}
 .who .intro-text .small-tit .intro-small .name {font-size: 4.5vw; font-family: 'Fredericka the Great', cursive; color: #6eceb5; letter-spacing: -0.125em; width: 65%;}
-.who .intro-text .small-tit .intro-small .intro {font-size: 1.25vw; font-family: 'Roboto', sans-serif; letter-spacing: -1px; padding-top: 3em;}
-.who .intro-text .small-tit .intro-small .myself {font-family: 'Mrs Saint Delafield', cursive; font-size: 2.5vw; display: flex; justify-content: flex-end; text-decoration: underline; padding: 2em 2em 0;}
+.who .intro-text .small-tit .intro-small .s-title {font-size: 1.25vw; padding: 1em 0;}
+.who .intro-text .small-tit .intro-small .edu {display: flex; padding-top: 1em; font-size: 1vw; padding-left: 2em;}
+.who .intro-text .small-tit .intro-small .edu i {padding-top: 0.325em; font-size: 1vw;}
+.who .intro-text .small-tit .intro-small .edu .schools {padding-left: 2em;}
+.who .intro-text .small-tit .intro-small .edu .schools div {display: flex;}
+.who .intro-text .small-tit .intro-small .edu .schools .mon {display: flex;}
+.who .intro-text .small-tit .intro-small .edu .schools .kor {display: flex; padding-top: 0.25em;}
+.who .intro-text .small-tit .intro-small .edu .schools span {padding-right: 1.25em; font-weight: 500;}
+.who .intro-text .small-tit .intro-small .edu .schools .mon p {padding-left: 4.75em; justify-content: flex-end;font-weight: 500;}
+.who .intro-text .small-tit .intro-small .edu .schools .kor p {padding-left: 3.25em; justify-content: flex-end;}
+.who .intro-text .small-tit .intro-small .edu .schools .course p {padding-left: 5.25em; justify-content: flex-end;}
+.who .intro-text .small-tit .intro-small .worker {padding-top: 2em;}
+.who .intro-text .small-tit .intro-small .edu .works div {display: flex;}
+.who .intro-text .small-tit .intro-small .edu .works {padding-left: 2em;}
+.who .intro-text .small-tit .intro-small .edu .works span {padding-right: 1.25em; font-weight: 500;}
+.who .intro-text .small-tit .intro-small .edu .works .one p {padding-left: 8.5em; justify-content: flex-end; padding-bottom: 0.5em;}
+.who .intro-text .small-tit .intro-small .edu .works .two p {padding-left: 5.25em; justify-content: flex-end; padding-bottom: 0.5em;}
+.who .intro-text .small-tit .intro-small .edu .works .three p {padding-left: 8em; justify-content: flex-end;padding-bottom: 2em;}
+.who .intro-text .small-tit .intro-small .hobbies .one {padding-left: 1.25em; font-weight: bold;}
+.who .intro-text .small-tit .intro-small .one i {padding: 0 0.25em; font-size: 1.25vw; color: #6eceb5;}
+.who .intro-text .small-tit .intro-small .hobbies {display: flex;}
+.who .intro-text .small-tit .intro-small .hobbies .h-icons {padding-left: 1.5em;}
+
+.who .intro-text .small-tit .intro-small .myself {font-family: 'Mrs Saint Delafield', cursive; font-size: 2vw; display: flex; justify-content: flex-end; text-decoration: underline; padding: 1em 1em 0;}
 
 @keyframes line {
 	0% {width: 0;}
